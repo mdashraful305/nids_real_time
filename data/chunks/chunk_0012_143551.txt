@@ -1,0 +1,56 @@
+====================================================================
+LOG WINDOW #0012
+Time range : 2026-08-23 14:35:51 UTC → 2026-08-23 14:36:11 UTC
+Suricata alerts :    7  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (7):
+------------------------------------------------------------
+  [2026-08-23T20:35:52] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:36890 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:35:52] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:36890 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:35:52] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:36890 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:35:52] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:36890 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:35:54] SID:2016182 (sev=1) ET WEB_SERVER ColdFusion componentutils access
+    category : Web Application Attack
+    192.168.1.194:36922 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:36:09] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:58298 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:36:10] SID:2056027 (sev=1) ET WEB_SPECIFIC_APPS Wordpress LiteSpeed Cache Plugin debug.log Access Attempt (CVE-2024-44000)
+    category : Successful Credential Theft Detected
+    192.168.1.194:58346 → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (5249 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:53310 → 192.168.1.169 | GET 192.168.1.169/structure.sql
+  HTTP 192.168.1.194:53310 → 192.168.1.169 | GET 192.168.1.169/servlet/SessionManager
+  HTTP 192.168.1.194:53310 → 192.168.1.169 | GET 192.168.1.169/php.ini
+  HTTP 192.168.1.194:53310 → 192.168.1.169 | GET 192.168.1.169/SiteScope/cgi/go.exe/SiteScope?page=eventLog&machine=&logNa
+  HTTP 192.168.1.194:53310 → 192.168.1.169 | GET 192.168.1.169/ip.txt
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=111  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=3346153.8
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=120  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=11600000.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=114  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=15818182.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=110  Protocol=6  Flow Duration=0.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=125329.1
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=127  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=11600000.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=113  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=6960000.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=135  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=1689320.4
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=133  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=15818182.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA Applayer Detect protocol only one direction, ET WEB_SERVER ColdFusion administrator access, ET WEB_SPECIFIC_APPS Wordpress LiteSpeed Cache Plugin debug.log Access Attempt (CVE-2024-44000), ET WEB_SERVER ColdFusion componentutils access
+  Unique source IPs : 1
+  Top dest ports    : [111, 120, 114, 110, 127]
+  Protocols         : {6: 8}
+====================================================================

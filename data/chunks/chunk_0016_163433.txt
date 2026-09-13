@@ -1,0 +1,62 @@
+====================================================================
+LOG WINDOW #0016
+Time range : 2026-08-23 16:34:33 UTC → 2026-08-23 16:34:53 UTC
+Suricata alerts :    9  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (9):
+------------------------------------------------------------
+  [2026-08-23T22:34:36] SID:2221028 (sev=3) SURICATA HTTP Host header invalid
+    category : Generic Protocol Command Decode
+    192.168.1.194:42224 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:36] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:42244 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:38] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:42312 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:40] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:42486 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:48] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:42500 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:48] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:42500 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:48] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:42500 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:48] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:42500 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T22:34:50] SID:2016182 (sev=1) ET WEB_SERVER ColdFusion componentutils access
+    category : Web Application Attack
+    192.168.1.194:42542 → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (4003 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:55466 → 192.168.1.169 | HEAD 192.168.1.169/
+  HTTP 192.168.1.194:55466 → 192.168.1.169 | GET 192.168.1.169/
+  HTTP 192.168.1.194:55466 → 192.168.1.169 | GET 192.168.1.169/
+  HTTP 192.168.1.194:55466 → 192.168.1.169 | GET 192.168.1.169/S2GZOt9G.htaccess
+  HTTP 192.168.1.194:55466 → 192.168.1.169 | GET 192.168.1.169/S2GZOt9G.el
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.167  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+  Src IP=192.168.1.196  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+  Src IP=192.168.1.167  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.1.194  Src Port=43684  Dst IP=192.168.1.169  Destination Port=126  Protocol=6  Flow Duration=19.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=9157895.0
+  Src IP=192.168.1.194  Src Port=43684  Dst IP=192.168.1.169  Destination Port=106  Protocol=6  Flow Duration=7.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=24857142.0
+  Src IP=192.168.1.194  Src Port=43684  Dst IP=192.168.1.169  Destination Port=122  Protocol=6  Flow Duration=21.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=8285714.5
+  Src IP=192.168.1.194  Src Port=43684  Dst IP=192.168.1.169  Destination Port=105  Protocol=6  Flow Duration=46.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=3782608.8
+  Src IP=192.168.1.194  Src Port=43684  Dst IP=192.168.1.169  Destination Port=123  Protocol=6  Flow Duration=3.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=58000000.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA HTTP Host header invalid, ET WEB_SERVER ColdFusion administrator access, ET WEB_SERVER ColdFusion componentutils access, SURICATA Applayer Detect protocol only one direction
+  Unique source IPs : 3
+  Top dest ports    : [5353, 126, 106, 122, 105]
+  Protocols         : {6: 5, 17: 3}
+====================================================================

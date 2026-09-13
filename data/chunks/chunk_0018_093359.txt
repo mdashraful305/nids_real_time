@@ -1,0 +1,25 @@
+====================================================================
+LOG WINDOW #0018
+Time range : 2026-08-21 09:33:59 UTC → 2026-08-21 09:34:59 UTC
+Suricata alerts :    0  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=55370  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=119  Total Backward Packets=142  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=407692.9
+  Src IP=192.168.1.194  Src Port=55410  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.6  Total Fwd Packets=115  Total Backward Packets=133  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=198741.7
+  Src IP=192.168.1.194  Src Port=38068  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.4  Total Fwd Packets=108  Total Backward Packets=116  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=258419.0
+  Src IP=192.168.1.194  Src Port=55354  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=108  Total Backward Packets=112  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=276423.5
+  Src IP=192.168.1.194  Src Port=34140  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=108  Total Backward Packets=112  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=278530.3
+  Src IP=192.168.1.194  Src Port=54794  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=1.0  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=77075.9
+  Src IP=192.168.1.194  Src Port=54846  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.8  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=103042.7
+  Src IP=192.168.1.194  Src Port=34046  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=243074.7
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique source IPs : 1
+  Top dest ports    : [80]
+  Protocols         : {6: 8}
+====================================================================

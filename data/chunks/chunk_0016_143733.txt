@@ -1,0 +1,72 @@
+====================================================================
+LOG WINDOW #0016
+Time range : 2026-08-23 14:37:33 UTC → 2026-08-23 14:37:53 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62806  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62796  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62786  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62862  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62803  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62790  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62865  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62815  proto=TCP
+  [2026-08-23T20:37:25] SID:2210008 (sev=3) SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+    category : Generic Protocol Command Decode
+    192.168.1.194:62802 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62814  proto=TCP
+  [2026-08-23T20:37:25] SID:2210008 (sev=3) SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+    category : Generic Protocol Command Decode
+    192.168.1.194:62849 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:37:25] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:62810  proto=TCP
+  [2026-08-23T20:37:25] SID:2210008 (sev=3) SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+    category : Generic Protocol Command Decode
+    192.168.1.194:62823 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:37:25] SID:2210008 (sev=3) SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+    category : Generic Protocol Command Decode
+    192.168.1.194:62824 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T20:37:25] SID:2210008 (sev=3) SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+    category : Generic Protocol Command Decode
+    192.168.1.194:62825 → 192.168.1.169:80  proto=TCP
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=111  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=3346153.8
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=120  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=11600000.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=114  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=15818182.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=110  Protocol=6  Flow Duration=0.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=125329.1
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=127  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=11600000.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=113  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=6960000.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=135  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=1689320.4
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=133  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=15818182.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM 3way handshake SYNACK resend with different ack, SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+  Unique source IPs : 1
+  Top dest ports    : [111, 120, 114, 110, 127]
+  Protocols         : {6: 8}
+====================================================================

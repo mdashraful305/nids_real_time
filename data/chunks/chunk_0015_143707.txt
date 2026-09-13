@@ -1,0 +1,72 @@
+====================================================================
+LOG WINDOW #0015
+Time range : 2026-08-23 14:37:07 UTC → 2026-08-23 14:37:27 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42274  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42284  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42296  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42294  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42318  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42306  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42370  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42362  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42336  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42398  proto=TCP
+  [2026-08-23T20:37:02] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:42416  proto=TCP
+  [2026-08-23T20:37:04] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:58254  proto=TCP
+  [2026-08-23T20:37:04] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:58218  proto=TCP
+  [2026-08-23T20:37:04] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:58238  proto=TCP
+  [2026-08-23T20:37:04] SID:2210044 (sev=3) SURICATA STREAM Packet with invalid timestamp
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:58278  proto=TCP
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=111  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=3346153.8
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=119  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=19333334.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=109  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=14500000.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=126  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=117  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=5272727.5
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=107  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=8285714.5
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=115  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=9666667.0
+  Src IP=192.168.1.194  Src Port=53381  Dst IP=192.168.1.169  Destination Port=104  Protocol=6  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=11600000.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM Packet with invalid timestamp
+  Unique source IPs : 1
+  Top dest ports    : [111, 119, 109, 126, 117]
+  Protocols         : {6: 8}
+====================================================================

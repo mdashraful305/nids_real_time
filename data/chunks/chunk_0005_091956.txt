@@ -1,0 +1,68 @@
+====================================================================
+LOG WINDOW #0005
+Time range : 2026-08-21 09:19:56 UTC → 2026-08-21 09:20:56 UTC
+Suricata alerts :   11  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (11):
+------------------------------------------------------------
+  [2026-08-21T15:20:05] SID:2221028 (sev=3) SURICATA HTTP Host header invalid
+    category : Generic Protocol Command Decode
+    192.168.1.194:37772 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:05] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:37782 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:06] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:37846 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:07] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:38030 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:15] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:55354 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:15] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:55354 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:15] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:55354 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:15] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:55354 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:17] SID:2016182 (sev=1) ET WEB_SERVER ColdFusion componentutils access
+    category : Web Application Attack
+    192.168.1.194:55388 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:28] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:34164 → 192.168.1.169:80  proto=TCP
+  [2026-08-21T15:20:28] SID:2056027 (sev=1) ET WEB_SPECIFIC_APPS Wordpress LiteSpeed Cache Plugin debug.log Access Attempt (CVE-2024-44000)
+    category : Successful Credential Theft Detected
+    192.168.1.194:34190 → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (6296 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:37726 → 192.168.1.169 | HEAD 192.168.1.169/
+  HTTP 192.168.1.194:37726 → 192.168.1.169 | GET 192.168.1.169/
+  HTTP 192.168.1.194:37726 → 192.168.1.169 | GET 192.168.1.169/
+  HTTP 192.168.1.194:37726 → 192.168.1.169 | GET 192.168.1.169/iVsLkuJD.html+
+  HTTP 192.168.1.194:37726 → 192.168.1.169 | GET 192.168.1.169/iVsLkuJD.inc+
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=55370  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=119  Total Backward Packets=142  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=407692.9
+  Src IP=192.168.1.194  Src Port=55410  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.6  Total Fwd Packets=115  Total Backward Packets=133  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=198741.7
+  Src IP=192.168.1.194  Src Port=38068  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.4  Total Fwd Packets=108  Total Backward Packets=116  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=258419.0
+  Src IP=192.168.1.194  Src Port=55354  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=108  Total Backward Packets=112  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=276423.5
+  Src IP=192.168.1.194  Src Port=34140  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=108  Total Backward Packets=112  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=278530.3
+  Src IP=192.168.1.194  Src Port=54794  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=1.0  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=77075.9
+  Src IP=192.168.1.194  Src Port=54846  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.8  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=103042.7
+  Src IP=192.168.1.194  Src Port=34046  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=0.3  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=243074.7
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : ET WEB_SERVER ColdFusion componentutils access, SURICATA HTTP Host header invalid, ET WEB_SERVER ColdFusion administrator access, SURICATA Applayer Detect protocol only one direction, ET WEB_SPECIFIC_APPS Wordpress LiteSpeed Cache Plugin debug.log Access Attempt (CVE-2024-44000)
+  Unique source IPs : 1
+  Top dest ports    : [80]
+  Protocols         : {6: 8}
+====================================================================

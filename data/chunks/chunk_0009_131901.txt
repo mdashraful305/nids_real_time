@@ -1,0 +1,47 @@
+====================================================================
+LOG WINDOW #0009
+Time range : 2026-08-23 13:19:01 UTC → 2026-08-23 13:19:21 UTC
+Suricata alerts :    4  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (4):
+------------------------------------------------------------
+  [2026-08-23T19:19:16] SID:2221028 (sev=3) SURICATA HTTP Host header invalid
+    category : Generic Protocol Command Decode
+    192.168.1.194:36354 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T19:19:16] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:36374 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T19:19:17] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:33780 → 192.168.1.169:80  proto=TCP
+  [2026-08-23T19:19:19] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:33936 → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (1424 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:36320 → 192.168.1.169 | HEAD 192.168.1.169/
+  HTTP 192.168.1.194:36320 → 192.168.1.169 | GET 192.168.1.169/
+  HTTP 192.168.1.194:36320 → 192.168.1.169 | GET 192.168.1.169/
+  HTTP 192.168.1.194:36320 → 192.168.1.169 | GET 192.168.1.169/LqgRBWMW.00RelNotes
+  HTTP 192.168.1.194:36320 → 192.168.1.169 | GET 192.168.1.169/LqgRBWMW.pdf
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.196  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+  Src IP=192.168.1.196  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+  Src IP=192.168.1.194  Src Port=56232  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=0.1  Total Fwd Packets=13  Total Backward Packets=12  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=40904.7
+  Src IP=192.168.1.196  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.1.194  Src Port=56240  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=10.9  Total Fwd Packets=18  Total Backward Packets=20  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=554.4
+  Src IP=192.168.1.194  Src Port=56246  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=10.9  Total Fwd Packets=16  Total Backward Packets=20  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=542.1
+  Src IP=192.168.1.194  Src Port=56258  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=10.9  Total Fwd Packets=16  Total Backward Packets=20  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=542.2
+  Src IP=192.168.1.194  Src Port=56264  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=8.7  Total Fwd Packets=15  Total Backward Packets=18  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=637.6
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA Applayer Detect protocol only one direction, SURICATA HTTP Host header invalid, ET WEB_SERVER ColdFusion administrator access
+  Unique source IPs : 2
+  Top dest ports    : [22, 5353]
+  Protocols         : {6: 5, 17: 3}
+====================================================================
