@@ -1,0 +1,53 @@
+====================================================================
+LOG WINDOW #0188
+Time range : 2017-07-07 15:07:39 UTC → 2017-07-07 15:08:39 UTC
+Suricata alerts :    6  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (6):
+------------------------------------------------------------
+  [2017-07-07T21:08:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    213.180.204.210:443 → 192.168.10.25:52342  proto=TCP
+  [2017-07-07T21:08:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.5.90.130:80 → 192.168.10.15:53825  proto=TCP
+  [2017-07-07T21:08:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.114.112:80 → 192.168.10.15:53827  proto=TCP
+  [2017-07-07T21:08:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.114.112:80 → 192.168.10.15:53826  proto=TCP
+  [2017-07-07T21:08:21] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:53828 → 192.168.10.3:445  proto=TCP
+  [2017-07-07T21:08:21] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:53828 → 192.168.10.3:445  proto=TCP
+
+PROTOCOL METADATA (55 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.14 queried dns.msftncsi.com type=A
+  DNS  192.168.10.14 queried dns.msftncsi.com type=A
+  DNS  192.168.10.14 queried dns.msftncsi.com type=A
+  DNS  192.168.10.14 queried dns.msftncsi.com type=A
+  TLS  192.168.10.25 → 213.180.204.210 SNI=portal-xiva.yandex.net version=TLSv1
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=114500234  Total Fwd Packets=119  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.25  Src Port=52340  Dst IP=192.168.10.50  Destination Port=139  Protocol=6  Flow Duration=63539  Total Fwd Packets=49  Total Backward Packets=30  Init_Win_bytes_backward=269  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=89331.0
+  Src IP=192.168.10.3  Src Port=137  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=1529184  Total Fwd Packets=39  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1275.2
+  Src IP=192.168.10.50  Src Port=56298  Dst IP=192.168.10.3  Destination Port=3268  Protocol=6  Flow Duration=111786728  Total Fwd Packets=36  Total Backward Packets=18  Init_Win_bytes_backward=2076  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=76.5
+  Src IP=192.168.10.16  Src Port=57010  Dst IP=74.125.22.108  Destination Port=465  Protocol=6  Flow Duration=2245187  Total Fwd Packets=18  Total Backward Packets=24  Init_Win_bytes_backward=175  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=2626.1
+  Src IP=192.168.10.25  Src Port=137  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=19  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=34200000.0
+  Src IP=192.168.10.25  Src Port=49303  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=25  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=26000000.0
+  Src IP=192.168.10.19  Src Port=138  Dst IP=192.168.10.255  Destination Port=138  Protocol=17  Flow Duration=29  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=105000000.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 6
+  Top dest ports    : [137, 0, 139, 3268, 465]
+  Protocols         : {17: 4, 6: 3, 0: 1}
+====================================================================

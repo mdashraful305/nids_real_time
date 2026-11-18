@@ -1,0 +1,44 @@
+====================================================================
+LOG WINDOW #0246
+Time range : 2017-07-06 16:04:58 UTC → 2017-07-06 16:05:58 UTC
+Suricata alerts :    3  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (3):
+------------------------------------------------------------
+  [2017-07-06T22:05:00] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    162.213.33.50:443 → 192.168.10.51:51207  proto=TCP
+  [2017-07-06T22:05:09] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.8:52561 → 178.63.46.205:443  proto=TCP
+  [2017-07-06T22:05:49] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.8:52571 → 178.63.46.205:443  proto=TCP
+
+PROTOCOL METADATA (9 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.8 → 178.63.46.205 SNI=tt.onthe.io version=TLS 1.2
+  DNS  192.168.10.17 queried va.v.liveperson.net type=A
+  DNS  192.168.10.17 queried va.v.liveperson.net type=A
+  DNS  192.168.10.17 queried va.v.liveperson.net type=AAAA
+  DNS  192.168.10.17 queried va.v.liveperson.net type=AAAA
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.8  Src Port=52571.0  Dst IP=178.63.46.205  Destination Port=443.0  Protocol=6.0  Flow Duration=50142408.0  Total Fwd Packets=16.0  Total Backward Packets=14.0  Init_Win_bytes_backward=35376.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=80.6
+  Src IP=192.168.10.8  Src Port=52518.0  Dst IP=172.217.6.230  Destination Port=443.0  Protocol=6.0  Flow Duration=119704768.0  Total Fwd Packets=10.0  Total Backward Packets=12.0  Init_Win_bytes_backward=610.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=9.1
+  Src IP=192.168.10.51  Src Port=51208.0  Dst IP=162.213.33.50  Destination Port=443.0  Protocol=6.0  Flow Duration=5870744.0  Total Fwd Packets=10.0  Total Backward Packets=11.0  Init_Win_bytes_backward=254.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=792.6
+  Src IP=192.168.10.51  Src Port=51207.0  Dst IP=162.213.33.50  Destination Port=443.0  Protocol=6.0  Flow Duration=1177596.0  Total Fwd Packets=9.0  Total Backward Packets=10.0  Init_Win_bytes_backward=252.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3951.3
+  Src IP=192.168.10.17  Src Port=34658.0  Dst IP=208.89.12.90  Destination Port=443.0  Protocol=6.0  Flow Duration=100.0  Total Fwd Packets=2.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=120000.0
+  Src IP=192.168.10.8  Src Port=52561.0  Dst IP=178.63.46.205  Destination Port=443.0  Protocol=6.0  Flow Duration=221.0  Total Fwd Packets=2.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=54298.6
+  Src IP=192.168.10.17  Src Port=63609.0  Dst IP=192.168.10.3  Destination Port=53.0  Protocol=17.0  Flow Duration=290.0  Total Fwd Packets=2.0  Total Backward Packets=2.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=620689.6
+  Src IP=192.168.10.17  Src Port=61192.0  Dst IP=192.168.10.3  Destination Port=53.0  Protocol=17.0  Flow Duration=264.0  Total Fwd Packets=2.0  Total Backward Packets=2.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1053030.2
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM reassembly overlap with different data
+  Unique source IPs : 3
+  Top dest ports    : [443.0, 53.0]
+  Protocols         : {6.0: 6, 17.0: 2}
+====================================================================

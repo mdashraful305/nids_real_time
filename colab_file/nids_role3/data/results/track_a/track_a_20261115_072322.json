@@ -1,0 +1,586 @@
+{
+  "generated_at": "2026-11-15T07:23:22.541028",
+  "track": "A \u2014 per-dataset evaluation of the schema-routed universal model",
+  "datasets_evaluated": [
+    "CICIDS2017",
+    "UNSW-NB15",
+    "NSL-KDD"
+  ],
+  "datasets_skipped": [],
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "routing_integrity": {
+    "CICIDS2017": {
+      "routed_to": "CICIDS2017",
+      "correct": true,
+      "coverage": {
+        "CICIDS2017": 1.0,
+        "UNSW-NB15": 0.0,
+        "NSL-KDD": 0.0
+      }
+    },
+    "UNSW-NB15": {
+      "routed_to": "UNSW-NB15",
+      "correct": true,
+      "coverage": {
+        "CICIDS2017": 0.0,
+        "UNSW-NB15": 1.0,
+        "NSL-KDD": 0.0667
+      }
+    },
+    "NSL-KDD": {
+      "routed_to": "NSL-KDD",
+      "correct": true,
+      "coverage": {
+        "CICIDS2017": 0.0,
+        "UNSW-NB15": 0.0667,
+        "NSL-KDD": 1.0
+      }
+    }
+  },
+  "results": {
+    "CICIDS2017": {
+      "dataset": "CICIDS2017",
+      "n_test": 504324,
+      "n_features": 52,
+      "classes_present": [
+        "Benign",
+        "Bot",
+        "Brute Force",
+        "DDoS",
+        "DoS",
+        "PortScan",
+        "Web Attack"
+      ],
+      "binary_n_benign": 419226,
+      "binary_n_attack": 85098,
+      "binary_degenerate": false,
+      "accuracy_pct": 99.91,
+      "macro_f1_pct": 97.26,
+      "weighted_f1_pct": 99.91,
+      "binary_attack_detection_ci": {
+        "accuracy": {
+          "point": 99.91,
+          "lo": 99.9,
+          "hi": 99.92,
+          "n_valid_resamples": 2000
+        },
+        "precision": {
+          "point": 99.57,
+          "lo": 99.52,
+          "hi": 99.61,
+          "n_valid_resamples": 2000
+        },
+        "recall": {
+          "point": 99.91,
+          "lo": 99.89,
+          "hi": 99.93,
+          "n_valid_resamples": 2000
+        },
+        "f1_score": {
+          "point": 99.74,
+          "lo": 99.71,
+          "hi": 99.76,
+          "n_valid_resamples": 2000
+        },
+        "fpr": {
+          "point": 0.09,
+          "lo": 0.08,
+          "hi": 0.1,
+          "n_valid_resamples": 2000
+        }
+      },
+      "per_class": {
+        "Benign": {
+          "precision": 0.9998233590894877,
+          "recall": 0.999115035804077,
+          "f1-score": 0.999469071949699,
+          "support": 419226.0
+        },
+        "Bot": {
+          "precision": 0.7569892473118279,
+          "recall": 0.9025641025641026,
+          "f1-score": 0.8233918128654971,
+          "support": 390.0
+        },
+        "Brute Force": {
+          "precision": 1.0,
+          "recall": 0.9989077007099946,
+          "f1-score": 0.9994535519125683,
+          "support": 1831.0
+        },
+        "DDoS": {
+          "precision": 0.9999609390258193,
+          "recall": 0.999882826231301,
+          "f1-score": 0.9999218811030388,
+          "support": 25603.0
+        },
+        "DoS": {
+          "precision": 0.9982987936900711,
+          "recall": 0.9994838709677419,
+          "f1-score": 0.9988909808371805,
+          "support": 38750.0
+        },
+        "PortScan": {
+          "precision": 0.9892790723115633,
+          "recall": 0.9992265193370166,
+          "f1-score": 0.994227914902974,
+          "support": 18100.0
+        },
+        "Web Attack": {
+          "precision": 0.995260663507109,
+          "recall": 0.9905660377358491,
+          "f1-score": 0.9929078014184397,
+          "support": 424.0
+        },
+        "accuracy": 0.9991037507633981,
+        "macro avg": {
+          "precision": 0.9628017249908398,
+          "recall": 0.9842494419071547,
+          "f1-score": 0.9726090021413426,
+          "support": 504324.0
+        },
+        "weighted avg": {
+          "precision": 0.9991437909987149,
+          "recall": 0.9991037507633981,
+          "f1-score": 0.9991178032665926,
+          "support": 504324.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Benign",
+          "Bot",
+          "Brute Force",
+          "DDoS",
+          "DoS",
+          "PortScan",
+          "Web Attack"
+        ],
+        "matrix": [
+          [
+            418855,
+            113,
+            0,
+            1,
+            61,
+            196,
+            0
+          ],
+          [
+            38,
+            352,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1829,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            25600,
+            0,
+            0,
+            0
+          ],
+          [
+            20,
+            0,
+            0,
+            0,
+            38730,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            0,
+            0,
+            5,
+            18086,
+            2
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            420
+          ]
+        ]
+      },
+      "unmapped_labels": [],
+      "subsampled": false
+    },
+    "UNSW-NB15": {
+      "dataset": "UNSW-NB15",
+      "n_test": 32500,
+      "n_features": 60,
+      "classes_present": [
+        "Analysis",
+        "Benign",
+        "DoS",
+        "Fuzzers",
+        "Infiltration",
+        "PortScan",
+        "Shellcode",
+        "Web Attack"
+      ],
+      "binary_n_benign": 17130,
+      "binary_n_attack": 15370,
+      "binary_degenerate": false,
+      "accuracy_pct": 81.36,
+      "macro_f1_pct": 60.84,
+      "weighted_f1_pct": 82.25,
+      "binary_attack_detection_ci": {
+        "accuracy": {
+          "point": 91.76,
+          "lo": 91.46,
+          "hi": 92.06,
+          "n_valid_resamples": 2000
+        },
+        "precision": {
+          "point": 92.93,
+          "lo": 92.51,
+          "hi": 93.35,
+          "n_valid_resamples": 2000
+        },
+        "recall": {
+          "point": 89.38,
+          "lo": 88.9,
+          "hi": 89.88,
+          "n_valid_resamples": 2000
+        },
+        "f1_score": {
+          "point": 91.12,
+          "lo": 90.76,
+          "hi": 91.45,
+          "n_valid_resamples": 2000
+        },
+        "fpr": {
+          "point": 6.1,
+          "lo": 5.72,
+          "hi": 6.45,
+          "n_valid_resamples": 2000
+        }
+      },
+      "per_class": {
+        "Analysis": {
+          "precision": 0.13464696223316913,
+          "recall": 0.40294840294840295,
+          "f1-score": 0.20184615384615384,
+          "support": 407.0
+        },
+        "Benign": {
+          "precision": 0.9078338412913421,
+          "recall": 0.9389959136018681,
+          "f1-score": 0.923151974288338,
+          "support": 17130.0
+        },
+        "DoS": {
+          "precision": 0.8442028985507246,
+          "recall": 0.6227567773959527,
+          "f1-score": 0.7167655460338387,
+          "support": 2619.0
+        },
+        "Fuzzers": {
+          "precision": 0.7253125,
+          "recall": 0.5536736641221374,
+          "f1-score": 0.6279761904761905,
+          "support": 4192.0
+        },
+        "Infiltration": {
+          "precision": 0.16299559471365638,
+          "recall": 0.39361702127659576,
+          "f1-score": 0.23052959501557632,
+          "support": 376.0
+        },
+        "PortScan": {
+          "precision": 0.8376764386536374,
+          "recall": 0.7722722722722722,
+          "f1-score": 0.8036458333333333,
+          "support": 1998.0
+        },
+        "Shellcode": {
+          "precision": 0.4016,
+          "recall": 0.8625429553264605,
+          "f1-score": 0.5480349344978166,
+          "support": 291.0
+        },
+        "Web Attack": {
+          "precision": 0.8501087601344671,
+          "recall": 0.7834882449425916,
+          "f1-score": 0.8154400606980273,
+          "support": 5487.0
+        },
+        "accuracy": 0.8136,
+        "macro avg": {
+          "precision": 0.6080471244471246,
+          "recall": 0.6662869064857853,
+          "f1-score": 0.6084237860236593,
+          "support": 32500.0
+        },
+        "weighted avg": {
+          "precision": 0.8422722658816635,
+          "recall": 0.8136,
+          "f1-score": 0.82251049665933,
+          "support": 32500.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Analysis",
+          "Benign",
+          "DoS",
+          "Fuzzers",
+          "Infiltration",
+          "PortScan",
+          "Shellcode",
+          "Web Attack"
+        ],
+        "matrix": [
+          [
+            164,
+            53,
+            7,
+            3,
+            173,
+            0,
+            1,
+            6
+          ],
+          [
+            30,
+            16085,
+            26,
+            753,
+            1,
+            12,
+            84,
+            139
+          ],
+          [
+            236,
+            30,
+            1631,
+            25,
+            143,
+            25,
+            63,
+            466
+          ],
+          [
+            200,
+            1386,
+            24,
+            2321,
+            147,
+            3,
+            67,
+            44
+          ],
+          [
+            198,
+            1,
+            10,
+            1,
+            148,
+            5,
+            8,
+            5
+          ],
+          [
+            186,
+            2,
+            16,
+            4,
+            134,
+            1543,
+            22,
+            91
+          ],
+          [
+            0,
+            15,
+            2,
+            14,
+            0,
+            2,
+            251,
+            7
+          ],
+          [
+            204,
+            146,
+            216,
+            79,
+            162,
+            252,
+            129,
+            4299
+          ]
+        ]
+      },
+      "unmapped_labels": [],
+      "subsampled": false
+    },
+    "NSL-KDD": {
+      "dataset": "NSL-KDD",
+      "n_test": 29423,
+      "n_features": 60,
+      "classes_present": [
+        "Benign",
+        "Brute Force",
+        "DoS",
+        "PortScan",
+        "Web Attack"
+      ],
+      "binary_n_benign": 15393,
+      "binary_n_attack": 14030,
+      "binary_degenerate": false,
+      "accuracy_pct": 99.88,
+      "macro_f1_pct": 99.64,
+      "weighted_f1_pct": 99.88,
+      "binary_attack_detection_ci": {
+        "accuracy": {
+          "point": 99.88,
+          "lo": 99.84,
+          "hi": 99.92,
+          "n_valid_resamples": 2000
+        },
+        "precision": {
+          "point": 99.86,
+          "lo": 99.8,
+          "hi": 99.92,
+          "n_valid_resamples": 2000
+        },
+        "recall": {
+          "point": 99.89,
+          "lo": 99.84,
+          "hi": 99.94,
+          "n_valid_resamples": 2000
+        },
+        "f1_score": {
+          "point": 99.88,
+          "lo": 99.84,
+          "hi": 99.92,
+          "n_valid_resamples": 2000
+        },
+        "fpr": {
+          "point": 0.12,
+          "lo": 0.07,
+          "hi": 0.18,
+          "n_valid_resamples": 2000
+        }
+      },
+      "per_class": {
+        "Benign": {
+          "precision": 0.9990252777958282,
+          "recall": 0.9987656727083739,
+          "f1-score": 0.9988954583847703,
+          "support": 15393.0
+        },
+        "Brute Force": {
+          "precision": 1.0,
+          "recall": 0.9922178988326849,
+          "f1-score": 0.99609375,
+          "support": 257.0
+        },
+        "DoS": {
+          "precision": 0.9996208171390654,
+          "recall": 0.9997155858930603,
+          "f1-score": 0.9996681992700384,
+          "support": 10548.0
+        },
+        "PortScan": {
+          "precision": 0.9960587603009674,
+          "recall": 0.9971305595408895,
+          "f1-score": 0.9965943717512099,
+          "support": 2788.0
+        },
+        "Web Attack": {
+          "precision": 0.9886104783599089,
+          "recall": 0.9931350114416476,
+          "f1-score": 0.9908675799086758,
+          "support": 437.0
+        },
+        "accuracy": 0.9988104544064168,
+        "macro avg": {
+          "precision": 0.996663066719154,
+          "recall": 0.9961929456833312,
+          "f1-score": 0.9964238718629389,
+          "support": 29423.0
+        },
+        "weighted avg": {
+          "precision": 0.9988115108267825,
+          "recall": 0.9988104544064168,
+          "f1-score": 0.998810736207375,
+          "support": 29423.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Benign",
+          "Brute Force",
+          "DoS",
+          "PortScan",
+          "Web Attack"
+        ],
+        "matrix": [
+          [
+            15374,
+            0,
+            4,
+            10,
+            5
+          ],
+          [
+            2,
+            255,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            10545,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            2780,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0,
+            434
+          ]
+        ]
+      },
+      "unmapped_labels": [],
+      "subsampled": false
+    }
+  },
+  "note_on_cross_dataset_transfer": "Not performed. The three datasets share zero feature columns after mutual-information selection, so a model trained on one cannot be applied to another without retraining on a common feature space. Report this in Limitations rather than approximating it."
+}

@@ -1,0 +1,50 @@
+====================================================================
+LOG WINDOW #0224
+Time range : 2017-07-07 15:43:39 UTC → 2017-07-07 15:44:39 UTC
+Suricata alerts :    5  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (5):
+------------------------------------------------------------
+  [2017-07-07T21:43:49] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:59770 → 192.168.10.50:53685  proto=TCP
+  [2017-07-07T21:43:49] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:59770 → 192.168.10.50:53685  proto=TCP
+  [2017-07-07T21:43:49] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:59770 → 192.168.10.50:53685  proto=TCP
+  [2017-07-07T21:43:49] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:59770 → 192.168.10.50:53685  proto=TCP
+  [2017-07-07T21:43:49] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:59770 → 192.168.10.50:53685  proto=TCP
+
+PROTOCOL METADATA (10 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.51 → 162.213.33.50 SNI=videosearch.ubuntu.com version=TLS 1.2
+  TLS  192.168.10.51 → 162.213.33.50 SNI=videosearch.ubuntu.com version=TLS 1.2
+  DNS  192.168.10.15 queried dns.msftncsi.com type=A
+  DNS  192.168.10.15 queried dns.msftncsi.com type=A
+  DNS  192.168.10.3 queried dns.msftncsi.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=112003868  Total Fwd Packets=120  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.25  Src Port=52389  Dst IP=192.168.10.50  Destination Port=139  Protocol=6  Flow Duration=65035  Total Fwd Packets=49  Total Backward Packets=30  Init_Win_bytes_backward=269  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=87276.1
+  Src IP=192.168.10.12  Src Port=35366  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1259109  Total Fwd Packets=41  Total Backward Packets=44  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7638.7
+  Src IP=192.168.10.50  Src Port=56338  Dst IP=192.168.10.3  Destination Port=3268  Protocol=6  Flow Duration=111809461  Total Fwd Packets=40  Total Backward Packets=20  Init_Win_bytes_backward=2076  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=85.0
+  Src IP=192.168.10.12  Src Port=35368  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1316247  Total Fwd Packets=37  Total Backward Packets=38  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7112.6
+  Src IP=192.168.10.19  Src Port=45983  Dst IP=192.168.10.50  Destination Port=21  Protocol=6  Flow Duration=133939  Total Fwd Packets=20  Total Backward Packets=25  Init_Win_bytes_backward=227  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=4599.1
+  Src IP=192.168.10.16  Src Port=41610  Dst IP=192.168.10.50  Destination Port=21  Protocol=6  Flow Duration=148602  Total Fwd Packets=20  Total Backward Packets=25  Init_Win_bytes_backward=227  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=4145.3
+  Src IP=192.168.10.19  Src Port=48475  Dst IP=192.168.10.50  Destination Port=40927  Protocol=6  Flow Duration=8484  Total Fwd Packets=15  Total Backward Packets=6  Init_Win_bytes_backward=362  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=2345238.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 6
+  Top dest ports    : [21, 22, 139, 0, 3268]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

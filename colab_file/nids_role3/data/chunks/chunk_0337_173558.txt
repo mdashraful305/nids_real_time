@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0337
+Time range : 2017-07-06 17:35:58 UTC → 2017-07-06 17:36:58 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-06T23:36:01] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:01] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:01] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:01] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:01] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:3268 → 192.168.10.25:51082  proto=TCP
+  [2017-07-06T23:36:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:3268 → 192.168.10.25:51082  proto=TCP
+  [2017-07-06T23:36:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:389 → 192.168.10.25:51083  proto=TCP
+  [2017-07-06T23:36:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:389 → 192.168.10.25:51083  proto=TCP
+  [2017-07-06T23:36:02] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:02] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:02] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:02] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:02] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+  [2017-07-06T23:36:02] SID:2023207 (sev=1) ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+    category : A Network Trojan was detected
+    192.168.10.8:54131 → 205.174.165.73:444  proto=TCP
+
+PROTOCOL METADATA (863 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.51 → 162.213.33.50 SNI=videosearch.ubuntu.com version=TLS 1.2
+  HTTP 192.168.10.16:43162 → 23.211.85.169 | GET cdn.clicktale.net/www02/ptc/0ba500d4-08cd-4bc9-8f93-05032be0167b.js
+  DNS  192.168.10.25 queried 3.10.168.192.in-addr.arpa type=PTR
+  DNS  192.168.10.25 queried 3.10.168.192.in-addr.arpa type=PTR
+  DNS  192.168.10.25 queried 3.10.168.192.in-addr.arpa type=PTR
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.8  Src Port=54119.0  Dst IP=205.174.165.73  Destination Port=444.0  Protocol=6.0  Flow Duration=119995184.0  Total Fwd Packets=1819.0  Total Backward Packets=1817.0  Init_Win_bytes_backward=3294.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=4167.6
+  Src IP=192.168.10.8  Src Port=54131.0  Dst IP=205.174.165.73  Destination Port=444.0  Protocol=6.0  Flow Duration=69365640.0  Total Fwd Packets=1031.0  Total Backward Packets=1031.0  Init_Win_bytes_backward=3977.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=4528.5
+  Src IP=192.168.10.17  Src Port=37064.0  Dst IP=206.126.112.142  Destination Port=443.0  Protocol=6.0  Flow Duration=539653.0  Total Fwd Packets=1001.0  Total Backward Packets=1155.0  Init_Win_bytes_backward=127.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=6353379.0
+  Src IP=192.168.10.25  Src Port=51105.0  Dst IP=131.117.217.70  Destination Port=443.0  Protocol=6.0  Flow Duration=81207648.0  Total Fwd Packets=568.0  Total Backward Packets=673.0  Init_Win_bytes_backward=67.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=15289.2
+  Src IP=192.168.10.25  Src Port=51106.0  Dst IP=131.117.217.70  Destination Port=443.0  Protocol=6.0  Flow Duration=79800752.0  Total Fwd Packets=478.0  Total Backward Packets=679.0  Init_Win_bytes_backward=68.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=18967.8
+  Src IP=192.168.10.25  Src Port=51101.0  Dst IP=131.117.217.70  Destination Port=443.0  Protocol=6.0  Flow Duration=81200384.0  Total Fwd Packets=441.0  Total Backward Packets=406.0  Init_Win_bytes_backward=67.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=9753.4
+  Src IP=192.168.10.25  Src Port=51102.0  Dst IP=131.117.217.70  Destination Port=443.0  Protocol=6.0  Flow Duration=77528960.0  Total Fwd Packets=330.0  Total Backward Packets=399.0  Init_Win_bytes_backward=66.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=10360.3
+  Src IP=192.168.10.25  Src Port=51092.0  Dst IP=185.165.123.22  Destination Port=443.0  Protocol=6.0  Flow Duration=33047028.0  Total Fwd Packets=182.0  Total Backward Packets=352.0  Init_Win_bytes_backward=4173.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=17244.1
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, ET MALWARE Windows Microsoft Windows DOS prompt command Error not recognized
+  Unique source IPs : 3
+  Top dest ports    : [443.0, 444.0]
+  Protocols         : {6.0: 8}
+====================================================================

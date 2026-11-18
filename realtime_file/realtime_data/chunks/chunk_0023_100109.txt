@@ -1,0 +1,36 @@
+====================================================================
+LOG WINDOW #0023
+Time range : 2026-11-16 10:01:09 UTC → 2026-11-16 10:01:16 UTC
+Suricata alerts : 28948  | Network flows : 58204 (showing top 8)
+====================================================================
+
+SURICATA ALERTS (28948 total, 2 unique group(s)):
+------------------------------------------------------------
+  [2026-11-16T16:01:15] [14464x] SID:2210008 (sev=3) SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+    category : Generic Protocol Command Decode
+    192.168.1.194:ephemeral → 192.168.1.169:80  proto=TCP
+  [2026-11-16T16:01:15] [14484x] SID:2210004 (sev=3) SURICATA STREAM 3way handshake SYNACK resend with different ack
+    category : Generic Protocol Command Decode
+    192.168.1.169:80 → 192.168.1.194:client-reply-ports  proto=TCP
+
+NETWORK FLOWS — top 8 of 58204 by packet count:
+------------------------------------------------------------
+  Src IP=0.0.0.0  Src Port=68  Dst IP=255.255.255.255  Destination Port=67  Protocol=17  Flow Duration=1617409.0  Total Fwd Packets=5  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1028.8
+  Src IP=192.168.1.1  Src Port=67  Dst IP=255.255.255.255  Destination Port=68  Protocol=17  Flow Duration=1028375.0  Total Fwd Packets=5  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=2868.6
+  Src IP=192.168.1.194  Src Port=2221  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3491861.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=64240  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=119.1
+  Src IP=192.168.1.194  Src Port=2220  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3491857.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=64240  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=119.1
+  Src IP=192.168.1.194  Src Port=2214  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3539086.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=64240  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=117.5
+  Src IP=192.168.1.194  Src Port=2215  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3538026.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=64240  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=117.6
+  Src IP=192.168.1.194  Src Port=2217  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3491894.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=64240  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=119.1
+  Src IP=192.168.1.194  Src Port=2223  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3539066.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=64240  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=117.5
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Alert signatures  : 14484x SURICATA STREAM 3way handshake SYNACK resend with different ack, 14464x SURICATA STREAM 3way handshake SYN resend different seq on SYN recv
+  Total window flows: 58204
+  Unique source IPs : 3
+  Distinct dst ports: 3  (top: [80, 67, 68])
+  Protocols (6=TCP,17=UDP): {'6': 58202, '17': 2}
+  TCP SYN summary   : total_syn=188323, half_open_flows=51225
+  Role 1 assessment : DoS/Flood (Heuristics) (100.0%)
+====================================================================

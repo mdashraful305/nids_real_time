@@ -1,0 +1,13 @@
+Dataset,Model,Label space,Accuracy %,Macro-F1 %
+CICIDS2017,Plain XGBoost (default),merged (shared),99.5,85.89
+CICIDS2017,Tuned pipeline (hybrid),merged (shared),99.91,97.26
+CICIDS2017,Plain XGBoost (default),native,99.43,79.17
+CICIDS2017,Tuned pipeline (hybrid),native,99.88,91.15
+NSL-KDD,Plain XGBoost (default),merged (shared),99.87,99.61
+NSL-KDD,Tuned pipeline (hybrid),merged (shared),99.88,99.64
+NSL-KDD,Plain XGBoost (default),native,99.75,98.03
+NSL-KDD,Tuned pipeline (hybrid),native,99.79,98.55
+UNSW-NB15,Plain XGBoost (default),merged (shared),82.34,58.97
+UNSW-NB15,Tuned pipeline (hybrid),merged (shared),80.96,60.55
+UNSW-NB15,Plain XGBoost (default),native,82.21,58.23
+UNSW-NB15,Tuned pipeline (hybrid),native,80.85,59.77

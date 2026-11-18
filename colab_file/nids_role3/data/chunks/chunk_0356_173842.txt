@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0356
+Time range : 2017-07-05 17:38:42 UTC → 2017-07-05 17:39:42 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-05T23:38:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:57780 → 198.54.12.96:80  proto=TCP
+  [2017-07-05T23:38:42] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56894  proto=TCP
+  [2017-07-05T23:38:42] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56895  proto=TCP
+  [2017-07-05T23:38:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    198.54.12.96:80 → 192.168.10.8:57780  proto=TCP
+  [2017-07-05T23:38:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    198.54.12.96:80 → 192.168.10.8:57780  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56895 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56894 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56896 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56897 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:38:43] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56897  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:57816 → 34.194.92.111:80  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    199.233.57.19:80 → 192.168.10.8:58266  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    34.194.92.111:80 → 192.168.10.8:57816  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:57780 → 198.54.12.96:80  proto=TCP
+  [2017-07-05T23:38:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:57780 → 198.54.12.96:80  proto=TCP
+
+PROTOCOL METADATA (1235 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.51 → 172.16.0.1 SNI=? version=TLS 1.2
+  HTTP 192.168.10.8:56895 → 192.35.249.127 | ? ?/libhtp::request_uri_not_seen
+  DNS  192.168.10.8 queried idsync.rlcdn.com type=A
+  DNS  192.168.10.8 queried idsync.rlcdn.com type=A
+  DNS  192.168.10.8 queried idsync.rlcdn.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.8  Src Port=57780  Dst IP=198.54.12.96  Destination Port=80  Protocol=6  Flow Duration=117423524  Total Fwd Packets=204  Total Backward Packets=336  Init_Win_bytes_backward=65535  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5832.6
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=119269571  Total Fwd Packets=160  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.8  Src Port=57816  Dst IP=34.194.92.111  Destination Port=80  Protocol=6  Flow Duration=117207964  Total Fwd Packets=87  Total Backward Packets=86  Init_Win_bytes_backward=1927  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1448.0
+  Src IP=192.168.10.8  Src Port=58771  Dst IP=173.241.242.220  Destination Port=80  Protocol=6  Flow Duration=119641736  Total Fwd Packets=50  Total Backward Packets=49  Init_Win_bytes_backward=133  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=383.5
+  Src IP=192.168.10.8  Src Port=56895  Dst IP=192.35.249.127  Destination Port=80  Protocol=6  Flow Duration=119976169  Total Fwd Packets=48  Total Backward Packets=52  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=553.4
+  Src IP=192.168.10.8  Src Port=56899  Dst IP=192.35.249.127  Destination Port=80  Protocol=6  Flow Duration=119977177  Total Fwd Packets=48  Total Backward Packets=52  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=554.4
+  Src IP=192.168.10.8  Src Port=56556  Dst IP=172.217.3.98  Destination Port=80  Protocol=6  Flow Duration=116013428  Total Fwd Packets=44  Total Backward Packets=24  Init_Win_bytes_backward=1391  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=248.3
+  Src IP=192.168.10.17  Src Port=55611  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1262733  Total Fwd Packets=41  Total Backward Packets=44  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7616.8
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA HTTP unable to match response to request
+  Unique source IPs : 3
+  Top dest ports    : [80, 0, 22]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

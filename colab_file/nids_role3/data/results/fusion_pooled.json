@@ -1,0 +1,201 @@
+{
+  "files": [
+    "data/results/pw_wednesday.csv",
+    "data/results/pw_friday.csv"
+  ],
+  "n_windows": 991,
+  "suspicious_is_attack": false,
+  "gt_attack": 152,
+  "gt_benign": 839,
+  "role1_only": {
+    "tp": 151,
+    "fp": 7,
+    "fn": 1,
+    "tn": 832,
+    "precision": 95.57,
+    "recall": 99.34,
+    "f1": 97.42,
+    "fpr": 0.83,
+    "accuracy": 99.19
+  },
+  "role3_only": {
+    "tp": 147,
+    "fp": 831,
+    "fn": 5,
+    "tn": 8,
+    "precision": 15.03,
+    "recall": 96.71,
+    "f1": 26.02,
+    "fpr": 99.05,
+    "accuracy": 15.64
+  },
+  "modes": {
+    "or": {
+      "combined": {
+        "tp": 152,
+        "fp": 831,
+        "fn": 0,
+        "tn": 8,
+        "precision": 15.46,
+        "recall": 100.0,
+        "f1": 26.78,
+        "fpr": 99.05,
+        "accuracy": 16.15
+      },
+      "ci": {
+        "accuracy": {
+          "point": 16.15,
+          "lo": 14.03,
+          "hi": 18.47,
+          "n_valid_resamples": 2000
+        },
+        "precision": {
+          "point": 15.46,
+          "lo": 13.33,
+          "hi": 17.8,
+          "n_valid_resamples": 2000
+        },
+        "recall": {
+          "point": 100.0,
+          "lo": 100.0,
+          "hi": 100.0,
+          "n_valid_resamples": 2000
+        },
+        "f1_score": {
+          "point": 26.78,
+          "lo": 23.52,
+          "hi": 30.23,
+          "n_valid_resamples": 2000
+        },
+        "fpr": {
+          "point": 99.05,
+          "lo": 98.37,
+          "hi": 99.64,
+          "n_valid_resamples": 2000
+        }
+      },
+      "mcnemar_vs_role1": {
+        "p_value": 0.0,
+        "statistic": 819.0109,
+        "method": "chi2_continuity_corrected",
+        "only_a_correct": 824,
+        "only_b_correct": 1,
+        "both_correct": 159,
+        "both_wrong": 7,
+        "n_discordant": 825,
+        "significant_at_0.05": true
+      }
+    },
+    "role1_gated": {
+      "combined": {
+        "tp": 151,
+        "fp": 7,
+        "fn": 1,
+        "tn": 832,
+        "precision": 95.57,
+        "recall": 99.34,
+        "f1": 97.42,
+        "fpr": 0.83,
+        "accuracy": 99.19
+      },
+      "ci": {
+        "accuracy": {
+          "point": 99.19,
+          "lo": 98.59,
+          "hi": 99.7,
+          "n_valid_resamples": 2000
+        },
+        "precision": {
+          "point": 95.57,
+          "lo": 92.07,
+          "hi": 98.26,
+          "n_valid_resamples": 2000
+        },
+        "recall": {
+          "point": 99.34,
+          "lo": 97.84,
+          "hi": 100.0,
+          "n_valid_resamples": 2000
+        },
+        "f1_score": {
+          "point": 97.42,
+          "lo": 95.52,
+          "hi": 99.02,
+          "n_valid_resamples": 2000
+        },
+        "fpr": {
+          "point": 0.83,
+          "lo": 0.35,
+          "hi": 1.54,
+          "n_valid_resamples": 2000
+        }
+      },
+      "mcnemar_vs_role1": {
+        "p_value": 1.0,
+        "statistic": 0.0,
+        "method": "no_discordant_pairs",
+        "only_a_correct": 0,
+        "only_b_correct": 0,
+        "both_correct": 983,
+        "both_wrong": 8,
+        "significant_at_0.05": false
+      }
+    },
+    "and": {
+      "combined": {
+        "tp": 146,
+        "fp": 7,
+        "fn": 6,
+        "tn": 832,
+        "precision": 95.42,
+        "recall": 96.05,
+        "f1": 95.74,
+        "fpr": 0.83,
+        "accuracy": 98.69
+      },
+      "ci": {
+        "accuracy": {
+          "point": 98.69,
+          "lo": 97.88,
+          "hi": 99.29,
+          "n_valid_resamples": 2000
+        },
+        "precision": {
+          "point": 95.42,
+          "lo": 91.81,
+          "hi": 98.19,
+          "n_valid_resamples": 2000
+        },
+        "recall": {
+          "point": 96.05,
+          "lo": 92.72,
+          "hi": 98.74,
+          "n_valid_resamples": 2000
+        },
+        "f1_score": {
+          "point": 95.74,
+          "lo": 93.14,
+          "hi": 97.76,
+          "n_valid_resamples": 2000
+        },
+        "fpr": {
+          "point": 0.83,
+          "lo": 0.35,
+          "hi": 1.54,
+          "n_valid_resamples": 2000
+        }
+      },
+      "mcnemar_vs_role1": {
+        "p_value": 0.0625,
+        "statistic": 0.0,
+        "method": "exact_binomial",
+        "only_a_correct": 5,
+        "only_b_correct": 0,
+        "both_correct": 978,
+        "both_wrong": 8,
+        "n_discordant": 5,
+        "significant_at_0.05": false
+      }
+    }
+  }
+}

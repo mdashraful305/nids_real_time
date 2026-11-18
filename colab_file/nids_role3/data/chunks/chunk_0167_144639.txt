@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0167
+Time range : 2017-07-07 14:46:39 UTC → 2017-07-07 14:47:39 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-07T20:46:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:52784 → 104.97.87.215:443  proto=TCP
+  [2017-07-07T20:46:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    178.239.182.230:443 → 192.168.10.14:52627  proto=TCP
+  [2017-07-07T20:46:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    178.239.182.230:443 → 192.168.10.14:52627  proto=TCP
+  [2017-07-07T20:46:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    178.239.182.230:443 → 192.168.10.14:52620  proto=TCP
+  [2017-07-07T20:46:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    178.239.182.230:443 → 192.168.10.14:52620  proto=TCP
+  [2017-07-07T20:46:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:52792 → 104.97.87.215:443  proto=TCP
+  [2017-07-07T20:46:45] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.14:52676 → 195.209.111.7:443  proto=TCP
+  [2017-07-07T20:46:48] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.14:52676 → 195.209.111.7:443  proto=TCP
+  [2017-07-07T20:46:48] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    204.15.8.12:443 → 192.168.10.15:53659  proto=TCP
+  [2017-07-07T20:46:48] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    204.15.8.11:443 → 192.168.10.15:53668  proto=TCP
+  [2017-07-07T20:46:48] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    204.15.8.11:443 → 192.168.10.15:53668  proto=TCP
+  [2017-07-07T20:46:48] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    204.15.8.11:443 → 192.168.10.15:53668  proto=TCP
+  [2017-07-07T20:46:48] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    204.15.8.11:443 → 192.168.10.15:53668  proto=TCP
+  [2017-07-07T20:46:48] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    204.15.8.11:443 → 192.168.10.15:53668  proto=TCP
+  [2017-07-07T20:46:51] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.14:52676 → 195.209.111.7:443  proto=TCP
+
+PROTOCOL METADATA (222 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.12 → 104.97.118.92 SNI=img.ak.impact-ad.jp version=TLS 1.2
+  TLS  192.168.10.12 → 104.97.118.92 SNI=img.ak.impact-ad.jp version=TLS 1.2
+  TLS  192.168.10.12 → 104.97.118.92 SNI=img.ak.impact-ad.jp version=TLS 1.2
+  DNS  192.168.10.9 queried i3.bongacams.com type=A
+  DNS  192.168.10.9 queried i3.bongacams.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.14  Src Port=52627  Dst IP=178.239.182.230  Destination Port=443  Protocol=6  Flow Duration=78362699  Total Fwd Packets=1035  Total Backward Packets=1121  Init_Win_bytes_backward=366  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=29891.3
+  Src IP=192.168.10.14  Src Port=52622  Dst IP=178.239.182.230  Destination Port=443  Protocol=6  Flow Duration=52412463  Total Fwd Packets=209  Total Backward Packets=281  Init_Win_bytes_backward=337  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=10868.5
+  Src IP=192.168.10.14  Src Port=52620  Dst IP=178.239.182.230  Destination Port=443  Protocol=6  Flow Duration=78420607  Total Fwd Packets=182  Total Backward Packets=245  Init_Win_bytes_backward=322  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6143.6
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=118720175  Total Fwd Packets=168  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.12  Src Port=41458  Dst IP=133.237.48.235  Destination Port=443  Protocol=6  Flow Duration=1743601  Total Fwd Packets=153  Total Backward Packets=230  Init_Win_bytes_backward=5045  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=194707.4
+  Src IP=192.168.10.12  Src Port=41456  Dst IP=133.237.48.235  Destination Port=443  Protocol=6  Flow Duration=1441530  Total Fwd Packets=140  Total Backward Packets=176  Init_Win_bytes_backward=5048  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=190332.5
+  Src IP=192.168.10.14  Src Port=52623  Dst IP=178.239.182.230  Destination Port=443  Protocol=6  Flow Duration=52310369  Total Fwd Packets=138  Total Backward Packets=174  Init_Win_bytes_backward=355  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6384.9
+  Src IP=192.168.10.12  Src Port=41460  Dst IP=133.237.48.235  Destination Port=443  Protocol=6  Flow Duration=1450853  Total Fwd Packets=136  Total Backward Packets=193  Init_Win_bytes_backward=5044  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=196521.6
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM reassembly overlap with different data, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 3
+  Top dest ports    : [443, 0]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

@@ -1,0 +1,16 @@
+✓ live_b_worker watching data/live_b/raw_5s -> Suricata(data/live_b/suri_in) + CSV(data/cicflow_csv)
+  ✓ Batch #0001 (3 segs) -> live_20261116_095935_0001_flows.csv
+  ✓ Batch #0002 (1 segs) -> live_20261116_095955_0002_flows.csv
+  ✓ Batch #0003 (1 segs) -> live_20261116_100016_0003_flows.csv
+  ✓ Batch #0004 (1 segs) -> live_20261116_100036_0004_flows.csv
+  ✓ Batch #0005 (2 segs) -> live_20261116_100116_0005_flows.csv
+  ✓ Batch #0006 (16 segs) -> live_20261116_100406_0006_flows.csv
+  ✓ Batch #0007 (6 segs) -> live_20261116_100454_0007_flows.csv
+  ✓ Batch #0008 (3 segs) -> live_20261116_100511_0008_flows.csv
+  ✓ Batch #0009 (2 segs) -> live_20261116_100531_0009_flows.csv
+  ✓ Batch #0010 (2 segs) -> live_20261116_100551_0010_flows.csv
+  ✓ Batch #0011 (1 segs) -> live_20261116_100611_0011_flows.csv
+  ✓ Batch #0012 (2 segs) -> live_20261116_100632_0012_flows.csv
+  ⏳ live_b_worker drain mode active: waiting for final Approach A PCAP chunks...
+  ✓ Batch #0013 (2 segs) -> live_20261116_100649_0013_flows.csv
+  ✓ live_b_worker drained all PCAPs -> Suricata & CICFlow CSV

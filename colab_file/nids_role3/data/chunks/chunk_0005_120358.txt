@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0005
+Time range : 2017-07-06 12:03:58 UTC → 2017-07-06 12:04:58 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-06T18:03:58] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:1179 → 52.11.31.31:443  proto=TCP
+  [2017-07-06T18:03:58] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:1181 → 52.11.31.31:443  proto=TCP
+  [2017-07-06T18:03:58] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:1178 → 52.11.31.31:443  proto=TCP
+  [2017-07-06T18:03:58] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:1177 → 52.11.31.31:443  proto=TCP
+  [2017-07-06T18:03:58] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.194.181.149:80 → 192.168.10.5:49216  proto=TCP
+  [2017-07-06T18:03:59] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.5:49201 → 192.168.10.3:135  proto=TCP
+  [2017-07-06T18:03:59] SID:2027390 (sev=3) ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+    category : Misc activity
+    192.168.10.5:49217 → 23.194.182.93:80  proto=TCP
+  [2017-07-06T18:03:59] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.194.181.149:80 → 192.168.10.5:49216  proto=TCP
+  [2017-07-06T18:03:59] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    40.112.210.171:80 → 192.168.10.5:49218  proto=TCP
+  [2017-07-06T18:03:59] SID:2025275 (sev=3) ET INFO Windows OS Submitting USB Metadata to Microsoft
+    category : Misc activity
+    192.168.10.5:49218 → 40.112.210.171:80  proto=TCP
+  [2017-07-06T18:03:59] SID:2027390 (sev=3) ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+    category : Misc activity
+    192.168.10.5:49218 → 40.112.210.171:80  proto=TCP
+  [2017-07-06T18:03:59] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:49223 → 23.194.182.93:80  proto=TCP
+  [2017-07-06T18:03:59] SID:2027390 (sev=3) ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+    category : Misc activity
+    192.168.10.5:49223 → 23.194.182.93:80  proto=TCP
+  [2017-07-06T18:03:59] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:49218 → 40.112.210.171:80  proto=TCP
+  [2017-07-06T18:04:00] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    40.112.210.171:80 → 192.168.10.5:49218  proto=TCP
+
+PROTOCOL METADATA (1072 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.9:1111 → 72.21.91.29 | POST ocsp.digicert.com/
+  HTTP 192.168.10.9:1112 → 72.21.91.29 | POST ocsp.digicert.com/
+  HTTP 192.168.10.5:49216 → 23.194.181.149 | GET img.stb.s-msn.com/usappex/tenant/amp/entityid/BBDLp2U.jpg?h=150&w=310&m=6&x=1
+  DNS  192.168.10.5 queried go.microsoft.com type=A
+  DNS  192.168.10.5 queried go.microsoft.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.5  Src Port=49265.0  Dst IP=172.217.12.142  Destination Port=443.0  Protocol=6.0  Flow Duration=62433652.0  Total Fwd Packets=1271.0  Total Backward Packets=2031.0  Init_Win_bytes_backward=1622.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=53135.0
+  Src IP=192.168.10.9  Src Port=1187.0  Dst IP=206.126.112.141  Destination Port=443.0  Protocol=6.0  Flow Duration=30533644.0  Total Fwd Packets=1155.0  Total Backward Packets=1394.0  Init_Win_bytes_backward=123.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=94986.6
+  Src IP=192.168.10.25  Src Port=137.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=33066172.0  Total Fwd Packets=480.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=987.1
+  Src IP=192.168.10.25  Src Port=5353.0  Dst IP=224.0.0.251  Destination Port=5353.0  Protocol=17.0  Flow Duration=107389600.0  Total Fwd Packets=396.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=353.3
+  Src IP=192.168.10.25  Src Port=49155.0  Dst IP=192.168.10.3  Destination Port=389.0  Protocol=6.0  Flow Duration=66522608.0  Total Fwd Packets=376.0  Total Backward Packets=240.0  Init_Win_bytes_backward=2080.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=4468.2
+  Src IP=192.168.10.17  Src Port=5353.0  Dst IP=224.0.0.251  Destination Port=5353.0  Protocol=17.0  Flow Duration=87536592.0  Total Fwd Packets=253.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=342.4
+  Src IP=192.168.10.17  Src Port=137.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=3510260.0  Total Fwd Packets=252.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=4820.2
+  Src IP=192.168.10.9  Src Port=1185.0  Dst IP=204.93.43.11  Destination Port=80.0  Protocol=6.0  Flow Duration=115812880.0  Total Fwd Packets=128.0  Total Backward Packets=173.0  Init_Win_bytes_backward=946.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3095.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window, ET INFO Windows OS Submitting USB Metadata to Microsoft, ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+  Unique source IPs : 4
+  Top dest ports    : [443.0, 137.0, 5353.0, 389.0, 80.0]
+  Protocols         : {6.0: 4, 17.0: 4}
+====================================================================

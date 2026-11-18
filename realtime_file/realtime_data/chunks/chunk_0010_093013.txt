@@ -1,0 +1,50 @@
+====================================================================
+LOG WINDOW #0010
+Time range : 2026-11-16 09:30:13 UTC → 2026-11-16 09:30:34 UTC
+Suricata alerts :    7  | Network flows :   113 (showing top 8)
+====================================================================
+
+SURICATA ALERTS (7 total, 4 unique group(s)):
+------------------------------------------------------------
+  [2026-11-16T15:30:20] SID:2016182 (sev=1) ET WEB_SERVER ColdFusion componentutils access
+    category : Web Application Attack
+    192.168.1.194:56506 → 192.168.1.169:80  proto=TCP
+  [2026-11-16T15:30:18] [4x] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:ephemeral → 192.168.1.169:80  proto=TCP
+  [2026-11-16T15:30:34] SID:2056027 (sev=1) ET WEB_SPECIFIC_APPS Wordpress LiteSpeed Cache Plugin debug.log Access Attempt (CVE-2024-44000)
+    category : Successful Credential Theft Detected
+    192.168.1.194:41292 → 192.168.1.169:80  proto=TCP
+  [2026-11-16T15:30:33] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:41246 → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (3562 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:56506 → 192.168.1.169 | GET 192.168.1.169/doc/Judy/
+  HTTP 192.168.1.194:56506 → 192.168.1.169 | GET 192.168.1.169/doc/TechPrtServ/
+  HTTP 192.168.1.194:56506 → 192.168.1.169 | GET 192.168.1.169/doc/sw_patches.txt
+  HTTP 192.168.1.194:56506 → 192.168.1.169 | GET 192.168.1.169/doc/Judy/COPYRIGHT
+  HTTP 192.168.1.194:56506 → 192.168.1.169 | GET 192.168.1.169/doc/Judy/Judy1_3x.htm
+
+NETWORK FLOWS — top 8 of 113 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=56488  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=596605.0  Total Fwd Packets=116  Total Backward Packets=141  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=235489.1
+  Src IP=192.168.1.194  Src Port=56544  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=488004.0  Total Fwd Packets=116  Total Backward Packets=133  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=257053.2
+  Src IP=192.168.1.194  Src Port=56466  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=365345.0  Total Fwd Packets=109  Total Backward Packets=112  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=252273.9
+  Src IP=192.168.1.194  Src Port=41226  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=371970.0  Total Fwd Packets=109  Total Backward Packets=112  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=240909.2
+  Src IP=192.168.1.194  Src Port=56424  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=545249.0  Total Fwd Packets=108  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=145201.5
+  Src IP=192.168.1.194  Src Port=51182  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=389068.0  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=216813.0
+  Src IP=192.168.1.194  Src Port=56438  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=551588.0  Total Fwd Packets=106  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=142673.5
+  Src IP=192.168.1.194  Src Port=56472  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=434133.0  Total Fwd Packets=106  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=191710.8
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Alert signatures  : 4x ET WEB_SERVER ColdFusion administrator access, 1x ET WEB_SERVER ColdFusion componentutils access, 1x ET WEB_SPECIFIC_APPS Wordpress LiteSpeed Cache Plugin debug.log Access Attempt (CVE-2024-44000), 1x SURICATA Applayer Detect protocol only one direction
+  Total window flows: 113
+  Unique source IPs : 2
+  Distinct dst ports: 2  (top: [80, 5353])
+  Protocols (6=TCP,17=UDP): {'6': 112, '17': 1}
+  TCP SYN summary   : total_syn=333, half_open_flows=0
+  Role 1 assessment : Web Attack (Heuristics) (100.0%)
+====================================================================

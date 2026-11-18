@@ -1,0 +1,25 @@
+====================================================================
+LOG WINDOW #0020
+Time range : 2026-11-16 09:36:01 UTC → 2026-11-16 09:36:01 UTC
+Suricata alerts :    0  | Network flows :     1
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+PROTOCOL METADATA (1 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:32962 → 192.168.1.169 | GET ?/
+
+NETWORK FLOWS — top 1 of 1 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.179  Src Port=54112  Dst IP=192.168.1.169  Destination Port=445  Protocol=6  Flow Duration=2250833.0  Total Fwd Packets=6  Total Backward Packets=5  Init_Win_bytes_backward=0  SYN Flag Count=6  FIN Flag Count=0  RST Flag Count=5  Flow Bytes/s=295.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Total window flows: 1
+  Unique source IPs : 1
+  Distinct dst ports: 1  (top: [445])
+  Protocols (6=TCP,17=UDP): {'6': 1}
+  TCP SYN summary   : total_syn=6, half_open_flows=0
+  Role 1 assessment : Benign (99.3%)
+====================================================================

@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0385
+Time range : 2017-07-05 18:07:42 UTC → 2017-07-05 18:08:42 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-06T00:07:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:53359 → 198.54.12.96:443  proto=TCP
+  [2017-07-06T00:07:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    146.20.129.10:443 → 192.168.10.5:53374  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    50.63.243.230:80 → 192.168.10.5:53375  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+  [2017-07-06T00:07:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.10:443 → 192.168.10.5:53376  proto=TCP
+
+PROTOCOL METADATA (3115 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.5 queried ssp.lkqd.net type=A
+  DNS  192.168.10.5 queried ssp.lkqd.net type=A
+  DNS  192.168.10.3 queried ssp.lkqd.net type=A
+  DNS  192.168.10.5 queried ssp.lkqd.net type=A
+  DNS  192.168.10.5 queried ssp.lkqd.net type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.5  Src Port=53378  Dst IP=146.20.129.72  Destination Port=443  Protocol=6  Flow Duration=117129907  Total Fwd Packets=427  Total Backward Packets=423  Init_Win_bytes_backward=8192  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6489.7
+  Src IP=192.168.10.9  Src Port=21464  Dst IP=31.13.80.9  Destination Port=443  Protocol=6  Flow Duration=117235468  Total Fwd Packets=407  Total Backward Packets=592  Init_Win_bytes_backward=215  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=8754.4
+  Src IP=192.168.10.51  Src Port=52502  Dst IP=104.88.107.249  Destination Port=443  Protocol=6  Flow Duration=77228717  Total Fwd Packets=360  Total Backward Packets=622  Init_Win_bytes_backward=1291  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=16940.2
+  Src IP=192.168.10.9  Src Port=21382  Dst IP=104.244.46.167  Destination Port=443  Protocol=6  Flow Duration=117394786  Total Fwd Packets=330  Total Backward Packets=445  Init_Win_bytes_backward=64  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7412.5
+  Src IP=192.168.10.9  Src Port=21438  Dst IP=95.213.11.219  Destination Port=443  Protocol=6  Flow Duration=119047083  Total Fwd Packets=329  Total Backward Packets=433  Init_Win_bytes_backward=64  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7180.4
+  Src IP=192.168.10.5  Src Port=53420  Dst IP=63.238.216.10  Destination Port=80  Protocol=6  Flow Duration=114054746  Total Fwd Packets=292  Total Backward Packets=151  Init_Win_bytes_backward=4129  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=867.3
+  Src IP=192.168.10.9  Src Port=21329  Dst IP=95.213.11.181  Destination Port=443  Protocol=6  Flow Duration=68420863  Total Fwd Packets=274  Total Backward Packets=404  Init_Win_bytes_backward=74  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=10710.5
+  Src IP=192.168.10.9  Src Port=21335  Dst IP=195.16.108.152  Destination Port=443  Protocol=6  Flow Duration=64591123  Total Fwd Packets=208  Total Backward Packets=283  Init_Win_bytes_backward=101  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=8364.6
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 3
+  Top dest ports    : [443, 80]
+  Protocols         : {6: 8}
+====================================================================

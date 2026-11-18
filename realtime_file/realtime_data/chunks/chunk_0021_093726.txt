@@ -1,0 +1,23 @@
+====================================================================
+LOG WINDOW #0021
+Time range : 2026-11-16 09:37:26 UTC → 2026-11-16 09:37:26 UTC
+Suricata alerts :    0  | Network flows :     3
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+NETWORK FLOWS — top 3 of 3 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=63140  Dst IP=192.168.1.169  Destination Port=123  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+  Src IP=192.168.1.194  Src Port=63140  Dst IP=192.168.1.169  Destination Port=53  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+  Src IP=192.168.1.194  Src Port=63140  Dst IP=192.168.1.169  Destination Port=161  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Total window flows: 3
+  Unique source IPs : 1
+  Distinct dst ports: 3  (top: [123, 53, 161])
+  Protocols (6=TCP,17=UDP): {'17': 3}
+  TCP SYN summary   : total_syn=0, half_open_flows=0
+  Role 1 assessment : Benign (96.7%)
+====================================================================

@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0316
+Time range : 2017-07-04 17:09:32 UTC → 2017-07-04 17:10:32 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:64938 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:64938 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.3:60458 → 192.168.10.1:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:64938 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:64938 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:56301 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:56301 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:61695 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:61695 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.3:61962 → 192.168.10.1:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:61695 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:61695 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:09:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.16.59.5:443 → 192.168.10.15:55845  proto=TCP
+  [2017-07-04T23:09:33] SID:2035464 (sev=3) ET INFO Observed Discord Domain (discordapp .com in TLS SNI)
+    category : Misc activity
+    192.168.10.15:55845 → 104.16.59.5:443  proto=TCP
+  [2017-07-04T23:09:34] SID:2035466 (sev=3) ET INFO Observed Discord Domain in DNS Lookup (discordapp .com)
+    category : Misc activity
+    192.168.10.15:63976 → 192.168.10.3:53  proto=UDP
+
+PROTOCOL METADATA (1083 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.15 queried www.discordapp.com type=A
+  DNS  192.168.10.15 queried www.discordapp.com type=A
+  DNS  192.168.10.3 queried www.discordapp.com type=A
+  DNS  192.168.10.15 queried www.discordapp.com type=A
+  DNS  192.168.10.15 queried www.discordapp.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.15  Src Port=55845  Dst IP=104.16.59.5  Destination Port=443  Protocol=6  Flow Duration=119743015  Total Fwd Packets=493  Total Backward Packets=439  Init_Win_bytes_backward=37  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7774.6
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=118423730  Total Fwd Packets=179  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.25  Src Port=57081  Dst IP=54.192.37.200  Destination Port=443  Protocol=6  Flow Duration=499532  Total Fwd Packets=99  Total Backward Packets=110  Init_Win_bytes_backward=122  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=332897.6
+  Src IP=192.168.10.50  Src Port=53120  Dst IP=192.168.10.3  Destination Port=3268  Protocol=6  Flow Duration=119290033  Total Fwd Packets=78  Total Backward Packets=43  Init_Win_bytes_backward=2076  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=211.6
+  Src IP=192.168.10.50  Src Port=54134  Dst IP=192.168.10.3  Destination Port=389  Protocol=6  Flow Duration=119261394  Total Fwd Packets=78  Total Backward Packets=43  Init_Win_bytes_backward=2076  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=277.1
+  Src IP=192.168.10.8  Src Port=53808  Dst IP=204.15.8.11  Destination Port=443  Protocol=6  Flow Duration=90961174  Total Fwd Packets=72  Total Backward Packets=89  Init_Win_bytes_backward=9  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1182.2
+  Src IP=192.168.10.8  Src Port=53765  Dst IP=172.217.11.14  Destination Port=443  Protocol=6  Flow Duration=78674390  Total Fwd Packets=65  Total Backward Packets=90  Init_Win_bytes_backward=1622  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=883.4
+  Src IP=192.168.10.9  Src Port=6893  Dst IP=138.201.98.163  Destination Port=443  Protocol=6  Flow Duration=75983729  Total Fwd Packets=59  Total Backward Packets=52  Init_Win_bytes_backward=64  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1441.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : ET INFO Observed Discord Domain in DNS Lookup (discordapp .com), SURICATA TCPv4 invalid checksum, ET INFO Observed Discord Domain (discordapp .com in TLS SNI)
+  Unique source IPs : 6
+  Top dest ports    : [443, 0, 3268, 389]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

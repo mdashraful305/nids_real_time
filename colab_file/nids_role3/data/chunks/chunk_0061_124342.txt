@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0061
+Time range : 2017-07-05 12:43:42 UTC → 2017-07-05 12:44:42 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-05T18:43:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.17:38473 → 68.67.178.137:80  proto=TCP
+  [2017-07-05T18:43:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    35.165.158.113:443 → 192.168.10.9:15390  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:50466 → 192.168.10.50:51829  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:50466 → 192.168.10.50:51829  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:50466 → 192.168.10.50:51829  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:50466 → 192.168.10.50:51829  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:51746 → 192.168.10.50:25825  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:51746 → 192.168.10.50:25825  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:51746 → 192.168.10.50:25825  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:51746 → 192.168.10.50:25825  proto=TCP
+  [2017-07-05T18:43:50] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:51746 → 192.168.10.50:25825  proto=TCP
+  [2017-07-05T18:43:51] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    68.67.180.12:80 → 192.168.10.17:38861  proto=TCP
+  [2017-07-05T18:43:51] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    204.13.192.211:80 → 192.168.10.17:56215  proto=TCP
+  [2017-07-05T18:43:52] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    68.67.178.137:80 → 192.168.10.17:38473  proto=TCP
+  [2017-07-05T18:43:54] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.12:37608 → 54.186.39.123:443  proto=TCP
+
+PROTOCOL METADATA (729 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.9 queried shavar.services.mozilla.com type=A
+  DNS  192.168.10.9 queried shavar.services.mozilla.com type=A
+  DNS  192.168.10.3 queried shavar.services.mozilla.com type=A
+  DNS  192.168.10.3 queried shavar.services.mozilla.com type=A
+  DNS  192.168.10.9 queried shavar.services.mozilla.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.17  Src Port=52924  Dst IP=104.25.208.111  Destination Port=80  Protocol=6  Flow Duration=49078589  Total Fwd Packets=339  Total Backward Packets=613  Init_Win_bytes_backward=51  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=19819.9
+  Src IP=192.168.10.8  Src Port=50846  Dst IP=151.101.46.109  Destination Port=443  Protocol=6  Flow Duration=58806275  Total Fwd Packets=326  Total Backward Packets=441  Init_Win_bytes_backward=150  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=13372.6
+  Src IP=192.168.10.17  Src Port=52926  Dst IP=104.25.208.111  Destination Port=80  Protocol=6  Flow Duration=48960745  Total Fwd Packets=193  Total Backward Packets=322  Init_Win_bytes_backward=56  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=10285.8
+  Src IP=192.168.10.17  Src Port=52922  Dst IP=104.25.208.111  Destination Port=80  Protocol=6  Flow Duration=48949494  Total Fwd Packets=176  Total Backward Packets=268  Init_Win_bytes_backward=57  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=8808.2
+  Src IP=192.168.10.17  Src Port=52923  Dst IP=104.25.208.111  Destination Port=80  Protocol=6  Flow Duration=48689022  Total Fwd Packets=174  Total Backward Packets=295  Init_Win_bytes_backward=53  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=8495.2
+  Src IP=192.168.10.17  Src Port=52927  Dst IP=104.25.208.111  Destination Port=80  Protocol=6  Flow Duration=48710815  Total Fwd Packets=158  Total Backward Packets=245  Init_Win_bytes_backward=53  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=8102.8
+  Src IP=192.168.10.17  Src Port=52928  Dst IP=104.25.208.111  Destination Port=80  Protocol=6  Flow Duration=48661629  Total Fwd Packets=143  Total Backward Packets=236  Init_Win_bytes_backward=52  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7997.4
+  Src IP=192.168.10.17  Src Port=54132  Dst IP=104.20.50.83  Destination Port=80  Protocol=6  Flow Duration=46040646  Total Fwd Packets=135  Total Backward Packets=184  Init_Win_bytes_backward=30  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6096.1
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA HTTP unable to match response to request
+  Unique source IPs : 2
+  Top dest ports    : [80, 443]
+  Protocols         : {6: 8}
+====================================================================

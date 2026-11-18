@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0465
+Time range : 2017-07-06 19:43:58 UTC → 2017-07-06 19:44:58 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-07T01:43:58] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    64.94.116.192:80 → 192.168.10.15:61224  proto=TCP
+  [2017-07-07T01:44:00] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    172.217.7.14:443 → 192.168.10.51:56672  proto=TCP
+  [2017-07-07T01:44:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:56672 → 172.217.7.14:443  proto=TCP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:13957 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:13957 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:57268 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.3:60906 → 192.168.10.1:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:57268 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.3:62012 → 192.168.10.1:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.27.214.30:443 → 192.168.10.12:34112  proto=TCP
+  [2017-07-07T01:44:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.27.214.30:443 → 192.168.10.12:34112  proto=TCP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:27230 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:27230 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:36635 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T01:44:02] SID:2027757 (sev=2) ET DNS Query for .to TLD
+    category : Potentially Bad Traffic
+    192.168.10.12:36635 → 192.168.10.3:53  proto=UDP
+
+PROTOCOL METADATA (713 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.8:2196 → 178.33.142.90 | GET visit-01.kameleoon.com/_.gif?sc=ca4kfioskh&p=ZXZlbnQ9YWN0aXZpdHkmYWN0aXZlPWZhbHNlJ
+  DNS  192.168.10.51 queried safebrowsing.google.com type=A
+  DNS  192.168.10.51 queried safebrowsing.google.com type=A
+  DNS  192.168.10.51 queried safebrowsing.google.com type=A
+  DNS  192.168.10.51 queried safebrowsing.google.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.12  Src Port=34112.0  Dst IP=104.27.214.30  Destination Port=443.0  Protocol=6.0  Flow Duration=119327392.0  Total Fwd Packets=134.0  Total Backward Packets=355.0  Init_Win_bytes_backward=49.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3929.2
+  Src IP=192.168.10.25  Src Port=53734.0  Dst IP=172.217.12.194  Destination Port=443.0  Protocol=6.0  Flow Duration=51923288.0  Total Fwd Packets=109.0  Total Backward Packets=147.0  Init_Win_bytes_backward=535.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3937.0
+  Src IP=192.168.10.25  Src Port=53748.0  Dst IP=216.58.219.230  Destination Port=443.0  Protocol=6.0  Flow Duration=50572168.0  Total Fwd Packets=50.0  Total Backward Packets=55.0  Init_Win_bytes_backward=401.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1536.3
+  Src IP=192.168.10.25  Src Port=53754.0  Dst IP=192.168.10.19  Destination Port=139.0  Protocol=6.0  Flow Duration=38980.0  Total Fwd Packets=49.0  Total Backward Packets=26.0  Init_Win_bytes_backward=269.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=146690.6
+  Src IP=192.168.10.51  Src Port=43354.0  Dst IP=174.35.73.202  Destination Port=80.0  Protocol=6.0  Flow Duration=7654800.0  Total Fwd Packets=46.0  Total Backward Packets=49.0  Init_Win_bytes_backward=675.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=11355.9
+  Src IP=192.168.10.16  Src Port=48042.0  Dst IP=192.168.10.3  Destination Port=3268.0  Protocol=6.0  Flow Duration=236800.0  Total Fwd Packets=42.0  Total Backward Packets=33.0  Init_Win_bytes_backward=2080.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=85109.8
+  Src IP=192.168.10.17  Src Port=51795.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1330751.0  Total Fwd Packets=41.0  Total Backward Packets=42.0  Init_Win_bytes_backward=243.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7227.5
+  Src IP=192.168.10.17  Src Port=51796.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1312332.0  Total Fwd Packets=41.0  Total Backward Packets=42.0  Init_Win_bytes_backward=243.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7133.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA HTTP unable to match response to request, ET DNS Query for .to TLD
+  Unique source IPs : 5
+  Top dest ports    : [443.0, 22.0, 139.0, 80.0, 3268.0]
+  Protocols         : {6.0: 8}
+====================================================================

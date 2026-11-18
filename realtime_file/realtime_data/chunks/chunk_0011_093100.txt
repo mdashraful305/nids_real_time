@@ -1,0 +1,29 @@
+====================================================================
+LOG WINDOW #0011
+Time range : 2026-11-16 09:31:00 UTC → 2026-11-16 09:31:11 UTC
+Suricata alerts :    0  | Network flows :     4
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+PROTOCOL METADATA (2 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:57318 → 192.168.1.169 | OPTIONS 192.168.1.169/
+  HTTP 192.168.1.194:57304 → 192.168.1.169 | HEAD 192.168.1.169/
+
+NETWORK FLOWS — top 4 of 4 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=57304  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=11226.0  Total Fwd Packets=7  Total Backward Packets=4  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=96472.5
+  Src IP=192.168.1.194  Src Port=57318  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=7481.0  Total Fwd Packets=7  Total Backward Packets=4  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=132736.3
+  Src IP=192.168.1.194  Src Port=35740  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=1874.0  Total Fwd Packets=4  Total Backward Packets=1  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=188900.8
+  Src IP=192.168.1.194  Src Port=46946  Dst IP=192.168.1.169  Destination Port=443  Protocol=6  Flow Duration=45.0  Total Fwd Packets=2  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=2  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=4488889.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Total window flows: 4
+  Unique source IPs : 1
+  Distinct dst ports: 2  (top: [80, 443])
+  Protocols (6=TCP,17=UDP): {'6': 4}
+  TCP SYN summary   : total_syn=11, half_open_flows=1
+  Role 1 assessment : Benign (98.8%)
+====================================================================

@@ -1,0 +1,59 @@
+====================================================================
+LOG WINDOW #0427
+Time range : 2017-07-06 19:05:58 UTC → 2017-07-06 19:06:58 UTC
+Suricata alerts :    8  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (8):
+------------------------------------------------------------
+  [2017-07-07T01:06:15] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.14:51094 → 13.112.55.104:443  proto=TCP
+  [2017-07-07T01:06:54] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    74.125.29.108:465 → 192.168.10.16:48960  proto=TCP
+  [2017-07-07T01:06:56] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:3268 → 192.168.10.25:53540  proto=TCP
+  [2017-07-07T01:06:56] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:3268 → 192.168.10.25:53540  proto=TCP
+  [2017-07-07T01:06:56] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:389 → 192.168.10.25:53541  proto=TCP
+  [2017-07-07T01:06:56] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:389 → 192.168.10.25:53541  proto=TCP
+  [2017-07-07T01:06:57] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    54.230.51.114:443 → 192.168.10.25:53542  proto=TCP
+  [2017-07-07T01:06:57] SID:2029340 (sev=2) ET INFO TLS Handshake Failure
+    category : Potentially Bad Traffic
+    54.230.51.114:443 → 192.168.10.25:53543  proto=TCP
+
+PROTOCOL METADATA (180 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.16 queried www.vidto.me type=A
+  DNS  192.168.10.16 queried www.vidto.me type=A
+  DNS  192.168.10.16 queried www.vidto.me type=AAAA
+  DNS  192.168.10.16 queried www.vidto.me type=AAAA
+  DNS  192.168.10.3 queried www.vidto.me type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0.0  Dst IP=8.0.6.4  Destination Port=0.0  Protocol=0.0  Flow Duration=101512880.0  Total Fwd Packets=110.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=0.0
+  Src IP=192.168.10.19  Src Port=46779.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1328779.0  Total Fwd Packets=41.0  Total Backward Packets=44.0  Init_Win_bytes_backward=243.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7238.2
+  Src IP=192.168.10.19  Src Port=46780.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1327478.0  Total Fwd Packets=41.0  Total Backward Packets=42.0  Init_Win_bytes_backward=243.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7052.5
+  Src IP=192.168.10.14  Src Port=51193.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1410997.0  Total Fwd Packets=37.0  Total Backward Packets=44.0  Init_Win_bytes_backward=245.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=6871.7
+  Src IP=192.168.10.14  Src Port=51194.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1436870.0  Total Fwd Packets=37.0  Total Backward Packets=40.0  Init_Win_bytes_backward=245.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=6553.1
+  Src IP=192.168.10.19  Src Port=138.0  Dst IP=192.168.10.255  Destination Port=138.0  Protocol=17.0  Flow Duration=46.0  Total Fwd Packets=26.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=126000000.0
+  Src IP=192.168.10.15  Src Port=60662.0  Dst IP=23.21.84.138  Destination Port=443.0  Protocol=6.0  Flow Duration=111572000.0  Total Fwd Packets=22.0  Total Backward Packets=22.0  Init_Win_bytes_backward=35926.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=61.5
+  Src IP=192.168.10.25  Src Port=53541.0  Dst IP=192.168.10.3  Destination Port=389.0  Protocol=6.0  Flow Duration=109157664.0  Total Fwd Packets=22.0  Total Backward Packets=13.0  Init_Win_bytes_backward=0.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=85.6
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, ET INFO TLS Handshake Failure, SURICATA STREAM reassembly overlap with different data
+  Unique source IPs : 5
+  Top dest ports    : [22.0, 0.0, 138.0, 443.0, 389.0]
+  Protocols         : {6.0: 6, 0.0: 1, 17.0: 1}
+====================================================================

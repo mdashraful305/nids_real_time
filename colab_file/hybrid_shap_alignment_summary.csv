@@ -1,0 +1,4 @@
+Dataset,w_xgb,w_rf,sum_abs_xgb_shap,sum_abs_rf_shap,scale_ratio_xgb_to_rf,l1_hyb_vs_xgb_shap_top15_n,l1_hyb_vs_xgb_shap_top15_pct,l1_hyb_vs_xgb_shap_rho,l1_hyb_vs_rf_shap_top15_n,l1_hyb_vs_rf_shap_top15_pct,l1_hyb_vs_rf_shap_rho,xgb_gain_vs_xgb_shap_top15_n,xgb_gain_vs_xgb_shap_top15_pct,xgb_gain_vs_xgb_shap_rho,rf_gini_vs_xgb_shap_top15_n,rf_gini_vs_xgb_shap_top15_pct,rf_gini_vs_xgb_shap_rho,rf_gini_vs_rf_shap_top15_n,rf_gini_vs_rf_shap_top15_pct,rf_gini_vs_rf_shap_rho
+CICIDS2017,0.501,0.499,5.758,0.193,29.9,14,93.3,0.973,12,80.0,0.916,5,33.3,0.398,9,60.0,0.804,9,60.0,0.877
+NSL-KDD,0.502,0.498,6.608,0.173,38.1,13,86.7,0.973,12,80.0,0.979,2,13.3,0.281,14,93.3,0.958,10,66.7,0.937
+UNSW-NB15,0.51,0.49,3.978,0.263,15.1,14,93.3,0.98,14,93.3,0.99,10,66.7,0.674,12,80.0,0.94,12,80.0,0.945

@@ -1,0 +1,21 @@
+{
+  "total": 1964,
+  "counts": {
+    "NONE": 13,
+    "LOW": 6,
+    "MEDIUM": 1621,
+    "HIGH": 324
+  },
+  "percent": {
+    "NONE": 0.7,
+    "LOW": 0.3,
+    "MEDIUM": 82.5,
+    "HIGH": 16.5
+  },
+  "files": [
+    "data/results/pw_wednesday.csv",
+    "data/results/pw_friday.csv",
+    "data/results/pw_thursday.csv",
+    "data/results/pw_tuesday.csv"
+  ]
+}

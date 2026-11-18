@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0245
+Time range : 2017-07-05 15:47:42 UTC → 2017-07-05 15:48:42 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-05T21:48:08] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:53862 → 192.168.10.50:6000  proto=TCP
+  [2017-07-05T21:48:08] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:53862 → 192.168.10.50:6000  proto=TCP
+  [2017-07-05T21:48:08] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:53862 → 192.168.10.50:6000  proto=TCP
+  [2017-07-05T21:48:08] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:53862 → 192.168.10.50:6000  proto=TCP
+  [2017-07-05T21:48:08] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:53862 → 192.168.10.50:6000  proto=TCP
+  [2017-07-05T21:48:08] SID:2210038 (sev=3) SURICATA STREAM FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.50:21 → 192.168.10.14:53861  proto=TCP
+  [2017-07-05T21:48:08] SID:2210038 (sev=3) SURICATA STREAM FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.50:21 → 192.168.10.14:53861  proto=TCP
+  [2017-07-05T21:48:22] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:42360 → 216.58.219.238:443  proto=TCP
+  [2017-07-05T21:48:22] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:42360 → 216.58.219.238:443  proto=TCP
+  [2017-07-05T21:48:22] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:42360 → 216.58.219.238:443  proto=TCP
+  [2017-07-05T21:48:22] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:42360 → 216.58.219.238:443  proto=TCP
+  [2017-07-05T21:48:22] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:42360 → 216.58.219.238:443  proto=TCP
+  [2017-07-05T21:48:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.26.156:443 → 192.168.10.8:54233  proto=TCP
+  [2017-07-05T21:48:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.60.139.27:80 → 192.168.10.8:54236  proto=TCP
+  [2017-07-05T21:48:30] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    52.84.26.156:443 → 192.168.10.8:54232  proto=TCP
+
+PROTOCOL METADATA (172 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.3 queried wns.notify.windows.com.akadns.net type=A
+  DNS  192.168.10.3 queried wns.notify.windows.com.akadns.net type=A
+  TLS  192.168.10.3 → 65.52.108.254 SNI=client.wns.windows.com version=TLS 1.2
+  DNS  192.168.10.3 queried BN4SCH101122114.wns.windows.com type=A
+  DNS  192.168.10.3 queried BN4SCH101122114.wns.windows.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.9  Src Port=18239  Dst IP=74.220.195.201  Destination Port=443  Protocol=6  Flow Duration=11584258  Total Fwd Packets=76  Total Backward Packets=92  Init_Win_bytes_backward=182  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=11141.0
+  Src IP=192.168.10.9  Src Port=18241  Dst IP=74.220.195.201  Destination Port=443  Protocol=6  Flow Duration=11569457  Total Fwd Packets=70  Total Backward Packets=79  Init_Win_bytes_backward=198  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=8744.9
+  Src IP=192.168.10.9  Src Port=18240  Dst IP=74.220.195.201  Destination Port=443  Protocol=6  Flow Duration=11625663  Total Fwd Packets=54  Total Backward Packets=57  Init_Win_bytes_backward=190  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5916.8
+  Src IP=192.168.10.19  Src Port=57208  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1307550  Total Fwd Packets=41  Total Backward Packets=42  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7160.0
+  Src IP=192.168.10.17  Src Port=53429  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1254997  Total Fwd Packets=41  Total Backward Packets=44  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7663.8
+  Src IP=192.168.10.19  Src Port=57207  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1327113  Total Fwd Packets=41  Total Backward Packets=44  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7247.3
+  Src IP=192.168.10.17  Src Port=53430  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1263533  Total Fwd Packets=41  Total Backward Packets=42  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7409.4
+  Src IP=192.168.10.15  Src Port=55978  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1436118  Total Fwd Packets=39  Total Backward Packets=46  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6759.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM FIN out of window, SURICATA STREAM CLOSEWAIT FIN out of window, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 4
+  Top dest ports    : [22, 443]
+  Protocols         : {6: 8}
+====================================================================

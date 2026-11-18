@@ -1,0 +1,33 @@
+====================================================================
+LOG WINDOW #0506
+Time range : 2017-07-05 20:08:42 UTC → 2017-07-05 20:09:42 UTC
+Suricata alerts :    0  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+PROTOCOL METADATA (47 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.51:53085 → 23.60.139.27 | POST s2.symcb.com/
+  TLS  192.168.10.14 → 104.79.150.160 SNI=px.moatads.com version=UNDETERMINED
+  HTTP 192.168.10.16:51542 → 72.167.239.239 | POST ocsp.godaddy.com/
+  HTTP 192.168.10.16:58712 → 23.60.139.27 | POST gv.symcd.com/
+  HTTP 192.168.10.14:58663 → 40.87.63.92 | POST dmd.metaservices.microsoft.com/dms/metadata.svc
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.12  Src Port=138  Dst IP=192.168.10.255  Destination Port=138  Protocol=17  Flow Duration=19  Total Fwd Packets=10  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=123000000.0
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=33081522  Total Fwd Packets=6  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=209.48.71.129  Src Port=80  Dst IP=192.168.10.15  Destination Port=58122  Protocol=6  Flow Duration=1  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=12000000.0
+  Src IP=209.48.71.129  Src Port=80  Dst IP=192.168.10.15  Destination Port=58122  Protocol=6  Flow Duration=1  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=12000000.0
+  Src IP=209.48.71.129  Src Port=80  Dst IP=192.168.10.15  Destination Port=58122  Protocol=6  Flow Duration=1  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=12000000.0
+  Src IP=209.48.71.129  Src Port=80  Dst IP=192.168.10.15  Destination Port=58122  Protocol=6  Flow Duration=1  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=12000000.0
+  Src IP=209.48.71.129  Src Port=80  Dst IP=192.168.10.15  Destination Port=58122  Protocol=6  Flow Duration=246087  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=48.8
+  Src IP=209.48.71.129  Src Port=80  Dst IP=192.168.10.15  Destination Port=58122  Protocol=6  Flow Duration=0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique source IPs : 3
+  Top dest ports    : [58122, 138, 0]
+  Protocols         : {6: 6, 17: 1, 0: 1}
+====================================================================

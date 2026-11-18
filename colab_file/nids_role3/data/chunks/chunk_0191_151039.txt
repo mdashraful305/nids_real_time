@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0191
+Time range : 2017-07-07 15:10:39 UTC → 2017-07-07 15:11:39 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:41204 → 172.217.7.132:443  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    68.67.178.110:443 → 192.168.10.19:48129  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:48129 → 68.67.178.110:443  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    172.217.7.132:443 → 192.168.10.19:41204  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    172.217.7.132:443 → 192.168.10.19:41204  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.94.232.32:443 → 192.168.10.19:54323  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    63.251.240.12:443 → 192.168.10.19:36431  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:39263 → 172.217.7.195:443  proto=TCP
+  [2017-07-07T21:10:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    50.63.243.230:80 → 192.168.10.19:49802  proto=TCP
+  [2017-07-07T21:10:40] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    54.231.33.203:443 → 192.168.10.19:49871  proto=TCP
+  [2017-07-07T21:10:40] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:54735 → 52.35.208.52:443  proto=TCP
+  [2017-07-07T21:10:41] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:43127 → 34.206.226.38:443  proto=TCP
+  [2017-07-07T21:10:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:43127 → 34.206.226.38:443  proto=TCP
+  [2017-07-07T21:10:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:53838 → 192.168.10.3:49666  proto=TCP
+  [2017-07-07T21:10:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:53838 → 192.168.10.3:49666  proto=TCP
+
+PROTOCOL METADATA (310 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.19:38634 → 172.217.10.142 | POST clients1.google.com/ocsp
+  DNS  192.168.10.3 queried segment-pixel.invitemedia.com type=A
+  DNS  192.168.10.19 queried segment-pixel.invitemedia.com type=A
+  DNS  192.168.10.19 queried segment-pixel.invitemedia.com type=A
+  TLS  192.168.10.19 → 172.217.10.134 SNI=ad.doubleclick.net version=TLS 1.2
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.19  Src Port=52310  Dst IP=204.13.194.242  Destination Port=443  Protocol=6  Flow Duration=63004146  Total Fwd Packets=131  Total Backward Packets=193  Init_Win_bytes_backward=40958  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5526.0
+  Src IP=192.168.10.19  Src Port=51790  Dst IP=23.33.119.185  Destination Port=443  Protocol=6  Flow Duration=118214102  Total Fwd Packets=99  Total Backward Packets=170  Init_Win_bytes_backward=1318  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=2792.4
+  Src IP=192.168.10.19  Src Port=38611  Dst IP=23.194.111.202  Destination Port=443  Protocol=6  Flow Duration=116062123  Total Fwd Packets=90  Total Backward Packets=107  Init_Win_bytes_backward=1006  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1655.3
+  Src IP=192.168.10.3  Src Port=137  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=98545350  Total Fwd Packets=78  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=39.6
+  Src IP=192.168.10.19  Src Port=51789  Dst IP=23.33.119.185  Destination Port=443  Protocol=6  Flow Duration=118214231  Total Fwd Packets=76  Total Backward Packets=96  Init_Win_bytes_backward=1318  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1309.6
+  Src IP=192.168.10.19  Src Port=51788  Dst IP=23.33.119.185  Destination Port=443  Protocol=6  Flow Duration=118214436  Total Fwd Packets=65  Total Backward Packets=79  Init_Win_bytes_backward=1298  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=945.4
+  Src IP=192.168.10.19  Src Port=51784  Dst IP=23.33.119.185  Destination Port=443  Protocol=6  Flow Duration=116797492  Total Fwd Packets=63  Total Backward Packets=91  Init_Win_bytes_backward=1207  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1340.2
+  Src IP=192.168.10.50  Src Port=42346  Dst IP=192.168.10.3  Destination Port=389  Protocol=6  Flow Duration=114327621  Total Fwd Packets=54  Total Backward Packets=32  Init_Win_bytes_backward=2079  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=213.4
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 3
+  Top dest ports    : [443, 137, 389]
+  Protocols         : {6: 7, 17: 1}
+====================================================================

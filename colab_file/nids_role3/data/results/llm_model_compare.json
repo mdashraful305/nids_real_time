@@ -1,0 +1,28 @@
+{
+  "qwen2.5:1.5b": {
+    "role3_precision": 17.68,
+    "role3_recall": 95.45,
+    "role3_f1": 29.84,
+    "role3_fpr": 98.99,
+    "combined_f1": 95.6,
+    "combined_fpr": 1.77,
+    "llm_mean_s": 3.16,
+    "llm_p95_s": 3.88,
+    "llm_calls": 461,
+    "windows": 483,
+    "wall_min": 6.7
+  },
+  "qwen2.5:7b": {
+    "role3_precision": 13.64,
+    "role3_recall": 3.41,
+    "role3_f1": 5.45,
+    "role3_fpr": 4.81,
+    "combined_f1": 95.6,
+    "combined_fpr": 1.77,
+    "llm_mean_s": 7.632,
+    "llm_p95_s": 8.7,
+    "llm_calls": 480,
+    "windows": 483,
+    "wall_min": 15.3
+  }
+}

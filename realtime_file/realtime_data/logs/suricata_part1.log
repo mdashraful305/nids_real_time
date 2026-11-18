@@ -1,0 +1,4 @@
+i: suricata: This is Suricata version 7.0.3 RELEASE running in USER mode
+i: threads: Threads created -> RX: 1 W: 8 FM: 1 FR: 1   Engine started.
+i: suricata: Signal Received.  Stopping engine.
+i: pcap: read 117 files, 24303 packets, 7797424 bytes

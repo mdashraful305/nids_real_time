@@ -1,0 +1,38 @@
+====================================================================
+LOG WINDOW #0501
+Time range : 2017-07-05 20:03:42 UTC → 2017-07-05 20:04:42 UTC
+Suricata alerts :    1  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (1):
+------------------------------------------------------------
+  [2017-07-06T02:04:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:60010 → 172.217.10.6:443  proto=TCP
+
+PROTOCOL METADATA (30 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.16:58466 → 23.60.139.27 | POST ss.symcd.com/
+  HTTP 192.168.10.16:58490 → 23.60.139.27 | POST gp.symcd.com/
+  HTTP 192.168.10.16:58490 → 23.60.139.27 | POST gp.symcd.com/
+  HTTP 192.168.10.16:58490 → 23.60.139.27 | POST gp.symcd.com/
+  TLS  192.168.10.51 → 172.217.7.132 SNI=www.google.com version=TLS 1.2
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.16  Src Port=44566  Dst IP=198.72.112.8  Destination Port=443  Protocol=6  Flow Duration=58843137  Total Fwd Packets=128  Total Backward Packets=236  Init_Win_bytes_backward=269  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=8259.2
+  Src IP=192.168.10.16  Src Port=55474  Dst IP=205.185.208.154  Destination Port=443  Protocol=6  Flow Duration=12315575  Total Fwd Packets=127  Total Backward Packets=253  Init_Win_bytes_backward=31  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=41615.2
+  Src IP=192.168.10.16  Src Port=55174  Dst IP=174.35.72.217  Destination Port=443  Protocol=6  Flow Duration=31682724  Total Fwd Packets=109  Total Backward Packets=195  Init_Win_bytes_backward=672  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=9944.5
+  Src IP=192.168.10.14  Src Port=58660  Dst IP=134.170.58.125  Destination Port=443  Protocol=6  Flow Duration=7199205  Total Fwd Packets=92  Total Backward Packets=129  Init_Win_bytes_backward=256  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=40193.5
+  Src IP=192.168.10.16  Src Port=53830  Dst IP=104.16.84.55  Destination Port=443  Protocol=6  Flow Duration=119720244  Total Fwd Packets=89  Total Backward Packets=189  Init_Win_bytes_backward=32  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=2180.8
+  Src IP=192.168.10.16  Src Port=38478  Dst IP=104.17.19.11  Destination Port=443  Protocol=6  Flow Duration=117855234  Total Fwd Packets=84  Total Backward Packets=98  Init_Win_bytes_backward=87  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=964.4
+  Src IP=192.168.10.16  Src Port=39228  Dst IP=185.13.88.201  Destination Port=443  Protocol=6  Flow Duration=117856654  Total Fwd Packets=82  Total Backward Packets=211  Init_Win_bytes_backward=236  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3545.6
+  Src IP=192.168.10.16  Src Port=43636  Dst IP=207.178.0.75  Destination Port=443  Protocol=6  Flow Duration=65798288  Total Fwd Packets=65  Total Backward Packets=79  Init_Win_bytes_backward=61  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1877.3
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 2
+  Top dest ports    : [443]
+  Protocols         : {6: 8}
+====================================================================

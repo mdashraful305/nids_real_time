@@ -1,0 +1,118 @@
+# NIDS Role 3 — Configuration
+# Edit this file to match your environment. All paths are relative to project root.
+
+# ── Ollama LLM ────────────────────────────────────────────────────────────────
+ollama:
+  url: "http://localhost:11434"
+  model: "qwen2.5:1.5b"
+  temperature: 0.1              # low = more deterministic verdicts
+  max_tokens: 600
+  timeout_seconds: 180
+  retry_attempts: 3
+
+# ── Data paths ────────────────────────────────────────────────────────────────
+paths:
+  raw_pcap_dir:    "data/raw_pcap"
+  cicflow_csv_dir: "data/cicflow_csv"
+  eve_logs_dir:    "data/eve_logs"
+  chunks_dir:      "data/chunks"
+  results_dir:     "data/results"
+  app_log_file:    "logs/nids_role3.log"
+
+  # Live mode — where Suricata writes its live eve.json
+  live_eve_json:   "/var/log/suricata/eve.json"
+
+# ── Chunking ──────────────────────────────────────────────────────────────────
+chunker:
+  window_seconds: 60            # seconds per log window — 10s = 6 windows/min (was 30s)
+  max_flows_per_chunk: 8        # cap flows shown to LLM (less = faster LLM response)
+  max_alerts_per_chunk: 15      # cap Suricata alerts shown per window
+  save_chunks_to_disk: true     # save .txt chunks for debugging
+
+# ── Suricata ──────────────────────────────────────────────────────────────────
+suricata:
+  offline_output_dir: "data/eve_logs"
+  rules_dir: "/etc/suricata/rules"
+  config_path: "/etc/suricata/suricata.yaml"
+  
+cicflow:
+  timestamp_utc_offset_hours: 6      # was "auto"
+
+# ── CICFlowMeter ──────────────────────────────────────────────────────────────
+cicflowmeter:
+  jar_path: "tools/CICFlowMeterV3-0.0.4-SNAPSHOT.jar"  # repo-local jar used by scripts/02_run_cicflowmeter.sh
+  output_dir: "data/cicflow_csv"
+
+  # How to interpret the NAIVE timestamps CICFlowMeter writes (it emits local
+  # wall-clock with no offset marker, unlike Suricata which writes e.g.
+  # "...T17:59:39+0600").
+  #
+  # "auto"  -> read the offset Suricata recorded in eve.json and apply it.
+  #            Correct whenever both artefacts came from the same machine
+  #            processing the same pcap, which is the normal case.
+  # <number>-> force this many hours, e.g. 6 for UTC+6, -3 for UTC-3.
+  #
+  # Getting this wrong is not cosmetic. Reading these values as UTC on a UTC+6
+  # machine placed every flow six hours after the Suricata events describing
+  # the same packets: 842 windows instead of ~483, 615 of them empty, and
+  # Role 1 / Role 3 fused across unrelated traffic in the rest. The pipeline
+  # now aborts if the two sources overlap by less than 80%.
+  timestamp_utc_offset_hours: "auto"
+
+# ── Role 1 (per-flow ML classification) ───────────────────────────────────────
+role1:
+  # Fraction of the model's trained features that must be PRESENT in the
+  # incoming flows before Role 1 is allowed to predict. Anything absent is
+  # zero-filled, so a low bar here means classifying mostly-empty vectors.
+  #
+  # This was effectively 0.30 before, which let a vector that was 70% zeros
+  # produce a high-confidence label. Keep at 0.90 unless a specific dataset
+  # genuinely cannot reproduce a couple of features (e.g. CIC's duplicated
+  # "Fwd Header Length.1" column, which python-cicflowmeter does not emit).
+  min_feature_coverage: 0.90
+
+# ── Evaluation (offline mode) ─────────────────────────────────────────────────
+evaluation:
+  # How to map LLM verdict to binary for precision/recall calculation
+  attack_verdicts: ["attack", "suspicious"]
+  benign_verdicts: ["benign"]
+  # CICIDS2017 benign label in the CSV
+  cicids_benign_label: "BENIGN"
+  # Save per-chunk LLM output for manual review
+  save_full_verdicts: true
+
+  # Fraction of a window's flows that must be attack-labelled (ground truth)
+  # or attack-predicted (Role 1's own window verdict) before the WINDOW is
+  # called "attack". Applied identically on both sides — see
+  # src/engine/label_map.attack_window_verdict and the window-verdict block
+  # in src/pipeline/unified_pipeline.py.
+  #
+  # 0.5 (majority vote) is the old default. It is correct for volumetric
+  # attacks (DoS/DDoS/PortScan floods dominate their window) but structurally
+  # invisible to low-volume attacks: CICIDS2017 Tuesday's FTP/SSH-Patator
+  # Brute Force averages ~8% of flows in the windows it appears in, so at
+  # 0.5 every one of those windows silently reads as "benign" ground truth
+  # (confirmed: 13,835 real attack flows, 0 windows scored positive).
+  #
+  # 0.0 ("any attack flow") was tried and rejected for the opposite reason:
+  # at a per-flow FPR of ~0.06% and ~1,400 flows/window, almost every benign
+  # window statistically contains at least one false-positive flow, which
+  # "any-flag" turns into a window-level FPR of 70%+ — see the window-verdict
+  # comment in unified_pipeline.py for the original measurement.
+  #
+  # Pick a value between the two: high enough to stay clear of ordinary
+  # per-flow noise, low enough to sit below the attack-flow fraction of the
+  # attack you need to detect. Calibrate against your own data before
+  # trusting a number here — the diagnostic script from the thesis
+  # conversation (per-window attack-flow-fraction distribution) is the
+  # fastest way to do that.
+  attack_window_threshold: 0.03
+
+# ── Live monitor ──────────────────────────────────────────────────────────────
+live:
+  poll_interval_seconds: 0.5    # how often to check for new eve.json lines
+  alert_on_verdicts: ["attack"] # which verdicts print a SOC alert to console
+  # Push verdict to a webhook (leave empty to disable)
+  webhook_url: ""
+  # Write LLM verdicts to a separate JSON file EveBox can read
+  output_verdict_json: "logs/llm_verdicts.json"

@@ -1,0 +1,21 @@
+====================================================================
+LOG WINDOW #0022
+Time range : 2026-11-16 09:40:01 UTC → 2026-11-16 09:40:01 UTC
+Suricata alerts :    0  | Network flows :     1
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+NETWORK FLOWS — top 1 of 1 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.179  Src Port=138  Dst IP=192.168.1.255  Destination Port=138  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Total window flows: 1
+  Unique source IPs : 1
+  Distinct dst ports: 1  (top: [138])
+  Protocols (6=TCP,17=UDP): {'17': 1}
+  TCP SYN summary   : total_syn=0, half_open_flows=0
+  Role 1 assessment : Benign (94.3%)
+====================================================================

@@ -1,0 +1,7 @@
+Dataset,Model,CV acc mean %,CV acc std,CV macro-F1 mean %,CV macro-F1 std,Held-out test macro-F1 %
+CICIDS2017,hybrid,99.8,0.02,89.84,1.9,91.15
+CICIDS2017,xgboost,99.8,0.01,89.12,2.23,91.02
+UNSW-NB15,hybrid,80.93,0.17,59.97,0.54,59.77
+UNSW-NB15,xgboost,81.45,0.28,57.41,0.97,59.76
+NSL-KDD,hybrid,99.6,0.05,97.5,0.38,98.55
+NSL-KDD,xgboost,99.6,0.05,97.49,0.42,98.64

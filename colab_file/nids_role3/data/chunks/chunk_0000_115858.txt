@@ -1,0 +1,31 @@
+====================================================================
+LOG WINDOW #0000
+Time range : 2017-07-06 11:58:58 UTC → 2017-07-06 11:59:58 UTC
+Suricata alerts :    0  | Network flows :     6
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+PROTOCOL METADATA (5 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.14 queried v10.vortex-win.data.microsoft.com type=A
+  DNS  192.168.10.14 queried v10.vortex-win.data.microsoft.com type=A
+  DNS  192.168.10.14 queried v10.vortex-win.data.microsoft.com type=A
+  DNS  192.168.10.14 queried v10.vortex-win.data.microsoft.com type=A
+  TLS  192.168.10.14 → 65.55.44.109 SNI=v10.vortex-win.data.microsoft.com version=TLS 1.2
+
+NETWORK FLOWS — top 6 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0.0  Dst IP=8.0.6.4  Destination Port=0.0  Protocol=0.0  Flow Duration=119945512.0  Total Fwd Packets=150.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=0.0
+  Src IP=192.168.10.50  Src Port=33904.0  Dst IP=192.168.10.3  Destination Port=389.0  Protocol=6.0  Flow Duration=113473704.0  Total Fwd Packets=68.0  Total Backward Packets=40.0  Init_Win_bytes_backward=2081.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=212.2
+  Src IP=192.168.10.50  Src Port=33898.0  Dst IP=192.168.10.3  Destination Port=389.0  Protocol=6.0  Flow Duration=113095464.0  Total Fwd Packets=48.0  Total Backward Packets=24.0  Init_Win_bytes_backward=2079.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=174.0
+  Src IP=192.168.10.14  Src Port=59135.0  Dst IP=65.55.44.109  Destination Port=443.0  Protocol=6.0  Flow Duration=60261928.0  Total Fwd Packets=9.0  Total Backward Packets=7.0  Init_Win_bytes_backward=513.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=108.7
+  Src IP=192.168.10.14  Src Port=59555.0  Dst IP=192.168.10.3  Destination Port=53.0  Protocol=17.0  Flow Duration=269.0  Total Fwd Packets=2.0  Total Backward Packets=2.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1576208.1
+  Src IP=192.168.10.50  Src Port=123.0  Dst IP=129.6.15.29  Destination Port=123.0  Protocol=17.0  Flow Duration=30352.0  Total Fwd Packets=1.0  Total Backward Packets=1.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3162.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique source IPs : 3
+  Top dest ports    : [389.0, 0.0, 443.0, 53.0, 123.0]
+  Protocols         : {6.0: 3, 17.0: 2, 0.0: 1}
+====================================================================

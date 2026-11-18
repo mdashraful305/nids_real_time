@@ -1,0 +1,53 @@
+====================================================================
+LOG WINDOW #0242
+Time range : 2017-07-07 16:01:39 UTC → 2017-07-07 16:02:39 UTC
+Suricata alerts :    6  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (6):
+------------------------------------------------------------
+  [2017-07-07T22:02:19] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:54018 → 64.4.54.18:443  proto=TCP
+  [2017-07-07T22:02:19] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:54018 → 64.4.54.18:443  proto=TCP
+  [2017-07-07T22:02:19] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:54018 → 64.4.54.18:443  proto=TCP
+  [2017-07-07T22:02:20] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:54018 → 64.4.54.18:443  proto=TCP
+  [2017-07-07T22:02:20] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:54018 → 64.4.54.18:443  proto=TCP
+  [2017-07-07T22:02:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:54019 → 65.55.252.202:443  proto=TCP
+
+PROTOCOL METADATA (91 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.14:53238 → 23.195.253.105 | GET tile-service.weather.microsoft.com/en-GB/livetile/preinstall?region=CA&appid=C98EA5B0842DBB940
+  DNS  192.168.10.16 queried smtp.gmail.com type=A
+  DNS  192.168.10.16 queried smtp.gmail.com type=A
+  DNS  192.168.10.16 queried smtp.gmail.com type=AAAA
+  DNS  192.168.10.16 queried smtp.gmail.com type=AAAA
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.25  Src Port=52397  Dst IP=192.168.10.50  Destination Port=139  Protocol=6  Flow Duration=64238  Total Fwd Packets=49  Total Backward Packets=30  Init_Win_bytes_backward=269  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=88358.9
+  Src IP=192.168.10.14  Src Port=137  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=1500608  Total Fwd Packets=39  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1299.5
+  Src IP=192.168.10.9  Src Port=6494  Dst IP=192.168.10.3  Destination Port=445  Protocol=6  Flow Duration=13941240  Total Fwd Packets=25  Total Backward Packets=20  Init_Win_bytes_backward=2051  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=712.0
+  Src IP=192.168.10.16  Src Port=57204  Dst IP=74.125.22.108  Destination Port=465  Protocol=6  Flow Duration=3707506  Total Fwd Packets=19  Total Backward Packets=23  Init_Win_bytes_backward=175  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1600.3
+  Src IP=192.168.10.17  Src Port=56283  Dst IP=74.125.22.109  Destination Port=465  Protocol=6  Flow Duration=2496978  Total Fwd Packets=15  Total Backward Packets=21  Init_Win_bytes_backward=175  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=935.5
+  Src IP=192.168.10.25  Src Port=49321  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=22  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=29500000.0
+  Src IP=192.168.10.16  Src Port=137  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=22  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=29500000.0
+  Src IP=192.168.10.14  Src Port=53242  Dst IP=65.55.44.109  Destination Port=443  Protocol=6  Flow Duration=60467245  Total Fwd Packets=11  Total Backward Packets=9  Init_Win_bytes_backward=513  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=139.6
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 5
+  Top dest ports    : [137, 465, 139, 445, 443]
+  Protocols         : {6: 5, 17: 3}
+====================================================================

@@ -1,0 +1,47 @@
+====================================================================
+LOG WINDOW #0249
+Time range : 2017-07-05 15:51:42 UTC → 2017-07-05 15:52:42 UTC
+Suricata alerts :    4  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (4):
+------------------------------------------------------------
+  [2017-07-05T21:52:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:41158 → 23.67.1.104:443  proto=TCP
+  [2017-07-05T21:52:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:41158 → 23.67.1.104:443  proto=TCP
+  [2017-07-05T21:52:17] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:41286 → 216.58.219.238:443  proto=TCP
+  [2017-07-05T21:52:28] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.10.25:51983 → 192.168.10.50:139  proto=TCP
+
+PROTOCOL METADATA (110 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.19  Src Port=57210  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1343132  Total Fwd Packets=37  Total Backward Packets=40  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7160.9
+  Src IP=192.168.10.19  Src Port=57211  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1307633  Total Fwd Packets=37  Total Backward Packets=38  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7159.5
+  Src IP=192.168.10.50  Src Port=60402  Dst IP=192.168.10.3  Destination Port=3268  Protocol=6  Flow Duration=96538535  Total Fwd Packets=28  Total Backward Packets=19  Init_Win_bytes_backward=2076  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=143.4
+  Src IP=192.168.10.8  Src Port=54240  Dst IP=209.85.201.108  Destination Port=465  Protocol=6  Flow Duration=1976082  Total Fwd Packets=16  Total Backward Packets=24  Init_Win_bytes_backward=351  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3013.0
+  Src IP=192.168.10.15  Src Port=55980  Dst IP=209.85.201.109  Destination Port=465  Protocol=6  Flow Duration=1865766  Total Fwd Packets=16  Total Backward Packets=24  Init_Win_bytes_backward=351  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3191.2
+  Src IP=192.168.10.50  Src Port=33176  Dst IP=192.168.10.3  Destination Port=389  Protocol=6  Flow Duration=457  Total Fwd Packets=11  Total Backward Packets=4  Init_Win_bytes_backward=2081  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1089715.5
+  Src IP=192.168.10.50  Src Port=33180  Dst IP=192.168.10.3  Destination Port=389  Protocol=6  Flow Duration=376  Total Fwd Packets=11  Total Backward Packets=4  Init_Win_bytes_backward=2081  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1324468.1
+  Src IP=192.168.10.51  Src Port=51269  Dst IP=162.213.33.48  Destination Port=443  Protocol=6  Flow Duration=1008242  Total Fwd Packets=10  Total Backward Packets=10  Init_Win_bytes_backward=254  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=4761.8
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA Applayer Detect protocol only one direction, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 5
+  Top dest ports    : [22, 465, 389, 3268, 443]
+  Protocols         : {6: 8}
+====================================================================

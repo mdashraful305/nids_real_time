@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-11-15T08:26:50.971878",
+  "attack_window_threshold": 0.03,
+  "dataset": "CICIDS2017",
+  "windows_total": 483,
+  "windows_with_ground_truth": 483,
+  "flows_total": 703086,
+  "uncertainty": {
+    "method": "percentile bootstrap over windows",
+    "n_resamples": 2000,
+    "seed": 42,
+    "n_windows": 483,
+    "role1_only": {
+      "accuracy": {
+        "point": 98.34,
+        "lo": 97.1,
+        "hi": 99.38,
+        "n_valid_resamples": 2000
+      },
+      "precision": {
+        "point": 92.55,
+        "lo": 86.6,
+        "hi": 97.22,
+        "n_valid_resamples": 2000
+      },
+      "recall": {
+        "point": 98.86,
+        "lo": 96.34,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "f1_score": {
+        "point": 95.6,
+        "lo": 92.23,
+        "hi": 98.38,
+        "n_valid_resamples": 2000
+      },
+      "fpr": {
+        "point": 1.77,
+        "lo": 0.72,
+        "hi": 3.23,
+        "n_valid_resamples": 2000
+      }
+    },
+    "role3_only": {
+      "accuracy": {
+        "point": 78.47,
+        "lo": 74.95,
+        "hi": 82.19,
+        "n_valid_resamples": 2000
+      },
+      "precision": {
+        "point": 13.64,
+        "lo": 0.0,
+        "hi": 29.64,
+        "n_valid_resamples": 2000
+      },
+      "recall": {
+        "point": 3.41,
+        "lo": 0.0,
+        "hi": 7.48,
+        "n_valid_resamples": 2000
+      },
+      "f1_score": {
+        "point": 5.45,
+        "lo": 1.74,
+        "hi": 11.88,
+        "n_valid_resamples": 1890
+      },
+      "fpr": {
+        "point": 4.81,
+        "lo": 2.81,
+        "hi": 6.98,
+        "n_valid_resamples": 2000
+      }
+    },
+    "combined": {
+      "accuracy": {
+        "point": 98.34,
+        "lo": 97.1,
+        "hi": 99.38,
+        "n_valid_resamples": 2000
+      },
+      "precision": {
+        "point": 92.55,
+        "lo": 86.6,
+        "hi": 97.22,
+        "n_valid_resamples": 2000
+      },
+      "recall": {
+        "point": 98.86,
+        "lo": 96.34,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "f1_score": {
+        "point": 95.6,
+        "lo": 92.23,
+        "hi": 98.38,
+        "n_valid_resamples": 2000
+      },
+      "fpr": {
+        "point": 1.77,
+        "lo": 0.72,
+        "hi": 3.23,
+        "n_valid_resamples": 2000
+      }
+    }
+  },
+  "significance": {
+    "test": "McNemar (paired, same windows)",
+    "combined_vs_role1": {
+      "p_value": 1.0,
+      "statistic": 0.0,
+      "method": "no_discordant_pairs",
+      "only_a_correct": 0,
+      "only_b_correct": 0,
+      "both_correct": 475,
+      "both_wrong": 8,
+      "significant_at_0.05": false
+    },
+    "combined_vs_role3": {
+      "p_value": 0.0,
+      "statistic": 82.0455,
+      "method": "chi2_continuity_corrected",
+      "only_a_correct": 103,
+      "only_b_correct": 7,
+      "both_correct": 372,
+      "both_wrong": 1,
+      "n_discordant": 110,
+      "significant_at_0.05": true
+    },
+    "role1_vs_role3": {
+      "p_value": 0.0,
+      "statistic": 82.0455,
+      "method": "chi2_continuity_corrected",
+      "only_a_correct": 103,
+      "only_b_correct": 7,
+      "both_correct": 372,
+      "both_wrong": 1,
+      "n_discordant": 110,
+      "significant_at_0.05": true
+    },
+    "interpretation": "'only_a_correct' counts windows the FIRST-named method got right and the second did not. A significant p with only_a_correct > only_b_correct supports the first method being better on this data."
+  },
+  "ablation": {
+    "role1_only": {
+      "accuracy": 98.34,
+      "precision": 92.55,
+      "recall": 98.86,
+      "f1_score": 95.6,
+      "fpr": 1.77,
+      "tp": 87,
+      "tn": 388,
+      "fp": 7,
+      "fn": 1
+    },
+    "role3_only": {
+      "accuracy": 78.47,
+      "precision": 13.64,
+      "recall": 3.41,
+      "f1_score": 5.45,
+      "fpr": 4.81,
+      "tp": 3,
+      "tn": 376,
+      "fp": 19,
+      "fn": 85
+    },
+    "combined": {
+      "accuracy": 98.34,
+      "precision": 92.55,
+      "recall": 98.86,
+      "f1_score": 95.6,
+      "fpr": 1.77,
+      "tp": 87,
+      "tn": 388,
+      "fp": 7,
+      "fn": 1
+    }
+  },
+  "per_family": {
+    "role1_only": [
+      {
+        "Family": "Benign",
+        "Windows": 395,
+        "Correct": 388,
+        "Accuracy %": 98.2
+      },
+      {
+        "Family": "Bot",
+        "Windows": 49,
+        "Correct": 48,
+        "Accuracy %": 98.0
+      },
+      {
+        "Family": "DDoS",
+        "Windows": 21,
+        "Correct": 21,
+        "Accuracy %": 100.0
+      },
+      {
+        "Family": "PortScan",
+        "Windows": 18,
+        "Correct": 18,
+        "Accuracy %": 100.0
+      }
+    ],
+    "role3_only": [
+      {
+        "Family": "Benign",
+        "Windows": 395,
+        "Correct": 376,
+        "Accuracy %": 95.2
+      },
+      {
+        "Family": "Bot",
+        "Windows": 49,
+        "Correct": 2,
+        "Accuracy %": 4.1
+      },
+      {
+        "Family": "DDoS",
+        "Windows": 21,
+        "Correct": 0,
+        "Accuracy %": 0.0
+      },
+      {
+        "Family": "PortScan",
+        "Windows": 18,
+        "Correct": 1,
+        "Accuracy %": 5.6
+      }
+    ],
+    "combined": [
+      {
+        "Family": "Benign",
+        "Windows": 395,
+        "Correct": 388,
+        "Accuracy %": 98.2
+      },
+      {
+        "Family": "Bot",
+        "Windows": 49,
+        "Correct": 48,
+        "Accuracy %": 98.0
+      },
+      {
+        "Family": "DDoS",
+        "Windows": 21,
+        "Correct": 21,
+        "Accuracy %": 100.0
+      },
+      {
+        "Family": "PortScan",
+        "Windows": 18,
+        "Correct": 18,
+        "Accuracy %": 100.0
+      }
+    ]
+  },
+  "llm_efficiency": {
+    "llm_calls": 480,
+    "cache_hits": 0,
+    "auto_benign": 3,
+    "total_windows": 483,
+    "llm_call_rate_pct": 99.4
+  },
+  "latency": {
+    "role1_per_window": {
+      "n": 483,
+      "mean_s": 0.274,
+      "p50_s": 0.262,
+      "p95_s": 0.359,
+      "max_s": 1.796
+    },
+    "role1_per_flow_normalised_ms": 0.1882,
+    "role3_per_llm_call": {
+      "n": 480,
+      "mean_s": 7.632,
+      "p50_s": 7.54,
+      "p95_s": 8.7,
+      "max_s": 26.03
+    }
+  },
+  "agreement": {
+    "n_conflicts": 387,
+    "n_agreements": 6,
+    "conflict_rate_pct": 80.1
+  },
+  "performance": {
+    "wall_clock_seconds": 918.4549100399017,
+    "windows_per_hour": 1893.2,
+    "flows_per_second": 765.5,
+    "peak_rss_mb": 1480.2,
+    "peak_rss_method": "psutil_rss"
+  }
+}

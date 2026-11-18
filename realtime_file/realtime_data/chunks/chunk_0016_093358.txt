@@ -1,0 +1,35 @@
+====================================================================
+LOG WINDOW #0016
+Time range : 2026-11-16 09:33:58 UTC → 2026-11-16 09:34:02 UTC
+Suricata alerts :    2  | Network flows :     3
+====================================================================
+
+SURICATA ALERTS (2 total, 2 unique group(s)):
+------------------------------------------------------------
+  [2026-11-16T15:33:24] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.1.194:0 → 192.168.1.169:0  proto=ICMP
+  [2026-11-16T15:33:24] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.1.169:0 → 192.168.1.194:0  proto=ICMP
+
+PROTOCOL METADATA (1 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:43428 → 192.168.1.169 | GET ?/
+
+NETWORK FLOWS — top 3 of 3 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.189  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=8996174.0  Total Fwd Packets=5  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=46.7
+  Src IP=0.0.0.0  Src Port=68  Dst IP=255.255.255.255  Destination Port=67  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.1.1  Src Port=67  Dst IP=255.255.255.255  Destination Port=68  Protocol=17  Flow Duration=0.0  Total Fwd Packets=2  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Alert signatures  : 2x SURICATA ICMPv4 unknown code
+  Total window flows: 3
+  Unique source IPs : 3
+  Distinct dst ports: 3  (top: [67, 68, 5353])
+  Protocols (6=TCP,17=UDP): {'17': 3}
+  TCP SYN summary   : total_syn=0, half_open_flows=0
+  Role 1 assessment : Benign (99.3%)
+====================================================================

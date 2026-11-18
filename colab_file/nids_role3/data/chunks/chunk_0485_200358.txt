@@ -1,0 +1,56 @@
+====================================================================
+LOG WINDOW #0485
+Time range : 2017-07-06 20:03:58 UTC → 2017-07-06 20:04:58 UTC
+Suricata alerts :    7  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (7):
+------------------------------------------------------------
+  [2017-07-07T02:04:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:9981 → 192.168.10.3:88  proto=TCP
+  [2017-07-07T02:04:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:9981 → 192.168.10.3:88  proto=TCP
+  [2017-07-07T02:04:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:88 → 192.168.10.9:9981  proto=TCP
+  [2017-07-07T02:04:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.3:88 → 192.168.10.9:9981  proto=TCP
+  [2017-07-07T02:04:05] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.9:9982 → 192.168.10.3:88  proto=TCP
+  [2017-07-07T02:04:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:9980 → 192.168.10.3:445  proto=TCP
+  [2017-07-07T02:04:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:9980 → 192.168.10.3:445  proto=TCP
+
+PROTOCOL METADATA (80 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.9 queried DC.Testbed1.ca type=A
+  DNS  192.168.10.9 queried DC.Testbed1.ca type=A
+  DNS  192.168.10.9 queried DC.Testbed1.ca type=A
+  DNS  192.168.10.9 queried DC.Testbed1.ca type=A
+  DNS  192.168.10.9 queried _ldap._tcp.Default-First-Site-Name._sites.Testbed1.ca type=SRV
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0.0  Dst IP=8.0.6.4  Destination Port=0.0  Protocol=0.0  Flow Duration=20510960.0  Total Fwd Packets=157.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=0.0
+  Src IP=192.168.10.9  Src Port=9980.0  Dst IP=192.168.10.3  Destination Port=445.0  Protocol=6.0  Flow Duration=212177.0  Total Fwd Packets=55.0  Total Backward Packets=52.0  Init_Win_bytes_backward=2050.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=114611.9
+  Src IP=192.168.10.9  Src Port=138.0  Dst IP=192.168.10.255  Destination Port=138.0  Protocol=17.0  Flow Duration=18.0  Total Fwd Packets=11.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=123000000.0
+  Src IP=192.168.10.50  Src Port=138.0  Dst IP=192.168.10.255  Destination Port=138.0  Protocol=17.0  Flow Duration=19.0  Total Fwd Packets=10.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=125000000.0
+  Src IP=192.168.10.9  Src Port=9981.0  Dst IP=192.168.10.3  Destination Port=88.0  Protocol=6.0  Flow Duration=1268.0  Total Fwd Packets=9.0  Total Backward Packets=6.0  Init_Win_bytes_backward=2053.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=4755520.5
+  Src IP=192.168.10.9  Src Port=9982.0  Dst IP=192.168.10.3  Destination Port=88.0  Protocol=6.0  Flow Duration=714.0  Total Fwd Packets=7.0  Total Backward Packets=4.0  Init_Win_bytes_backward=2053.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7675070.0
+  Src IP=192.168.10.8  Src Port=137.0  Dst IP=192.168.10.3  Destination Port=137.0  Protocol=17.0  Flow Duration=9079292.0  Total Fwd Packets=6.0  Total Backward Packets=6.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=85.9
+  Src IP=192.168.10.51  Src Port=41502.0  Dst IP=174.35.72.11  Destination Port=80.0  Protocol=6.0  Flow Duration=5023603.0  Total Fwd Packets=3.0  Total Backward Packets=1.0  Init_Win_bytes_backward=65535.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=0.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window
+  Unique source IPs : 5
+  Top dest ports    : [88.0, 138.0, 445.0, 0.0, 137.0]
+  Protocols         : {6.0: 4, 17.0: 3, 0.0: 1}
+====================================================================

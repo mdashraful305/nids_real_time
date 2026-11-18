@@ -1,0 +1,56 @@
+====================================================================
+LOG WINDOW #0076
+Time range : 2017-07-05 12:58:42 UTC → 2017-07-05 12:59:42 UTC
+Suricata alerts :    7  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (7):
+------------------------------------------------------------
+  [2017-07-05T18:59:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.72.173.26:443 → 192.168.10.9:15706  proto=TCP
+  [2017-07-05T18:59:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:49618 → 192.168.10.50:13686  proto=TCP
+  [2017-07-05T18:59:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:49618 → 192.168.10.50:13686  proto=TCP
+  [2017-07-05T18:59:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:49618 → 192.168.10.50:13686  proto=TCP
+  [2017-07-05T18:59:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:49618 → 192.168.10.50:13686  proto=TCP
+  [2017-07-05T18:59:25] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:49618 → 192.168.10.50:13686  proto=TCP
+  [2017-07-05T18:59:31] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    74.125.29.109:465 → 192.168.10.9:15707  proto=TCP
+
+PROTOCOL METADATA (468 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.16 queried ping.chartbeat.net type=A
+  DNS  192.168.10.16 queried ping.chartbeat.net type=A
+  DNS  192.168.10.16 queried ping.chartbeat.net type=AAAA
+  DNS  192.168.10.16 queried ping.chartbeat.net type=AAAA
+  DNS  192.168.10.3 queried ping.chartbeat.net type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=119139643  Total Fwd Packets=165  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.25  Src Port=50372  Dst IP=192.168.10.50  Destination Port=139  Protocol=6  Flow Duration=64239  Total Fwd Packets=49  Total Backward Packets=30  Init_Win_bytes_backward=269  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=88357.5
+  Src IP=192.168.10.50  Src Port=54710  Dst IP=192.168.10.3  Destination Port=389  Protocol=6  Flow Duration=112766587  Total Fwd Packets=36  Total Backward Packets=18  Init_Win_bytes_backward=257  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=114.8
+  Src IP=192.168.10.50  Src Port=53690  Dst IP=192.168.10.3  Destination Port=3268  Protocol=6  Flow Duration=112732492  Total Fwd Packets=32  Total Backward Packets=16  Init_Win_bytes_backward=2078  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=67.4
+  Src IP=192.168.10.3  Src Port=57233  Dst IP=224.0.0.252  Destination Port=5355  Protocol=17  Flow Duration=419239  Total Fwd Packets=26  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5581.5
+  Src IP=192.168.10.8  Src Port=50948  Dst IP=224.0.0.252  Destination Port=5355  Protocol=17  Flow Duration=99972  Total Fwd Packets=26  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5721.6
+  Src IP=192.168.10.17  Src Port=54888  Dst IP=172.217.10.14  Destination Port=443  Protocol=6  Flow Duration=116043125  Total Fwd Packets=25  Total Backward Packets=23  Init_Win_bytes_backward=562  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=164.1
+  Src IP=192.168.10.17  Src Port=52741  Dst IP=172.217.10.78  Destination Port=443  Protocol=6  Flow Duration=115870409  Total Fwd Packets=24  Total Backward Packets=22  Init_Win_bytes_backward=377  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=86.6
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 6
+  Top dest ports    : [5355, 443, 139, 0, 3268]
+  Protocols         : {6: 5, 17: 2, 0: 1}
+====================================================================

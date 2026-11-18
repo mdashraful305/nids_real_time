@@ -1,0 +1,107 @@
+{
+  "baseline": "plain_xgboost",
+  "n_features": 72,
+  "n_classes": 13,
+  "n_train": 480000,
+  "n_test": 120000,
+  "accuracy_pct": 99.96,
+  "macro_f1_pct": 95.81,
+  "weighted_f1_pct": 99.96,
+  "per_class": {
+    "BENIGN": {
+      "precision": 0.9998170383076044,
+      "recall": 0.9998513385250495,
+      "f1-score": 0.9998341881221519,
+      "support": 87447.0
+    },
+    "Bot": {
+      "precision": 0.9594594594594594,
+      "recall": 0.9342105263157895,
+      "f1-score": 0.9466666666666667,
+      "support": 76.0
+    },
+    "DDoS": {
+      "precision": 1.0,
+      "recall": 0.9997969543147208,
+      "f1-score": 0.9998984668494263,
+      "support": 4925.0
+    },
+    "DoS GoldenEye": {
+      "precision": 1.0,
+      "recall": 0.9949494949494949,
+      "f1-score": 0.9974683544303797,
+      "support": 396.0
+    },
+    "DoS Hulk": {
+      "precision": 0.9986516853932584,
+      "recall": 0.9997750281214848,
+      "f1-score": 0.9992130410342889,
+      "support": 8890.0
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.995260663507109,
+      "recall": 0.9905660377358491,
+      "f1-score": 0.9929078014184397,
+      "support": 212.0
+    },
+    "DoS slowloris": {
+      "precision": 1.0,
+      "recall": 0.9865470852017937,
+      "f1-score": 0.9932279909706546,
+      "support": 223.0
+    },
+    "FTP-Patator": {
+      "precision": 1.0,
+      "recall": 0.9967213114754099,
+      "f1-score": 0.9983579638752053,
+      "support": 305.0
+    },
+    "PortScan": {
+      "precision": 1.0,
+      "recall": 0.9998364409551849,
+      "f1-score": 0.9999182137891551,
+      "support": 6114.0
+    },
+    "SSH-Patator": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 227.0
+    },
+    "Web Attack \u2013 Brute Force": {
+      "precision": 0.8461538461538461,
+      "recall": 0.9482758620689655,
+      "f1-score": 0.8943089430894309,
+      "support": 58.0
+    },
+    "Web Attack \u2013 XSS": {
+      "precision": 0.8125,
+      "recall": 0.52,
+      "f1-score": 0.6341463414634146,
+      "support": 25.0
+    },
+    "nan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 11102.0
+    },
+    "accuracy": 0.999625,
+    "macro avg": {
+      "precision": 0.9701417456016367,
+      "recall": 0.951579236897211,
+      "f1-score": 0.9581498439776319,
+      "support": 120000.0
+    },
+    "weighted avg": {
+      "precision": 0.9996193136224207,
+      "recall": 0.999625,
+      "f1-score": 0.9996138106581578,
+      "support": 120000.0
+    }
+  },
+  "compare_full_pipeline": {
+    "accuracy_pct": 99.87,
+    "macro_f1_pct": 97.34
+  }
+}

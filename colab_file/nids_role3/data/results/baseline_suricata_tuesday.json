@@ -1,0 +1,17 @@
+{
+  "baseline": "suricata_alone",
+  "eve": "/content/eve_tuesday/tuesday_eve.json",
+  "flows": "data/cicflow_csv_labelled/CICIDS2017_tuesday_flows.csv",
+  "window_seconds": 60,
+  "min_alerts": 1,
+  "windows_with_gt": 487,
+  "tp": 0,
+  "fp": 487,
+  "fn": 0,
+  "tn": 0,
+  "precision_pct": 0.0,
+  "recall_pct": 0.0,
+  "f1_pct": 0.0,
+  "fpr_pct": 100.0,
+  "accuracy_pct": 0.0
+}

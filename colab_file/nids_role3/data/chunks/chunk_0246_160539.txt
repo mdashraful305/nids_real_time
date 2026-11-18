@@ -1,0 +1,65 @@
+====================================================================
+LOG WINDOW #0246
+Time range : 2017-07-07 16:05:39 UTC → 2017-07-07 16:06:39 UTC
+Suricata alerts :   10  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (10):
+------------------------------------------------------------
+  [2017-07-07T22:05:43] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    34.211.94.203:443 → 192.168.10.15:54225  proto=TCP
+  [2017-07-07T22:06:06] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.50.75.27:80 → 192.168.10.15:54227  proto=TCP
+  [2017-07-07T22:06:06] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.50.75.27:80 → 192.168.10.15:54228  proto=TCP
+  [2017-07-07T22:06:06] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.90.89.181:443 → 192.168.10.15:54226  proto=TCP
+  [2017-07-07T22:06:06] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.90.89.181:443 → 192.168.10.15:54226  proto=TCP
+  [2017-07-07T22:06:09] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    172.217.9.238:443 → 192.168.10.19:48949  proto=TCP
+  [2017-07-07T22:06:09] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:48949 → 172.217.9.238:443  proto=TCP
+  [2017-07-07T22:06:09] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:48949 → 172.217.9.238:443  proto=TCP
+  [2017-07-07T22:06:09] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:48949 → 172.217.9.238:443  proto=TCP
+  [2017-07-07T22:06:17] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    74.119.118.84:80 → 192.168.10.15:54076  proto=TCP
+
+PROTOCOL METADATA (140 events, showing first 5):
+------------------------------------------------------------
+  HTTP 172.16.0.1:40622 → 192.168.10.50 | GET 205.174.165.68/dv/
+  HTTP 172.16.0.1:40622 → 192.168.10.50 | GET 205.174.165.68/dv/login.php
+  DNS  192.168.10.15 queried detectportal.firefox.com type=A
+  DNS  192.168.10.15 queried detectportal.firefox.com type=A
+  DNS  192.168.10.3 queried detectportal.firefox.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.15  Src Port=54225  Dst IP=34.211.94.203  Destination Port=443  Protocol=6  Flow Duration=60623163  Total Fwd Packets=13  Total Backward Packets=11  Init_Win_bytes_backward=31440  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=83.9
+  Src IP=192.168.10.51  Src Port=59119  Dst IP=162.213.33.50  Destination Port=443  Protocol=6  Flow Duration=1430301  Total Fwd Packets=9  Total Backward Packets=11  Init_Win_bytes_backward=252  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3253.2
+  Src IP=192.168.10.51  Src Port=59120  Dst IP=162.213.33.50  Destination Port=443  Protocol=6  Flow Duration=3341837  Total Fwd Packets=9  Total Backward Packets=11  Init_Win_bytes_backward=252  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1392.3
+  Src IP=192.168.10.15  Src Port=137  Dst IP=192.168.10.3  Destination Port=137  Protocol=17  Flow Duration=477  Total Fwd Packets=6  Total Backward Packets=6  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1635220.1
+  Src IP=172.16.0.1  Src Port=40620  Dst IP=192.168.10.50  Destination Port=80  Protocol=6  Flow Duration=5021059  Total Fwd Packets=6  Total Backward Packets=5  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=421.6
+  Src IP=172.16.0.1  Src Port=40622  Dst IP=192.168.10.50  Destination Port=80  Protocol=6  Flow Duration=5024211  Total Fwd Packets=6  Total Backward Packets=5  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=421.4
+  Src IP=192.168.10.14  Src Port=57821  Dst IP=192.168.10.3  Destination Port=53  Protocol=17  Flow Duration=30744  Total Fwd Packets=4  Total Backward Packets=2  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7676.3
+  Src IP=192.168.10.15  Src Port=53931  Dst IP=192.168.10.3  Destination Port=53  Protocol=17  Flow Duration=31925  Total Fwd Packets=4  Total Backward Packets=2  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=15097.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA HTTP unable to match response to request, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 4
+  Top dest ports    : [443, 80, 53, 137]
+  Protocols         : {6: 5, 17: 3}
+====================================================================

@@ -1,0 +1,53 @@
+====================================================================
+LOG WINDOW #0244
+Time range : 2017-07-06 16:02:58 UTC → 2017-07-06 16:03:58 UTC
+Suricata alerts :    6  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (6):
+------------------------------------------------------------
+  [2017-07-06T22:03:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:4903 → 192.168.10.50:7767  proto=TCP
+  [2017-07-06T22:03:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:4903 → 192.168.10.50:7767  proto=TCP
+  [2017-07-06T22:03:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:4903 → 192.168.10.50:7767  proto=TCP
+  [2017-07-06T22:03:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:4903 → 192.168.10.50:7767  proto=TCP
+  [2017-07-06T22:03:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:4903 → 192.168.10.50:7767  proto=TCP
+  [2017-07-06T22:03:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:4903 → 192.168.10.50:7767  proto=TCP
+
+PROTOCOL METADATA (26 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.3 queried incoming.telemetry.mozilla.org type=A
+  DNS  192.168.10.8 queried incoming.telemetry.mozilla.org type=A
+  DNS  192.168.10.8 queried incoming.telemetry.mozilla.org type=A
+  DNS  192.168.10.8 queried pipeline-edge-prod-24-1300278808.us-west-2.elb.amazonaws.com type=A
+  DNS  192.168.10.8 queried pipeline-edge-prod-24-1300278808.us-west-2.elb.amazonaws.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.9  Src Port=4902.0  Dst IP=192.168.10.50  Destination Port=21.0  Protocol=6.0  Flow Duration=161886.0  Total Fwd Packets=18.0  Total Backward Packets=25.0  Init_Win_bytes_backward=229.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=4188.1
+  Src IP=192.168.10.9  Src Port=4903.0  Dst IP=192.168.10.50  Destination Port=7767.0  Protocol=6.0  Flow Duration=31701.0  Total Fwd Packets=15.0  Total Backward Packets=6.0  Init_Win_bytes_backward=357.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=648433.8
+  Src IP=192.168.10.50  Src Port=138.0  Dst IP=192.168.10.255  Destination Port=138.0  Protocol=17.0  Flow Duration=44.0  Total Fwd Packets=13.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=70000000.0
+  Src IP=192.168.10.8  Src Port=52518.0  Dst IP=172.217.6.230  Destination Port=443.0  Protocol=6.0  Flow Duration=117679344.0  Total Fwd Packets=10.0  Total Backward Packets=12.0  Init_Win_bytes_backward=567.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=9.3
+  Src IP=192.168.10.51  Src Port=51204.0  Dst IP=162.213.33.50  Destination Port=443.0  Protocol=6.0  Flow Duration=1870978.0  Total Fwd Packets=9.0  Total Backward Packets=11.0  Init_Win_bytes_backward=254.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=2486.9
+  Src IP=192.168.10.51  Src Port=51205.0  Dst IP=162.213.33.50  Destination Port=443.0  Protocol=6.0  Flow Duration=3572711.0  Total Fwd Packets=9.0  Total Backward Packets=11.0  Init_Win_bytes_backward=252.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1302.4
+  Src IP=192.168.10.8  Src Port=52425.0  Dst IP=172.217.12.206  Destination Port=443.0  Protocol=6.0  Flow Duration=63180080.0  Total Fwd Packets=7.0  Total Backward Packets=2.0  Init_Win_bytes_backward=748.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=4.4
+  Src IP=192.168.10.8  Src Port=52433.0  Dst IP=157.240.0.35  Destination Port=443.0  Protocol=6.0  Flow Duration=63169204.0  Total Fwd Packets=7.0  Total Backward Packets=4.0  Init_Win_bytes_backward=132.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=5.7
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 4
+  Top dest ports    : [443.0, 21.0, 7767.0, 138.0]
+  Protocols         : {6.0: 7, 17.0: 1}
+====================================================================

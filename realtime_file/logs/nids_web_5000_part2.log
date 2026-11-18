@@ -1,0 +1,433 @@
+
+════════════════════════════════════════════════════════════
+  NIDS Web Dashboard — Role 1 (ML) vs Role 3 (LLM)
+════════════════════════════════════════════════════════════
+  Run Dir : data/runs/live_20261116_095911
+  PKL     : universal_nids_output.pkl
+  Source  : wlp0s20f3  (backend=dumpcap)
+  Host IP : 192.168.1.169  (LAN=192.168.1.0/24)
+  Ollama  : https://presenting-characteristics-kathy-anybody.trycloudflare.com  model=qwen2.5:1.5b  (custom/3rd-party)
+  LLM     : enabled (ALL flows sent to LLM for comparison)
+  SHAP    : xgb
+  Web UI  : http://localhost:5000
+════════════════════════════════════════════════════════════
+
+  Loading model…
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:11] WARNING: /__w/xgboost/xgboost/src/gbm/gbtree.cc:439: Changing updater from `grow_gpu_hist` to `grow_quantile_histmaker`.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:11] WARNING: /__w/xgboost/xgboost/src/context.cc:55: No visible GPU is found, setting device to CPU.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:11] WARNING: /__w/xgboost/xgboost/src/context.cc:218: Device is changed from GPU to CPU as we couldn't find any available GPU on the system.
+  setstate(state)
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator RandomForestClassifier from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:13] WARNING: /__w/xgboost/xgboost/src/gbm/gbtree.cc:439: Changing updater from `grow_gpu_hist` to `grow_quantile_histmaker`.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:13] WARNING: /__w/xgboost/xgboost/src/context.cc:55: No visible GPU is found, setting device to CPU.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:13] WARNING: /__w/xgboost/xgboost/src/context.cc:218: Device is changed from GPU to CPU as we couldn't find any available GPU on the system.
+  setstate(state)
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator LabelEncoder from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator RobustScaler from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+  ✓ Feature extractor: fast packet-aligned dpkt (extracts real TCP Init_Win, payload sizes, act_data_pkt_fwd, min_seg_size_forward, Fwd Header Length)
+  ✓ Model loaded
+
+  ✓ Fresh state (--fresh)
+
+  ✓ Ollama ready (qwen2.5:1.5b)
+
+  Capture filter: excluding self-traffic (not (host 127.0.0.1 or port 5000 or (src host 192.168.1.169 and not dst net 192.168.1.0/24) or (dst host 192.168.1.169 and not src net 192.168.1.0/24) or port 5001))
+
+ * Serving Flask app 'nids_web'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.169:5000
+Press CTRL+C to quit
+  ✓ dumpcap live capture active on wlp0s20f3 (PID 70002, 5s PCAP segments, extractor=fast)
+127.0.0.1 - - [16/Nov/2026 15:59:15] "GET /api/stats HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:25] "GET /api/flows HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:25] "GET /api/stats HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:25] "GET /api/phase HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:25] "GET /stream HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:28] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:48] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:53] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:55] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 15:59:58] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:00] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:01] "GET /stream HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:03] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:04] "GET /api/flows HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:04] "GET /api/phase HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:04] "GET /api/stats HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:04] "GET /stream HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:08] "GET /api/stats HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:08] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:10] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:55] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:55] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:00:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:00] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:00] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:02] "GET /stream HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:10] "GET /api/drain_status HTTP/1.1" 200 -
+  🔎 proba flag :::0 → top=Benign(87.7%) 2nd=Brute Force(10.63%) notable_non_benign=[Brute Force=10.63%]
+  🔎 proba flag 0.0.0.0:67 → top=Benign(88.5%) 2nd=DoS(10.86%) notable_non_benign=[DoS=10.86%]
+  🔎 proba flag 192.168.1.1:68 → top=Benign(83.2%) 2nd=DoS(14.82%) notable_non_benign=[DoS=14.82%]
+127.0.0.1 - - [16/Nov/2026 16:01:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:19] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:23] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:25] "GET /api/drain_status HTTP/1.1" 200 -
+  🔎 proba flag 192.168.1.1:68 → top=Benign(74.5%) 2nd=DoS(24.71%) notable_non_benign=[DoS=24.71%]
+127.0.0.1 - - [16/Nov/2026 16:01:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:28] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:29] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:33] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:34] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:38] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:39] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:43] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:44] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:48] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:49] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:53] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:54] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:55] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:58] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:01:59] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:00] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:03] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:04] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:08] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:09] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:10] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:13] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:14] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:18] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:19] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:24] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:29] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:34] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:39] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:44] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:49] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:54] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:02:59] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:03] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:04] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:08] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:09] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:10] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:13] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:14] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:24] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:29] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:34] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:39] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:44] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:49] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:54] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:56] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:58] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:59] "GET /stream HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:03:59] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:01] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:03] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:04] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:06] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:08] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:10] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:13] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:14] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:18] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:19] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:28] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:29] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:33] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:34] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:38] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:39] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:43] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:44] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:48] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:49] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:53] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:54] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:55] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:04:59] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:00] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:03] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:04] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:08] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:09] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:10] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:13] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:14] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:18] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:19] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:23] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:24] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:28] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:29] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:35] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:38] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:39] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:43] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:44] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:48] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:49] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:53] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:54] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:55] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:58] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:05:59] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:00] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:03] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:04] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:08] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:09] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:10] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:13] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:14] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:18] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:19] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:23] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:24] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:28] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:29] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:33] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:34] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:37] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:40] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:42] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:45] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:47] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:48] "POST /api/capture/stop_drain HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:48] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:49] "POST /api/capture/stop_drain HTTP/1.1" 200 -
+  ⏳ Approach A Role 1 finished; draining 1 queued Role 3 LLM calls...
+127.0.0.1 - - [16/Nov/2026 16:06:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:50] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:52] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:53] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:54] "GET /api/drain_status HTTP/1.1" 200 -
+  ✓ Approach A drain complete (all PCAPs, flows, and LLM responses finished)
+127.0.0.1 - - [16/Nov/2026 16:06:55] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:57] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:58] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:06:59] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:00] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:02] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:03] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:04] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:05] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:07] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:08] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:09] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:10] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:12] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:13] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:14] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:15] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:17] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:18] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:19] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:20] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:22] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:23] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:24] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:25] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:27] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:28] "GET /stream HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:28] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:29] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:30] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:32] "GET /api/drain_status HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 16:07:33] "GET /api/drain_status HTTP/1.1" 200 -

@@ -1,0 +1,17 @@
+{
+  "ready_ts_utc": "2026-11-16T09:59:58.378533+00:00",
+  "run_dir": "data/runs/live_20261116_095911",
+  "iface": "wlp0s20f3",
+  "ollama_url": "https://presenting-characteristics-kathy-anybody.trycloudflare.com",
+  "ollama_model": "qwen2.5:1.5b",
+  "approach_a_url": "http://localhost:5000",
+  "approach_b_url": "http://localhost:5001",
+  "pids": {
+    "nids_web_5000": 69970,
+    "live_b_worker": 70004,
+    "suricata": 70024,
+    "main_unified_live": 70313,
+    "app_5001": 70314
+  },
+  "suricata_started": true
+}

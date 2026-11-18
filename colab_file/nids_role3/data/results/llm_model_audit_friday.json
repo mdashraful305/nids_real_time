@@ -1,0 +1,70 @@
+{
+  "qwen2.5:1.5b": {
+    "source_csv": "pw_friday.csv",
+    "metrics": {
+      "role3_precision": 17.68,
+      "role3_recall": 95.45,
+      "role3_f1": 29.84,
+      "role3_fpr": 98.99,
+      "combined_f1": 95.6,
+      "combined_fpr": 1.77,
+      "llm_mean_s": 3.16,
+      "llm_p95_s": 3.88,
+      "llm_calls": 461,
+      "windows": 483,
+      "wall_min": 6.7
+    },
+    "windows": 483,
+    "role3_raw_counts": {
+      "attack": 475,
+      "suspicious": 4,
+      "benign": 4
+    },
+    "gt_vs_role3_raw": {
+      "attack": {
+        "attack": 84,
+        "benign": 1,
+        "suspicious": 3
+      },
+      "benign": {
+        "attack": 391,
+        "benign": 3,
+        "suspicious": 1
+      }
+    }
+  },
+  "qwen2.5:7b": {
+    "source_csv": "thesis_per_window_20261115_082651.csv",
+    "metrics": {
+      "role3_precision": 13.64,
+      "role3_recall": 3.41,
+      "role3_f1": 5.45,
+      "role3_fpr": 4.81,
+      "combined_f1": 95.6,
+      "combined_fpr": 1.77,
+      "llm_mean_s": 7.632,
+      "llm_p95_s": 8.7,
+      "llm_calls": 480,
+      "windows": 483,
+      "wall_min": 15.3
+    },
+    "windows": 483,
+    "role3_raw_counts": {
+      "suspicious": 457,
+      "attack": 22,
+      "benign": 4
+    },
+    "gt_vs_role3_raw": {
+      "attack": {
+        "attack": 3,
+        "benign": 1,
+        "suspicious": 84
+      },
+      "benign": {
+        "attack": 19,
+        "benign": 3,
+        "suspicious": 373
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+====================================================================
+LOG WINDOW #0005
+Time range : 2026-11-16 09:27:10 UTC → 2026-11-16 09:27:15 UTC
+Suricata alerts :    0  | Network flows :     6
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+NETWORK FLOWS — top 6 of 6 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=2953  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=1971.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=120750.9
+  Src IP=192.168.1.194  Src Port=2954  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=1804.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=131929.0
+  Src IP=192.168.1.194  Src Port=2955  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3089.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=77047.6
+  Src IP=192.168.1.194  Src Port=2956  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3088.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=77072.5
+  Src IP=192.168.1.194  Src Port=2957  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=3026.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=78651.7
+  Src IP=192.168.1.194  Src Port=2958  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=2097.0  Total Fwd Packets=3  Total Backward Packets=1  Init_Win_bytes_backward=64240  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=1  Flow Bytes/s=113495.5
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Total window flows: 6
+  Unique source IPs : 1
+  Distinct dst ports: 1  (top: [80])
+  Protocols (6=TCP,17=UDP): {'6': 6}
+  TCP SYN summary   : total_syn=18, half_open_flows=6
+  Role 1 assessment : Benign (98.6%)
+====================================================================

@@ -1,0 +1,261 @@
+{
+  "generated_at": "2026-11-15T07:42:08.088535",
+  "attack_window_threshold": 0.03,
+  "dataset": "CICIDS2017",
+  "windows_total": 487,
+  "windows_with_ground_truth": 487,
+  "flows_total": 445744,
+  "uncertainty": {
+    "method": "percentile bootstrap over windows",
+    "n_resamples": 2000,
+    "seed": 42,
+    "n_windows": 487,
+    "role1_only": {
+      "accuracy": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "precision": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "recall": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "f1_score": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "fpr": {
+        "point": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n_valid_resamples": 2000
+      }
+    },
+    "role3_only": {
+      "accuracy": {
+        "point": 25.87,
+        "lo": 21.97,
+        "hi": 29.77,
+        "n_valid_resamples": 2000
+      },
+      "precision": {
+        "point": 25.72,
+        "lo": 21.77,
+        "hi": 29.63,
+        "n_valid_resamples": 2000
+      },
+      "recall": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "f1_score": {
+        "point": 40.92,
+        "lo": 35.75,
+        "hi": 45.71,
+        "n_valid_resamples": 2000
+      },
+      "fpr": {
+        "point": 99.72,
+        "lo": 99.14,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      }
+    },
+    "combined": {
+      "accuracy": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "precision": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "recall": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "f1_score": {
+        "point": 100.0,
+        "lo": 100.0,
+        "hi": 100.0,
+        "n_valid_resamples": 2000
+      },
+      "fpr": {
+        "point": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n_valid_resamples": 2000
+      }
+    }
+  },
+  "significance": {
+    "test": "McNemar (paired, same windows)",
+    "combined_vs_role1": {
+      "p_value": 1.0,
+      "statistic": 0.0,
+      "method": "no_discordant_pairs",
+      "only_a_correct": 0,
+      "only_b_correct": 0,
+      "both_correct": 487,
+      "both_wrong": 0,
+      "significant_at_0.05": false
+    },
+    "combined_vs_role3": {
+      "p_value": 0.0,
+      "statistic": 359.0028,
+      "method": "chi2_continuity_corrected",
+      "only_a_correct": 361,
+      "only_b_correct": 0,
+      "both_correct": 126,
+      "both_wrong": 0,
+      "n_discordant": 361,
+      "significant_at_0.05": true
+    },
+    "role1_vs_role3": {
+      "p_value": 0.0,
+      "statistic": 359.0028,
+      "method": "chi2_continuity_corrected",
+      "only_a_correct": 361,
+      "only_b_correct": 0,
+      "both_correct": 126,
+      "both_wrong": 0,
+      "n_discordant": 361,
+      "significant_at_0.05": true
+    },
+    "interpretation": "'only_a_correct' counts windows the FIRST-named method got right and the second did not. A significant p with only_a_correct > only_b_correct supports the first method being better on this data."
+  },
+  "ablation": {
+    "role1_only": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "fpr": 0.0,
+      "tp": 125,
+      "tn": 362,
+      "fp": 0,
+      "fn": 0
+    },
+    "role3_only": {
+      "accuracy": 25.87,
+      "precision": 25.72,
+      "recall": 100.0,
+      "f1_score": 40.92,
+      "fpr": 99.72,
+      "tp": 125,
+      "tn": 1,
+      "fp": 361,
+      "fn": 0
+    },
+    "combined": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "fpr": 0.0,
+      "tp": 125,
+      "tn": 362,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "per_family": {
+    "role1_only": [
+      {
+        "Family": "Benign",
+        "Windows": 362,
+        "Correct": 362,
+        "Accuracy %": 100.0
+      },
+      {
+        "Family": "Brute Force",
+        "Windows": 125,
+        "Correct": 125,
+        "Accuracy %": 100.0
+      }
+    ],
+    "role3_only": [
+      {
+        "Family": "Benign",
+        "Windows": 362,
+        "Correct": 1,
+        "Accuracy %": 0.3
+      },
+      {
+        "Family": "Brute Force",
+        "Windows": 125,
+        "Correct": 125,
+        "Accuracy %": 100.0
+      }
+    ],
+    "combined": [
+      {
+        "Family": "Benign",
+        "Windows": 362,
+        "Correct": 362,
+        "Accuracy %": 100.0
+      },
+      {
+        "Family": "Brute Force",
+        "Windows": 125,
+        "Correct": 125,
+        "Accuracy %": 100.0
+      }
+    ]
+  },
+  "llm_efficiency": {
+    "llm_calls": 477,
+    "cache_hits": 10,
+    "auto_benign": 0,
+    "total_windows": 487,
+    "llm_call_rate_pct": 97.9
+  },
+  "latency": {
+    "role1_per_window": {
+      "n": 487,
+      "mean_s": 0.275,
+      "p50_s": 0.276,
+      "p95_s": 0.314,
+      "max_s": 0.407
+    },
+    "role1_per_flow_normalised_ms": 0.3,
+    "role3_per_llm_call": {
+      "n": 477,
+      "mean_s": 3.287,
+      "p50_s": 3.14,
+      "p95_s": 3.93,
+      "max_s": 20.81
+    }
+  },
+  "agreement": {
+    "n_conflicts": 362,
+    "n_agreements": 125,
+    "conflict_rate_pct": 74.3
+  },
+  "performance": {
+    "wall_clock_seconds": 419.03060388565063,
+    "windows_per_hour": 4183.9,
+    "flows_per_second": 1063.8,
+    "peak_rss_mb": 1494.8,
+    "peak_rss_method": "psutil_rss"
+  }
+}

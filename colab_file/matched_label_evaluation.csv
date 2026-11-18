@@ -1,0 +1,10 @@
+Dataset,Model,Label space,N classes,Accuracy %,Macro-F1 %
+CICIDS2017,Standalone hybrid,native,12,99.88,91.15
+CICIDS2017,Standalone hybrid,merged (shared),7,99.91,97.26
+CICIDS2017,Universal Ensemble (routed),merged (shared),7,99.91,97.26
+UNSW-NB15,Standalone hybrid,native,9,80.85,59.77
+UNSW-NB15,Standalone hybrid,merged (shared),8,80.96,60.55
+UNSW-NB15,Universal Ensemble (routed),merged (shared),8,81.36,60.84
+NSL-KDD,Standalone hybrid,native,18,99.79,98.55
+NSL-KDD,Standalone hybrid,merged (shared),5,99.88,99.64
+NSL-KDD,Universal Ensemble (routed),merged (shared),5,99.88,99.64

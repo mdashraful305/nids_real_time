@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0416
+Time range : 2017-07-04 18:49:32 UTC → 2017-07-04 18:50:32 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63220  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63220  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63217  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63217  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63220  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63220  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63220  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63217  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63218  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63218  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63218  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63220  proto=TCP
+  [2017-07-05T00:49:32] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63220  proto=TCP
+  [2017-07-05T00:49:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63217  proto=TCP
+  [2017-07-05T00:49:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    203.66.159.1:443 → 192.168.10.25:63221  proto=TCP
+
+PROTOCOL METADATA (346 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.25 → 203.66.159.1 SNI=attach.mobile01.com version=TLSv1
+  TLS  192.168.10.25 → 203.66.159.1 SNI=attach.mobile01.com version=TLSv1
+  TLS  192.168.10.25 → 203.66.159.1 SNI=attach.mobile01.com version=TLSv1
+  TLS  192.168.10.25 → 203.66.159.1 SNI=attach.mobile01.com version=TLSv1
+  HTTP 192.168.10.8:56102 → 23.50.75.27 | POST gs.symcd.com/
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.14  Src Port=57137  Dst IP=185.5.72.153  Destination Port=443  Protocol=6  Flow Duration=61289206  Total Fwd Packets=814  Total Backward Packets=773  Init_Win_bytes_backward=287  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=27357.0
+  Src IP=192.168.10.25  Src Port=63217  Dst IP=203.66.159.1  Destination Port=443  Protocol=6  Flow Duration=43736493  Total Fwd Packets=408  Total Backward Packets=808  Init_Win_bytes_backward=125  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=37022.7
+  Src IP=192.168.10.14  Src Port=57203  Dst IP=192.168.10.3  Destination Port=445  Protocol=6  Flow Duration=100735823  Total Fwd Packets=317  Total Backward Packets=308  Init_Win_bytes_backward=2048  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1442.2
+  Src IP=192.168.10.25  Src Port=63218  Dst IP=203.66.159.1  Destination Port=443  Protocol=6  Flow Duration=43762502  Total Fwd Packets=273  Total Backward Packets=516  Init_Win_bytes_backward=96  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=23845.3
+  Src IP=192.168.10.25  Src Port=63219  Dst IP=203.66.159.1  Destination Port=443  Protocol=6  Flow Duration=41695664  Total Fwd Packets=125  Total Backward Packets=147  Init_Win_bytes_backward=43  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5104.8
+  Src IP=192.168.10.25  Src Port=63220  Dst IP=203.66.159.1  Destination Port=443  Protocol=6  Flow Duration=37336032  Total Fwd Packets=77  Total Backward Packets=143  Init_Win_bytes_backward=43  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6838.2
+  Src IP=192.168.10.25  Src Port=63204  Dst IP=192.168.10.50  Destination Port=139  Protocol=6  Flow Duration=66042  Total Fwd Packets=49  Total Backward Packets=30  Init_Win_bytes_backward=269  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=85945.3
+  Src IP=192.168.10.25  Src Port=63209  Dst IP=202.39.235.195  Destination Port=443  Protocol=6  Flow Duration=48099055  Total Fwd Packets=46  Total Backward Packets=37  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1054.1
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 2
+  Top dest ports    : [443, 445, 139]
+  Protocols         : {6: 8}
+====================================================================

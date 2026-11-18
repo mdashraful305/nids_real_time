@@ -1,0 +1,56 @@
+====================================================================
+LOG WINDOW #0108
+Time range : 2017-07-06 13:46:58 UTC → 2017-07-06 13:47:58 UTC
+Suricata alerts :    7  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (7):
+------------------------------------------------------------
+  [2017-07-06T19:47:00] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    54.69.246.94:443 → 192.168.10.8:50272  proto=TCP
+  [2017-07-06T19:47:16] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.10.25:50159 → 192.168.10.19:139  proto=TCP
+  [2017-07-06T19:47:19] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    204.11.109.66:443 → 192.168.10.15:53817  proto=TCP
+  [2017-07-06T19:47:19] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    204.11.109.66:443 → 192.168.10.15:53818  proto=TCP
+  [2017-07-06T19:47:20] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    152.163.66.131:443 → 192.168.10.15:53839  proto=TCP
+  [2017-07-06T19:47:26] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    72.21.91.29:80 → 192.168.10.15:53808  proto=TCP
+  [2017-07-06T19:47:31] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:53942 → 172.217.12.162:443  proto=TCP
+
+PROTOCOL METADATA (180 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.15 queried c.go-mpulse.net type=A
+  DNS  192.168.10.15 queried c.go-mpulse.net type=A
+  DNS  192.168.10.15 queried c.go-mpulse.net type=A
+  DNS  192.168.10.15 queried c.go-mpulse.net type=A
+  DNS  192.168.10.15 queried c.go-mpulse.net.cdn.cloudflare.net type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.25  Src Port=50159.0  Dst IP=192.168.10.19  Destination Port=139.0  Protocol=6.0  Flow Duration=40854.0  Total Fwd Packets=49.0  Total Backward Packets=26.0  Init_Win_bytes_backward=269.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=138640.0
+  Src IP=192.168.10.8  Src Port=50035.0  Dst IP=172.217.10.6  Destination Port=443.0  Protocol=6.0  Flow Duration=102562736.0  Total Fwd Packets=41.0  Total Backward Packets=72.0  Init_Win_bytes_backward=820.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=394.7
+  Src IP=192.168.10.8  Src Port=50343.0  Dst IP=35.164.147.83  Destination Port=443.0  Protocol=6.0  Flow Duration=116162288.0  Total Fwd Packets=32.0  Total Backward Packets=33.0  Init_Win_bytes_backward=31088.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=348.6
+  Src IP=192.168.10.8  Src Port=50341.0  Dst IP=54.192.48.142  Destination Port=443.0  Protocol=6.0  Flow Duration=115504104.0  Total Fwd Packets=20.0  Total Backward Packets=19.0  Init_Win_bytes_backward=123.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=45.3
+  Src IP=192.168.10.15  Src Port=53955.0  Dst IP=104.16.126.228  Destination Port=443.0  Protocol=6.0  Flow Duration=116038024.0  Total Fwd Packets=19.0  Total Backward Packets=17.0  Init_Win_bytes_backward=31.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=16.6
+  Src IP=192.168.10.8  Src Port=50344.0  Dst IP=72.21.91.29  Destination Port=80.0  Protocol=6.0  Flow Duration=115983880.0  Total Fwd Packets=16.0  Total Backward Packets=14.0  Init_Win_bytes_backward=288.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=11.4
+  Src IP=192.168.10.15  Src Port=53847.0  Dst IP=74.121.142.165  Destination Port=443.0  Protocol=6.0  Flow Duration=110432296.0  Total Fwd Packets=14.0  Total Backward Packets=14.0  Init_Win_bytes_backward=70.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=17.4
+  Src IP=192.168.10.25  Src Port=49222.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=29.0  Total Fwd Packets=13.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=22400000.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window, SURICATA Applayer Detect protocol only one direction
+  Unique source IPs : 3
+  Top dest ports    : [443.0, 139.0, 80.0, 137.0]
+  Protocols         : {6.0: 7, 17.0: 1}
+====================================================================

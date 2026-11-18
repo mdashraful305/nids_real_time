@@ -1,0 +1,47 @@
+{
+  "mode": "realtime",
+  "approach": 1,
+  "data_source": "data/runs/live_20261116_combined/flows.jsonl",
+  "metric_definition": "Per-flow over complete Approach A log. 'hit' = flow received a non-benign verdict. Role 3 evaluates un-suppressed transition/sampling flows (`evaluated`) rather than every redundant flood packet (`ui_suppressed`).",
+  "attacker_ip": "192.168.1.194",
+  "flows_total": 92237,
+  "attacker_flows": 91820,
+  "role1": {
+    "model_only_hits": 4,
+    "hits": 91405,
+    "hit_rate_pct": 99.55
+  },
+  "role3": {
+    "evaluated": 432,
+    "hits": 18,
+    "hit_rate_pct": 4.17,
+    "evaluated_on_r1_attacks": 18,
+    "hits_on_r1_attacks": 18,
+    "agreement_on_r1_attacks_pct": 100.0,
+    "ui_suppressed_skipped": 91387
+  },
+  "benign_side": {
+    "benign_flows_observed": 177,
+    "role1_false_positive_flows": 0,
+    "role3_evaluated": 177,
+    "role3_false_positive_flows": 0,
+    "role3_fpr_pct": 0.0
+  },
+  "hardware": {
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "python": "3.14.5",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i3-1215U",
+    "cpu_count_logical": 8,
+    "ram_total": "MemTotal:        7805604 kB",
+    "gpu": "none / CPU-only",
+    "captured_at": "2026-11-16T10:09:42.495502+00:00"
+  },
+  "role3_prompt": {
+    "system_prompt": "You are a network security analyst in a real-time NIDS.\nOutput ONLY a JSON object matching this exact schema, nothing else:\n{\n  \"verdict\": \"attack\" or \"suspicious\" or \"benign\",\n  \"attack_type\": \"DoS\" or \"PortScan\" or \"Brute Force\" or \"Web Attack\" or \"Bot\" or \"DDoS\" or \"Normal\" or \"Unknown\",\n  \"confidence\": integer 0 to 100,\n  \"explanation\": \"One clear sentence citing specific flow rate, port, HTTP/flag, or signed SHAP evidence.\",\n  \"recommended_action\": \"Recommended action to mitigate the threat or monitor safely.\"\n}\n\nDecision rules:\n- Use \"attack\" ONLY when there is clear malicious behavior: high flow rate (>20 flows in 15s), multi-port probing (>10 distinct_dst_ports -> attack_type=\"PortScan\"), high-rate SYN/flood to 1-3 ports (attack_type=\"DoS\"), repeated HTTP probes/requests (attack_type=\"Web Attack\"), repeated auth-port connections (attack_type=\"Brute Force\"), or a Role 1 Behavioral/Heuristic verdict.\n- Use \"benign\" when Role 1 predicts Benign AND 15s behavioral rates are low (<=5 flows, <=2 destination ports), especially for LAN discovery/control traffic (ICMP, IGMP, mDNS port 5353, SSDP port 1900, DHCP, NTP) or normal single connections.\n- Note on signed SHAP: SHAP listed as \"supporting Benign\" pushed the ML classifier AWAY from attack, NOT toward an attack. Never label a low-rate Benign flow as PortScan merely because Destination Port supports Benign.",
+    "decoding": {
+      "format": "json",
+      "temperature": 0.0,
+      "num_predict": 400
+    }
+  }
+}

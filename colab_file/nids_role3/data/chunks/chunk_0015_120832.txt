@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0015
+Time range : 2017-07-04 12:08:32 UTC → 2017-07-04 12:09:32 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-04T18:08:34] SID:2013504 (sev=3) ET INFO GNU/Linux APT User-Agent Outbound likely related to package management
+    category : Not Suspicious Traffic
+    192.168.10.12:46972 → 91.189.95.83:80  proto=TCP
+  [2017-07-04T18:08:34] SID:2013504 (sev=3) ET INFO GNU/Linux APT User-Agent Outbound likely related to package management
+    category : Not Suspicious Traffic
+    192.168.10.12:53430 → 91.189.88.162:80  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2013504 (sev=3) ET INFO GNU/Linux APT User-Agent Outbound likely related to package management
+    category : Not Suspicious Traffic
+    192.168.10.12:53432 → 91.189.88.162:80  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+  [2017-07-04T18:08:34] SID:2013504 (sev=3) ET INFO GNU/Linux APT User-Agent Outbound likely related to package management
+    category : Not Suspicious Traffic
+    192.168.10.12:53432 → 91.189.88.162:80  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53432  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53432  proto=TCP
+  [2017-07-04T18:08:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    91.189.88.162:80 → 192.168.10.12:53430  proto=TCP
+
+PROTOCOL METADATA (878 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+  DNS  192.168.10.51 queried daisy.ubuntu.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.14  Src Port=49688  Dst IP=165.254.0.104  Destination Port=80  Protocol=6  Flow Duration=4020578  Total Fwd Packets=11930  Total Backward Packets=10252  Init_Win_bytes_backward=960  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5825911.5
+  Src IP=192.168.10.14  Src Port=49679  Dst IP=165.254.0.104  Destination Port=80  Protocol=6  Flow Duration=19381632  Total Fwd Packets=7187  Total Backward Packets=7450  Init_Win_bytes_backward=1262  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=884402.9
+  Src IP=192.168.10.14  Src Port=49689  Dst IP=165.254.0.104  Destination Port=80  Protocol=6  Flow Duration=2314694  Total Fwd Packets=5622  Total Backward Packets=5800  Init_Win_bytes_backward=946  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6257889.5
+  Src IP=192.168.10.14  Src Port=49671  Dst IP=23.15.4.19  Destination Port=80  Protocol=6  Flow Duration=1634250  Total Fwd Packets=5228  Total Backward Packets=6927  Init_Win_bytes_backward=961  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=9753007.0
+  Src IP=192.168.10.14  Src Port=49670  Dst IP=23.15.4.19  Destination Port=80  Protocol=6  Flow Duration=4633221  Total Fwd Packets=4947  Total Backward Packets=4433  Init_Win_bytes_backward=1061  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=2128034.5
+  Src IP=192.168.10.5  Src Port=49246  Dst IP=209.48.71.138  Destination Port=80  Protocol=6  Flow Duration=118031138  Total Fwd Packets=4226  Total Backward Packets=5157  Init_Win_bytes_backward=946  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=90531.7
+  Src IP=192.168.10.17  Src Port=52187  Dst IP=91.189.88.152  Destination Port=80  Protocol=6  Flow Duration=12428431  Total Fwd Packets=1441  Total Backward Packets=2281  Init_Win_bytes_backward=773  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=343017.5
+  Src IP=192.168.10.14  Src Port=49673  Dst IP=23.15.4.19  Destination Port=80  Protocol=6  Flow Duration=610904  Total Fwd Packets=1310  Total Backward Packets=1212  Init_Win_bytes_backward=980  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=4348734.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, ET INFO GNU/Linux APT User-Agent Outbound likely related to package management
+  Unique source IPs : 3
+  Top dest ports    : [80]
+  Protocols         : {6: 8}
+====================================================================

@@ -1,0 +1,56 @@
+====================================================================
+LOG WINDOW #0462
+Time range : 2017-07-06 19:40:58 UTC → 2017-07-06 19:41:58 UTC
+Suricata alerts :    7  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (7):
+------------------------------------------------------------
+  [2017-07-07T01:41:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:58152 → 172.217.7.14:443  proto=TCP
+  [2017-07-07T01:41:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:58152 → 172.217.7.14:443  proto=TCP
+  [2017-07-07T01:41:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:58152 → 172.217.7.14:443  proto=TCP
+  [2017-07-07T01:41:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:58152 → 172.217.7.14:443  proto=TCP
+  [2017-07-07T01:41:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:58152 → 172.217.7.14:443  proto=TCP
+  [2017-07-07T01:41:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    172.217.12.174:443 → 192.168.10.5:58156  proto=TCP
+  [2017-07-07T01:41:56] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    60.199.243.53:80 → 192.168.10.16:55626  proto=TCP
+
+PROTOCOL METADATA (210 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.8:2171 → 178.33.142.90 | GET visit-01.kameleoon.com/_.gif?sc=ca4kfioskh&p=ZXZlbnQ9bnVtYmVyQ2xpY2tzJm51bWJlcj0wJ
+  DNS  192.168.10.9 queried www.ibtimes.co.uk type=A
+  DNS  192.168.10.9 queried www.ibtimes.co.uk type=A
+  DNS  192.168.10.3 queried www.ibtimes.co.uk type=A
+  DNS  192.168.10.3 queried www.ibtimes.co.uk type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0.0  Dst IP=8.0.6.4  Destination Port=0.0  Protocol=0.0  Flow Duration=117814456.0  Total Fwd Packets=147.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=0.0
+  Src IP=192.168.10.5  Src Port=58156.0  Dst IP=172.217.12.174  Destination Port=443.0  Protocol=6.0  Flow Duration=117543088.0  Total Fwd Packets=25.0  Total Backward Packets=28.0  Init_Win_bytes_backward=377.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=82.3
+  Src IP=192.168.10.5  Src Port=58152.0  Dst IP=172.217.7.14  Destination Port=443.0  Protocol=6.0  Flow Duration=117963920.0  Total Fwd Packets=21.0  Total Backward Packets=25.0  Init_Win_bytes_backward=726.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=256.3
+  Src IP=192.168.10.5  Src Port=58150.0  Dst IP=204.237.173.153  Destination Port=80.0  Protocol=6.0  Flow Duration=110058040.0  Total Fwd Packets=16.0  Total Backward Packets=15.0  Init_Win_bytes_backward=980.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=13.1
+  Src IP=192.168.10.5  Src Port=58154.0  Dst IP=172.217.10.142  Destination Port=80.0  Protocol=6.0  Flow Duration=116032096.0  Total Fwd Packets=16.0  Total Backward Packets=14.0  Init_Win_bytes_backward=343.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=10.9
+  Src IP=192.168.10.16  Src Port=54546.0  Dst IP=104.17.104.89  Destination Port=443.0  Protocol=6.0  Flow Duration=105596376.0  Total Fwd Packets=16.0  Total Backward Packets=13.0  Init_Win_bytes_backward=32.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=6.0
+  Src IP=192.168.10.12  Src Port=137.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=24.0  Total Fwd Packets=13.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=27100000.0
+  Src IP=192.168.10.51  Src Port=54067.0  Dst IP=162.213.33.50  Destination Port=443.0  Protocol=6.0  Flow Duration=2601666.0  Total Fwd Packets=10.0  Total Backward Packets=11.0  Init_Win_bytes_backward=252.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1788.5
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window
+  Unique source IPs : 5
+  Top dest ports    : [443.0, 80.0, 0.0, 137.0]
+  Protocols         : {6.0: 6, 0.0: 1, 17.0: 1}
+====================================================================

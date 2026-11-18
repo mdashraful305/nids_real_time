@@ -1,0 +1,59 @@
+====================================================================
+LOG WINDOW #0207
+Time range : 2017-07-06 15:25:58 UTC → 2017-07-06 15:26:58 UTC
+Suricata alerts :    8  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (8):
+------------------------------------------------------------
+  [2017-07-06T21:26:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:56389 → 172.217.10.14:443  proto=TCP
+  [2017-07-06T21:26:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:56389 → 172.217.10.14:443  proto=TCP
+  [2017-07-06T21:26:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:56389 → 172.217.10.14:443  proto=TCP
+  [2017-07-06T21:26:17] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:45371 → 124.153.83.92:443  proto=TCP
+  [2017-07-06T21:26:17] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.10.25:50999 → 192.168.10.19:139  proto=TCP
+  [2017-07-06T21:26:22] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    172.217.10.33:443 → 192.168.10.19:32856  proto=TCP
+  [2017-07-06T21:26:37] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:45371 → 124.153.83.92:443  proto=TCP
+  [2017-07-06T21:26:57] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:45371 → 124.153.83.92:443  proto=TCP
+
+PROTOCOL METADATA (153 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.12 queried smtp.gmail.com type=A
+  DNS  192.168.10.12 queried smtp.gmail.com type=A
+  DNS  192.168.10.12 queried smtp.gmail.com type=AAAA
+  DNS  192.168.10.12 queried smtp.gmail.com type=AAAA
+  DNS  192.168.10.12 queried smtp.gmail.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.25  Src Port=50999.0  Dst IP=192.168.10.19  Destination Port=139.0  Protocol=6.0  Flow Duration=41695.0  Total Fwd Packets=49.0  Total Backward Packets=26.0  Init_Win_bytes_backward=269.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=135843.6
+  Src IP=192.168.10.3  Src Port=137.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=1562513.0  Total Fwd Packets=39.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1248.0
+  Src IP=192.168.10.19  Src Port=37408.0  Dst IP=172.217.6.238  Destination Port=443.0  Protocol=6.0  Flow Duration=115819624.0  Total Fwd Packets=25.0  Total Backward Packets=22.0  Init_Win_bytes_backward=377.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=97.0
+  Src IP=192.168.10.19  Src Port=56389.0  Dst IP=172.217.10.14  Destination Port=443.0  Protocol=6.0  Flow Duration=116044856.0  Total Fwd Packets=24.0  Total Backward Packets=23.0  Init_Win_bytes_backward=562.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=161.2
+  Src IP=192.168.10.12  Src Port=49230.0  Dst IP=172.217.7.2  Destination Port=443.0  Protocol=6.0  Flow Duration=82149696.0  Total Fwd Packets=19.0  Total Backward Packets=18.0  Init_Win_bytes_backward=793.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=59.6
+  Src IP=192.168.10.25  Src Port=49315.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=21.0  Total Fwd Packets=13.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=31000000.0
+  Src IP=192.168.10.17  Src Port=137.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=21.0  Total Fwd Packets=13.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=31000000.0
+  Src IP=192.168.10.16  Src Port=137.0  Dst IP=192.168.10.255  Destination Port=137.0  Protocol=17.0  Flow Duration=63.0  Total Fwd Packets=13.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=10300000.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window, SURICATA Applayer Detect protocol only one direction
+  Unique source IPs : 6
+  Top dest ports    : [137.0, 443.0, 139.0]
+  Protocols         : {6.0: 4, 17.0: 4}
+====================================================================

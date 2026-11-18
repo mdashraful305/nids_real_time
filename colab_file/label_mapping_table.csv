@@ -1,0 +1,40 @@
+Dataset,Native label,Merged (shared) family,Mapped?
+CICIDS2017,BENIGN,Benign,yes
+CICIDS2017,Bot,Bot,yes
+CICIDS2017,DDoS,DDoS,yes
+CICIDS2017,DoS GoldenEye,DoS,yes
+CICIDS2017,DoS Hulk,DoS,yes
+CICIDS2017,DoS Slowhttptest,DoS,yes
+CICIDS2017,DoS slowloris,DoS,yes
+CICIDS2017,FTP-Patator,Brute Force,yes
+CICIDS2017,PortScan,PortScan,yes
+CICIDS2017,SSH-Patator,Brute Force,yes
+CICIDS2017,Web Attack � Brute Force,Web Attack,yes
+CICIDS2017,Web Attack � XSS,Web Attack,yes
+UNSW-NB15,Analysis,Analysis,yes
+UNSW-NB15,Backdoor,Infiltration,yes
+UNSW-NB15,DoS,DoS,yes
+UNSW-NB15,Exploits,Web Attack,yes
+UNSW-NB15,Fuzzers,Fuzzers,yes
+UNSW-NB15,Generic,DoS,yes
+UNSW-NB15,Normal,Benign,yes
+UNSW-NB15,Reconnaissance,PortScan,yes
+UNSW-NB15,Shellcode,Shellcode,yes
+NSL-KDD,apache2,DoS,yes
+NSL-KDD,back,DoS,yes
+NSL-KDD,guess_passwd,Brute Force,yes
+NSL-KDD,ipsweep,PortScan,yes
+NSL-KDD,mailbomb,DoS,yes
+NSL-KDD,mscan,PortScan,yes
+NSL-KDD,neptune,DoS,yes
+NSL-KDD,nmap,PortScan,yes
+NSL-KDD,normal,Benign,yes
+NSL-KDD,portsweep,PortScan,yes
+NSL-KDD,processtable,DoS,yes
+NSL-KDD,saint,PortScan,yes
+NSL-KDD,satan,PortScan,yes
+NSL-KDD,smurf,DoS,yes
+NSL-KDD,snmpguess,Web Attack,yes
+NSL-KDD,teardrop,DoS,yes
+NSL-KDD,warezclient,Web Attack,yes
+NSL-KDD,warezmaster,Web Attack,yes

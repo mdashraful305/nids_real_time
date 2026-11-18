@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0322
+Time range : 2017-07-04 17:15:32 UTC → 2017-07-04 17:16:32 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2053892 (sev=2) ET INFO Suspicious Domain (polyfill .io) in DNS Lookup
+    category : Potentially Bad Traffic
+    192.168.10.12:34086 → 192.168.10.3:53  proto=UDP
+  [2017-07-04T23:15:33] SID:2053892 (sev=2) ET INFO Suspicious Domain (polyfill .io) in DNS Lookup
+    category : Potentially Bad Traffic
+    192.168.10.3:62439 → 192.168.10.1:53  proto=UDP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2053893 (sev=2) ET INFO Suspicious Domain (polyfill .io) in TLS SNI
+    category : Potentially Bad Traffic
+    192.168.10.12:48734 → 151.101.22.109:443  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    151.101.22.109:443 → 192.168.10.12:48734  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    151.101.22.109:443 → 192.168.10.12:48736  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.201:443 → 192.168.10.12:38066  proto=TCP
+  [2017-07-04T23:15:33] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    23.50.75.27:80 → 192.168.10.9:6969  proto=TCP
+  [2017-07-04T23:15:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    64.147.131.160:443 → 192.168.10.12:59386  proto=TCP
+
+PROTOCOL METADATA (2972 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.12 queried cdn.polyfill.io type=A
+  DNS  192.168.10.12 queried cdn.polyfill.io type=A
+  DNS  192.168.10.12 queried cdn.polyfill.io type=AAAA
+  DNS  192.168.10.12 queried cdn.polyfill.io type=AAAA
+  DNS  192.168.10.3 queried cdn.polyfill.io type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=119953738  Total Fwd Packets=196  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.25  Src Port=57503  Dst IP=199.83.128.108  Destination Port=443  Protocol=6  Flow Duration=106407240  Total Fwd Packets=174  Total Backward Packets=292  Init_Win_bytes_backward=260  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=4878.3
+  Src IP=192.168.10.16  Src Port=36898  Dst IP=23.194.141.18  Destination Port=443  Protocol=6  Flow Duration=114801904  Total Fwd Packets=119  Total Backward Packets=185  Init_Win_bytes_backward=1297  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3086.4
+  Src IP=192.168.10.16  Src Port=60318  Dst IP=172.217.9.230  Destination Port=443  Protocol=6  Flow Duration=65042371  Total Fwd Packets=118  Total Backward Packets=193  Init_Win_bytes_backward=399  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3382.7
+  Src IP=192.168.10.16  Src Port=46522  Dst IP=204.246.169.185  Destination Port=80  Protocol=6  Flow Duration=118911305  Total Fwd Packets=93  Total Backward Packets=100  Init_Win_bytes_backward=122  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1104.9
+  Src IP=192.168.10.25  Src Port=57436  Dst IP=54.192.37.254  Destination Port=443  Protocol=6  Flow Duration=574893  Total Fwd Packets=92  Total Backward Packets=77  Init_Win_bytes_backward=122  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=289259.0
+  Src IP=192.168.10.12  Src Port=40504  Dst IP=54.192.36.222  Destination Port=443  Protocol=6  Flow Duration=116726340  Total Fwd Packets=88  Total Backward Packets=91  Init_Win_bytes_backward=132  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=999.4
+  Src IP=192.168.10.12  Src Port=43842  Dst IP=172.217.12.193  Destination Port=443  Protocol=6  Flow Duration=117774696  Total Fwd Packets=84  Total Backward Packets=121  Init_Win_bytes_backward=357  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1283.7
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : ET INFO Suspicious Domain (polyfill .io) in DNS Lookup, SURICATA TCPv4 invalid checksum, ET INFO Suspicious Domain (polyfill .io) in TLS SNI, SURICATA STREAM CLOSEWAIT FIN out of window
+  Unique source IPs : 4
+  Top dest ports    : [443, 0, 80]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

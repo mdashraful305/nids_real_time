@@ -1,0 +1,47 @@
+====================================================================
+LOG WINDOW #0009
+Time range : 2026-11-16 09:30:01 UTC → 2026-11-16 09:30:13 UTC
+Suricata alerts :    4  | Network flows :    47 (showing top 8)
+====================================================================
+
+SURICATA ALERTS (4 total, 3 unique group(s)):
+------------------------------------------------------------
+  [2026-11-16T15:30:07] SID:2016184 (sev=1) ET WEB_SERVER ColdFusion administrator access
+    category : Web Application Attack
+    192.168.1.194:44898 → 192.168.1.169:80  proto=TCP
+  [2026-11-16T15:30:05] [2x] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:ephemeral → 192.168.1.169:80  proto=TCP
+  [2026-11-16T15:30:03] SID:2221028 (sev=3) SURICATA HTTP Host header invalid
+    category : Generic Protocol Command Decode
+    192.168.1.194:44694 → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (2734 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:34648 → 192.168.1.169 | HEAD 192.168.1.169/
+  HTTP 192.168.1.194:44646 → 192.168.1.169 | GET 192.168.1.169/CfJwUhON.sys
+  HTTP 192.168.1.194:44672 → 192.168.1.169 | GET 192.168.1.169/index.asp
+  HTTP 192.168.1.194:34648 → 192.168.1.169 | GET 192.168.1.169/
+  HTTP 192.168.1.194:44646 → 192.168.1.169 | GET 192.168.1.169/CfJwUhON.htpasswd
+
+NETWORK FLOWS — top 8 of 47 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=44730  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=581319.0  Total Fwd Packets=115  Total Backward Packets=140  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=231970.8
+  Src IP=192.168.1.194  Src Port=34648  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=797094.0  Total Fwd Packets=112  Total Backward Packets=119  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=126264.9
+  Src IP=192.168.1.194  Src Port=44718  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=528903.0  Total Fwd Packets=111  Total Backward Packets=119  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=192129.8
+  Src IP=192.168.1.194  Src Port=44704  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=476499.0  Total Fwd Packets=108  Total Backward Packets=112  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=190180.9
+  Src IP=192.168.1.194  Src Port=44646  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=534446.0  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=147257.2
+  Src IP=192.168.1.194  Src Port=44980  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=547958.0  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=141906.9
+  Src IP=192.168.1.194  Src Port=44984  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=538272.0  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=144878.4
+  Src IP=192.168.1.194  Src Port=55882  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=647854.0  Total Fwd Packets=107  Total Backward Packets=105  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=120771.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Alert signatures  : 2x SURICATA Applayer Detect protocol only one direction, 1x SURICATA HTTP Host header invalid, 1x ET WEB_SERVER ColdFusion administrator access
+  Total window flows: 47
+  Unique source IPs : 1
+  Distinct dst ports: 1  (top: [80])
+  Protocols (6=TCP,17=UDP): {'6': 47}
+  TCP SYN summary   : total_syn=141, half_open_flows=0
+  Role 1 assessment : Web Attack (Heuristics) (100.0%)
+====================================================================

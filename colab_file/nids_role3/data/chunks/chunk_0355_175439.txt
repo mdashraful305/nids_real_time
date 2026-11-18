@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0355
+Time range : 2017-07-07 17:54:39 UTC → 2017-07-07 17:55:39 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-07T23:54:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:8309 → 106.122.252.16:443  proto=TCP
+  [2017-07-07T23:54:46] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    199.233.57.20:80 → 192.168.10.12:37002  proto=TCP
+  [2017-07-07T23:54:47] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:8310 → 106.122.252.16:443  proto=TCP
+  [2017-07-07T23:54:51] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.48.156.63:443 → 192.168.10.14:57194  proto=TCP
+  [2017-07-07T23:54:52] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:8308 → 106.122.252.16:443  proto=TCP
+  [2017-07-07T23:54:56] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.16:47222 → 35.167.220.41:443  proto=TCP
+  [2017-07-07T23:54:57] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:8309 → 106.122.252.16:443  proto=TCP
+  [2017-07-07T23:55:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:8310 → 106.122.252.16:443  proto=TCP
+  [2017-07-07T23:55:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.202.218.135:443 → 192.168.10.14:57072  proto=TCP
+  [2017-07-07T23:55:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    35.167.220.41:443 → 192.168.10.5:54111  proto=TCP
+  [2017-07-07T23:55:05] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:54111 → 35.167.220.41:443  proto=TCP
+  [2017-07-07T23:55:06] SID:2001582 (sev=3) ET SCAN Behavioral Unusual Port 1434 traffic Potential Scan or Infection
+    category : Misc activity
+    172.16.0.1:56642 → 192.168.10.50:1434  proto=TCP
+  [2017-07-07T23:55:06] SID:2001583 (sev=3) ET SCAN Behavioral Unusual Port 1433 traffic Potential Scan or Infection
+    category : Misc activity
+    172.16.0.1:52974 → 192.168.10.50:1433  proto=TCP
+  [2017-07-07T23:55:06] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    34.211.94.203:443 → 192.168.10.5:54114  proto=TCP
+  [2017-07-07T23:55:07] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:8308 → 106.122.252.16:443  proto=TCP
+
+PROTOCOL METADATA (1183 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.14 → 104.73.246.149 SNI=rtbcc.fyber.com version=TLS 1.2
+  DNS  192.168.10.3 queried mobawaba.masrawy.com type=AAAA
+  DNS  192.168.10.12 queried mobawaba.masrawy.com type=AAAA
+  DNS  192.168.10.12 queried mobawaba.masrawy.com type=AAAA
+  TLS  192.168.10.51 → 162.213.33.50 SNI=videosearch.ubuntu.com version=TLS 1.2
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.5  Src Port=53965  Dst IP=206.126.112.145  Destination Port=443  Protocol=6  Flow Duration=118328200  Total Fwd Packets=697  Total Backward Packets=1109  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=13450.2
+  Src IP=192.168.10.5  Src Port=53930  Dst IP=94.124.134.53  Destination Port=443  Protocol=6  Flow Duration=8214658  Total Fwd Packets=188  Total Backward Packets=248  Init_Win_bytes_backward=399  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=55230.8
+  Src IP=192.168.10.12  Src Port=59920  Dst IP=104.20.93.15  Destination Port=80  Protocol=6  Flow Duration=48750226  Total Fwd Packets=179  Total Backward Packets=291  Init_Win_bytes_backward=53  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=10293.7
+  Src IP=192.168.10.12  Src Port=59918  Dst IP=104.20.93.15  Destination Port=80  Protocol=6  Flow Duration=48909772  Total Fwd Packets=178  Total Backward Packets=278  Init_Win_bytes_backward=49  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=9996.0
+  Src IP=192.168.10.5  Src Port=53934  Dst IP=94.124.134.53  Destination Port=443  Protocol=6  Flow Duration=7395439  Total Fwd Packets=168  Total Backward Packets=232  Init_Win_bytes_backward=381  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=55480.7
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=117856507  Total Fwd Packets=166  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.5  Src Port=53936  Dst IP=94.124.134.53  Destination Port=443  Protocol=6  Flow Duration=7313672  Total Fwd Packets=152  Total Backward Packets=212  Init_Win_bytes_backward=363  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=51802.0
+  Src IP=192.168.10.5  Src Port=53935  Dst IP=94.124.134.53  Destination Port=443  Protocol=6  Flow Duration=7430409  Total Fwd Packets=142  Total Backward Packets=192  Init_Win_bytes_backward=399  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=44907.2
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : ET SCAN Behavioral Unusual Port 1434 traffic Potential Scan or Infection, SURICATA HTTP unable to match response to request, ET SCAN Behavioral Unusual Port 1433 traffic Potential Scan or Infection, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 3
+  Top dest ports    : [443, 80, 0]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

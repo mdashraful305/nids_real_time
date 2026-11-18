@@ -1,0 +1,44 @@
+====================================================================
+LOG WINDOW #0193
+Time range : 2017-07-07 15:12:39 UTC → 2017-07-07 15:13:39 UTC
+Suricata alerts :    3  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (3):
+------------------------------------------------------------
+  [2017-07-07T21:13:22] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.10.25:52357 → 192.168.10.50:139  proto=TCP
+  [2017-07-07T21:13:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    204.154.111.109:443 → 192.168.10.9:6382  proto=TCP
+  [2017-07-07T21:13:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.9:6382 → 204.154.111.109:443  proto=TCP
+
+PROTOCOL METADATA (120 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.51 → 162.213.33.50 SNI=videosearch.ubuntu.com version=TLS 1.2
+  DNS  192.168.10.14 queried dns.msftncsi.com type=A
+  DNS  192.168.10.14 queried dns.msftncsi.com type=A
+  DNS  192.168.10.3 queried dns.msftncsi.com type=A
+  DNS  192.168.10.3 queried dns.msftncsi.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.9  Src Port=6379  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1440126  Total Fwd Packets=35  Total Backward Packets=42  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6707.7
+  Src IP=192.168.10.9  Src Port=6380  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1419287  Total Fwd Packets=35  Total Backward Packets=40  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6625.9
+  Src IP=192.168.10.19  Src Port=56076  Dst IP=172.217.10.46  Destination Port=443  Protocol=6  Flow Duration=116043651  Total Fwd Packets=24  Total Backward Packets=23  Init_Win_bytes_backward=562  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=157.6
+  Src IP=192.168.10.19  Src Port=53770  Dst IP=172.217.11.14  Destination Port=443  Protocol=6  Flow Duration=115818070  Total Fwd Packets=24  Total Backward Packets=22  Init_Win_bytes_backward=377  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=84.7
+  Src IP=192.168.10.9  Src Port=6377  Dst IP=74.125.22.108  Destination Port=465  Protocol=6  Flow Duration=1817209  Total Fwd Packets=16  Total Backward Packets=24  Init_Win_bytes_backward=176  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3285.3
+  Src IP=192.168.10.25  Src Port=137  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=23  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=28300000.0
+  Src IP=192.168.10.50  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=21  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=73000000.0
+  Src IP=192.168.10.25  Src Port=52354  Dst IP=87.250.250.210  Destination Port=443  Protocol=6  Flow Duration=791785  Total Fwd Packets=12  Total Backward Packets=9  Init_Win_bytes_backward=34  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6721.5
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA Applayer Detect protocol only one direction, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 4
+  Top dest ports    : [443, 22, 465, 137, 5353]
+  Protocols         : {6: 6, 17: 2}
+====================================================================

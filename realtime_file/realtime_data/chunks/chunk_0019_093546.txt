@@ -1,0 +1,44 @@
+====================================================================
+LOG WINDOW #0019
+Time range : 2026-11-16 09:35:46 UTC → 2026-11-16 09:36:00 UTC
+Suricata alerts :   26  | Network flows :    54 (showing top 8)
+====================================================================
+
+SURICATA ALERTS (26 total, 2 unique group(s)):
+------------------------------------------------------------
+  [2026-11-16T15:35:59] [25x] SID:2024364 (sev=1) ET SCAN Possible Nmap User-Agent Observed
+    category : Web Application Attack
+    192.168.1.194:ephemeral → 192.168.1.169:80  proto=TCP
+  [2026-11-16T15:36:00] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.1.194:43838 → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (33 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.1.194 → 192.168.1.169 SNI=? version=TLS 1.3
+  HTTP 192.168.1.194:43712 → 192.168.1.169 | GET 192.168.1.169/.git/HEAD
+  HTTP 192.168.1.194:43722 → 192.168.1.169 | GET 192.168.1.169/robots.txt
+  HTTP 192.168.1.194:43728 → 192.168.1.169 | POST 192.168.1.169/
+  HTTP 192.168.1.194:43724 → 192.168.1.169 | GET 192.168.1.169/nmaplowercheck1794821759
+
+NETWORK FLOWS — top 8 of 54 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.179  Src Port=5353  Dst IP=224.0.0.251  Destination Port=5353  Protocol=17  Flow Duration=12698426.0  Total Fwd Packets=19  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=107.7
+  Src IP=192.168.1.194  Src Port=53966  Dst IP=192.168.1.169  Destination Port=110  Protocol=6  Flow Duration=152724.0  Total Fwd Packets=16  Total Backward Packets=16  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=2  Flow Bytes/s=31926.9
+  Src IP=192.168.1.194  Src Port=45328  Dst IP=192.168.1.169  Destination Port=995  Protocol=6  Flow Duration=148438.0  Total Fwd Packets=13  Total Backward Packets=14  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=2  Flow Bytes/s=30517.8
+  Src IP=192.168.1.194  Src Port=45316  Dst IP=192.168.1.169  Destination Port=995  Protocol=6  Flow Duration=129837.0  Total Fwd Packets=12  Total Backward Packets=12  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=2  Flow Bytes/s=32702.5
+  Src IP=192.168.1.194  Src Port=45346  Dst IP=192.168.1.169  Destination Port=995  Protocol=6  Flow Duration=56342.0  Total Fwd Packets=12  Total Backward Packets=9  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=5  Flow Bytes/s=69166.9
+  Src IP=192.168.1.194  Src Port=54034  Dst IP=192.168.1.169  Destination Port=110  Protocol=6  Flow Duration=255492.0  Total Fwd Packets=12  Total Backward Packets=9  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=15315.5
+  Src IP=192.168.1.194  Src Port=54014  Dst IP=192.168.1.169  Destination Port=110  Protocol=6  Flow Duration=264555.0  Total Fwd Packets=11  Total Backward Packets=9  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=13853.5
+  Src IP=192.168.1.194  Src Port=54018  Dst IP=192.168.1.169  Destination Port=110  Protocol=6  Flow Duration=220496.0  Total Fwd Packets=11  Total Backward Packets=9  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=17161.3
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Alert signatures  : 25x ET SCAN Possible Nmap User-Agent Observed, 1x SURICATA Applayer Detect protocol only one direction
+  Total window flows: 54
+  Unique source IPs : 2
+  Distinct dst ports: 7  (top: [80, 22, 110, 995, 445, 5353, 137])
+  Protocols (6=TCP,17=UDP): {'6': 52, '17': 2}
+  TCP SYN summary   : total_syn=162, half_open_flows=0
+  Role 1 assessment : Web Attack (Heuristics) (100.0%)
+====================================================================

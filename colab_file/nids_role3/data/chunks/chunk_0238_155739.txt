@@ -1,0 +1,47 @@
+====================================================================
+LOG WINDOW #0238
+Time range : 2017-07-07 15:57:39 UTC → 2017-07-07 15:58:39 UTC
+Suricata alerts :    4  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (4):
+------------------------------------------------------------
+  [2017-07-07T21:57:56] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    65.55.242.254:443 → 192.168.10.5:52373  proto=TCP
+  [2017-07-07T21:58:06] SID:2210038 (sev=3) SURICATA STREAM FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.5:52372 → 192.168.10.3:49666  proto=TCP
+  [2017-07-07T21:58:06] SID:2210038 (sev=3) SURICATA STREAM FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.5:52372 → 192.168.10.3:49666  proto=TCP
+  [2017-07-07T21:58:24] SID:2260002 (sev=3) SURICATA Applayer Detect protocol only one direction
+    category : Generic Protocol Command Decode
+    192.168.10.25:52394 → 192.168.10.50:139  proto=TCP
+
+PROTOCOL METADATA (101 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.5 queried fe2.ws.microsoft.com type=A
+  DNS  192.168.10.5 queried fe2.ws.microsoft.com type=A
+  DNS  192.168.10.3 queried fe2.ws.microsoft.com type=A
+  DNS  192.168.10.5 queried fe2.ws.microsoft.com type=A
+  DNS  192.168.10.5 queried fe2.ws.microsoft.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.12  Src Port=55462  Dst IP=192.168.10.3  Destination Port=3268  Protocol=6  Flow Duration=338805  Total Fwd Packets=46  Total Backward Packets=33  Init_Win_bytes_backward=2080  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=59485.5
+  Src IP=192.168.10.50  Src Port=42386  Dst IP=192.168.10.3  Destination Port=389  Protocol=6  Flow Duration=112853773  Total Fwd Packets=44  Total Backward Packets=22  Init_Win_bytes_backward=2081  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=140.2
+  Src IP=192.168.10.14  Src Port=53228  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1422606  Total Fwd Packets=39  Total Backward Packets=46  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6824.1
+  Src IP=192.168.10.15  Src Port=54009  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1450753  Total Fwd Packets=39  Total Backward Packets=46  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6691.7
+  Src IP=192.168.10.15  Src Port=54010  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1467852  Total Fwd Packets=39  Total Backward Packets=40  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6423.0
+  Src IP=192.168.10.14  Src Port=53229  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1423302  Total Fwd Packets=37  Total Backward Packets=40  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=6615.6
+  Src IP=192.168.10.12  Src Port=40034  Dst IP=192.168.10.3  Destination Port=389  Protocol=6  Flow Duration=194833  Total Fwd Packets=28  Total Backward Packets=20  Init_Win_bytes_backward=2079  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=93793.1
+  Src IP=192.168.10.16  Src Port=41634  Dst IP=192.168.10.50  Destination Port=21  Protocol=6  Flow Duration=147526  Total Fwd Packets=20  Total Backward Packets=25  Init_Win_bytes_backward=227  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=4175.5
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM FIN out of window, SURICATA Applayer Detect protocol only one direction, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 5
+  Top dest ports    : [22, 389, 3268, 21]
+  Protocols         : {6: 8}
+====================================================================

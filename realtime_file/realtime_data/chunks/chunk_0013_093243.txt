@@ -1,0 +1,41 @@
+====================================================================
+LOG WINDOW #0013
+Time range : 2026-11-16 09:32:43 UTC → 2026-11-16 09:32:49 UTC
+Suricata alerts :    4  | Network flows :    14 (showing top 8)
+====================================================================
+
+SURICATA ALERTS (4 total, 1 unique group(s)):
+------------------------------------------------------------
+  [2026-11-16T15:32:49] [4x] SID:2024364 (sev=1) ET SCAN Possible Nmap User-Agent Observed
+    category : Web Application Attack
+    192.168.1.194:ephemeral → 192.168.1.169:80  proto=TCP
+
+PROTOCOL METADATA (5 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.1.194:43438 → 192.168.1.169 | GET 192.168.1.169/nmaplowercheck1794821569
+  HTTP 192.168.1.194:43442 → 192.168.1.169 | POST 192.168.1.169/sdk
+  HTTP 192.168.1.194:43462 → 192.168.1.169 | GET 192.168.1.169/HNAP1
+  HTTP 192.168.1.194:43450 → 192.168.1.169 | GET ?/
+  HTTP 192.168.1.194:43454 → 192.168.1.169 | GET 192.168.1.169/evox/about
+
+NETWORK FLOWS — top 8 of 14 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=43450  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=10319.0  Total Fwd Packets=10  Total Backward Packets=11  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=1  RST Flag Count=2  Flow Bytes/s=1198468.9
+  Src IP=192.168.1.194  Src Port=43468  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=7133.0  Total Fwd Packets=10  Total Backward Packets=12  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=4  Flow Bytes/s=1740501.9
+  Src IP=192.168.1.194  Src Port=43428  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=6095665.0  Total Fwd Packets=9  Total Backward Packets=10  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=1  RST Flag Count=1  Flow Bytes/s=2008.1
+  Src IP=192.168.1.194  Src Port=43482  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=10255.0  Total Fwd Packets=9  Total Backward Packets=11  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=3  Flow Bytes/s=1198537.2
+  Src IP=192.168.1.194  Src Port=40066  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=15498.0  Total Fwd Packets=6  Total Backward Packets=4  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=46909.3
+  Src IP=192.168.1.194  Src Port=43438  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=11477.0  Total Fwd Packets=6  Total Backward Packets=5  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=120240.5
+  Src IP=192.168.1.194  Src Port=43442  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=10527.0  Total Fwd Packets=6  Total Backward Packets=5  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=173078.8
+  Src IP=192.168.1.194  Src Port=43454  Dst IP=192.168.1.169  Destination Port=80  Protocol=6  Flow Duration=7992.0  Total Fwd Packets=6  Total Backward Packets=5  Init_Win_bytes_backward=65160  SYN Flag Count=3  FIN Flag Count=2  RST Flag Count=0  Flow Bytes/s=170920.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Alert signatures  : 4x ET SCAN Possible Nmap User-Agent Observed
+  Total window flows: 14
+  Unique source IPs : 1
+  Distinct dst ports: 3  (top: [80, 443, 22])
+  Protocols (6=TCP,17=UDP): {'6': 14}
+  TCP SYN summary   : total_syn=40, half_open_flows=2
+  Role 1 assessment : Benign (98.8%)
+====================================================================

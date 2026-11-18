@@ -1,0 +1,64 @@
+{
+  "baseline": "suricata_alone_pooled",
+  "gt_threshold": 0.03,
+  "windows_with_gt": 1964,
+  "tp": 318,
+  "fp": 1634,
+  "fn": 1,
+  "tn": 11,
+  "precision_pct": 16.29,
+  "recall_pct": 99.69,
+  "f1_pct": 28.01,
+  "fpr_pct": 99.33,
+  "accuracy_pct": 16.75,
+  "per_day": {
+    "tuesday": {
+      "windows_with_gt": 487,
+      "tp": 125,
+      "fp": 362,
+      "fn": 0,
+      "tn": 0,
+      "precision_pct": 25.67,
+      "recall_pct": 100.0,
+      "f1_pct": 40.85,
+      "fpr_pct": 100.0,
+      "accuracy_pct": 25.67
+    },
+    "wednesday": {
+      "windows_with_gt": 508,
+      "tp": 64,
+      "fp": 442,
+      "fn": 0,
+      "tn": 2,
+      "precision_pct": 12.65,
+      "recall_pct": 100.0,
+      "f1_pct": 22.46,
+      "fpr_pct": 99.55,
+      "accuracy_pct": 12.99
+    },
+    "thursday": {
+      "windows_with_gt": 486,
+      "tp": 42,
+      "fp": 438,
+      "fn": 0,
+      "tn": 6,
+      "precision_pct": 8.75,
+      "recall_pct": 100.0,
+      "f1_pct": 16.09,
+      "fpr_pct": 98.65,
+      "accuracy_pct": 9.88
+    },
+    "friday": {
+      "windows_with_gt": 483,
+      "tp": 87,
+      "fp": 392,
+      "fn": 1,
+      "tn": 3,
+      "precision_pct": 18.16,
+      "recall_pct": 98.86,
+      "f1_pct": 30.69,
+      "fpr_pct": 99.24,
+      "accuracy_pct": 18.63
+    }
+  }
+}

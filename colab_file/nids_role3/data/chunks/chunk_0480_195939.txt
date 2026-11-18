@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0480
+Time range : 2017-07-07 19:59:39 UTC → 2017-07-07 20:00:39 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-08T01:59:49] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    23.52.155.27:80 → 192.168.10.8:10290  proto=TCP
+  [2017-07-08T01:59:55] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:59079 → 172.217.10.66:443  proto=TCP
+  [2017-07-08T02:00:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:59109 → 23.10.108.151:443  proto=TCP
+  [2017-07-08T02:00:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:59112 → 23.10.108.151:443  proto=TCP
+  [2017-07-08T02:00:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:59111 → 23.10.108.151:443  proto=TCP
+  [2017-07-08T02:00:04] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:59109 → 23.10.108.151:443  proto=TCP
+  [2017-07-08T02:00:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2221001 (sev=3) SURICATA HTTP gzip decompression failed
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2221004 (sev=3) SURICATA HTTP invalid response chunk len
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+  [2017-07-08T02:00:16] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.208.94.86:80 → 192.168.10.15:61276  proto=TCP
+
+PROTOCOL METADATA (1910 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.19 → 62.161.94.230 SNI=logs1406.xiti.com version=TLS 1.2
+  TLS  192.168.10.51 → 162.213.33.50 SNI=videosearch.ubuntu.com version=TLS 1.2
+  HTTP 192.168.10.14:58831 → 104.16.25.216 | POST ocsp2.globalsign.com/cloudsslsha2g3
+  TLS  192.168.10.19 → 62.161.94.230 SNI=logs1406.xiti.com version=TLS 1.2
+  TLS  192.168.10.19 → 62.161.94.230 SNI=logs1406.xiti.com version=TLS 1.2
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.25  Src Port=54162  Dst IP=172.217.12.131  Destination Port=443  Protocol=6  Flow Duration=30826445  Total Fwd Packets=61  Total Backward Packets=78  Init_Win_bytes_backward=376  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3308.9
+  Src IP=192.168.10.14  Src Port=59099  Dst IP=157.240.18.5  Destination Port=443  Protocol=6  Flow Duration=119696380  Total Fwd Packets=59  Total Backward Packets=56  Init_Win_bytes_backward=462  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=339.5
+  Src IP=192.168.10.14  Src Port=59031  Dst IP=23.10.108.151  Destination Port=443  Protocol=6  Flow Duration=88540827  Total Fwd Packets=42  Total Backward Packets=52  Init_Win_bytes_backward=980  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=873.9
+  Src IP=192.168.10.14  Src Port=59076  Dst IP=172.217.12.198  Destination Port=443  Protocol=6  Flow Duration=61550779  Total Fwd Packets=37  Total Backward Packets=61  Init_Win_bytes_backward=481  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1062.6
+  Src IP=192.168.10.14  Src Port=59059  Dst IP=172.217.12.198  Destination Port=443  Protocol=6  Flow Duration=117950690  Total Fwd Packets=36  Total Backward Packets=57  Init_Win_bytes_backward=438  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=600.6
+  Src IP=192.168.10.14  Src Port=59109  Dst IP=23.10.108.151  Destination Port=443  Protocol=6  Flow Duration=111375639  Total Fwd Packets=36  Total Backward Packets=40  Init_Win_bytes_backward=3045  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=365.0
+  Src IP=192.168.10.14  Src Port=59111  Dst IP=23.10.108.151  Destination Port=443  Protocol=6  Flow Duration=110495673  Total Fwd Packets=35  Total Backward Packets=37  Init_Win_bytes_backward=2771  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=336.1
+  Src IP=192.168.10.25  Src Port=54166  Dst IP=172.217.12.131  Destination Port=443  Protocol=6  Flow Duration=30551245  Total Fwd Packets=32  Total Backward Packets=30  Init_Win_bytes_backward=357  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1187.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM CLOSEWAIT FIN out of window, SURICATA HTTP invalid response chunk len, SURICATA HTTP gzip decompression failed, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 2
+  Top dest ports    : [443]
+  Protocols         : {6: 8}
+====================================================================

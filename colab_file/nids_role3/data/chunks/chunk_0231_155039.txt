@@ -1,0 +1,33 @@
+====================================================================
+LOG WINDOW #0231
+Time range : 2017-07-07 15:50:39 UTC → 2017-07-07 15:51:39 UTC
+Suricata alerts :    0  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+PROTOCOL METADATA (43 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.51 → 162.213.33.50 SNI=videosearch.ubuntu.com version=TLS 1.2
+  DNS  192.168.10.19 queried www.inven.co.kr type=A
+  DNS  192.168.10.19 queried www.inven.co.kr type=A
+  DNS  192.168.10.19 queried www.inven.co.kr type=AAAA
+  DNS  192.168.10.19 queried www.inven.co.kr type=AAAA
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.17  Src Port=33779  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1248228  Total Fwd Packets=41  Total Backward Packets=44  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7705.3
+  Src IP=192.168.10.17  Src Port=33780  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1247570  Total Fwd Packets=41  Total Backward Packets=42  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7504.2
+  Src IP=192.168.10.19  Src Port=33272  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1290970  Total Fwd Packets=41  Total Backward Packets=42  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7251.9
+  Src IP=192.168.10.19  Src Port=33271  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1311635  Total Fwd Packets=39  Total Backward Packets=42  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7332.8
+  Src IP=192.168.10.50  Src Port=138  Dst IP=192.168.10.255  Destination Port=138  Protocol=17  Flow Duration=47  Total Fwd Packets=26  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=125000000.0
+  Src IP=192.168.10.12  Src Port=137  Dst IP=192.168.10.255  Destination Port=137  Protocol=17  Flow Duration=23  Total Fwd Packets=13  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=28300000.0
+  Src IP=192.168.10.51  Src Port=59090  Dst IP=162.213.33.50  Destination Port=443  Protocol=6  Flow Duration=2483640  Total Fwd Packets=10  Total Backward Packets=11  Init_Win_bytes_backward=254  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1873.5
+  Src IP=192.168.10.51  Src Port=59091  Dst IP=162.213.33.50  Destination Port=443  Protocol=6  Flow Duration=1228664  Total Fwd Packets=9  Total Backward Packets=11  Init_Win_bytes_backward=252  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=3787.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique source IPs : 5
+  Top dest ports    : [22, 443, 138, 137]
+  Protocols         : {6: 6, 17: 2}
+====================================================================

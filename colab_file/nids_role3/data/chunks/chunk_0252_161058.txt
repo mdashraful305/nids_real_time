@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0252
+Time range : 2017-07-06 16:10:58 UTC → 2017-07-06 16:11:58 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-06T22:11:00] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    54.186.39.123:443 → 192.168.10.5:53702  proto=TCP
+  [2017-07-06T22:11:00] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:53702 → 54.186.39.123:443  proto=TCP
+  [2017-07-06T22:11:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.43.235.20:443 → 192.168.10.5:53703  proto=TCP
+  [2017-07-06T22:11:07] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:56386 → 192.168.10.50:26352  proto=TCP
+  [2017-07-06T22:11:07] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:56386 → 192.168.10.50:26352  proto=TCP
+  [2017-07-06T22:11:07] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:56386 → 192.168.10.50:26352  proto=TCP
+  [2017-07-06T22:11:07] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:56386 → 192.168.10.50:26352  proto=TCP
+  [2017-07-06T22:11:07] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:56386 → 192.168.10.50:26352  proto=TCP
+  [2017-07-06T22:11:11] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    166.78.192.64:443 → 192.168.10.14:63251  proto=TCP
+  [2017-07-06T22:11:11] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    166.78.192.64:443 → 192.168.10.14:63251  proto=TCP
+  [2017-07-06T22:11:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    54.192.36.203:443 → 192.168.10.14:63254  proto=TCP
+  [2017-07-06T22:11:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    54.192.36.203:443 → 192.168.10.14:63256  proto=TCP
+  [2017-07-06T22:11:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    54.192.36.203:443 → 192.168.10.14:63254  proto=TCP
+  [2017-07-06T22:11:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    157.240.18.19:443 → 192.168.10.14:63258  proto=TCP
+  [2017-07-06T22:11:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    157.240.18.19:443 → 192.168.10.14:63258  proto=TCP
+
+PROTOCOL METADATA (1978 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.5 queried incoming.telemetry.mozilla.org type=A
+  DNS  192.168.10.5 queried incoming.telemetry.mozilla.org type=A
+  DNS  192.168.10.3 queried incoming.telemetry.mozilla.org type=A
+  DNS  192.168.10.5 queried incoming.telemetry.mozilla.org type=A
+  DNS  192.168.10.5 queried incoming.telemetry.mozilla.org type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.19  Src Port=34000.0  Dst IP=23.203.118.98  Destination Port=443.0  Protocol=6.0  Flow Duration=118381744.0  Total Fwd Packets=130.0  Total Backward Packets=206.0  Init_Win_bytes_backward=1173.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3451.6
+  Src IP=192.168.10.19  Src Port=33995.0  Dst IP=23.203.118.98  Destination Port=443.0  Protocol=6.0  Flow Duration=117700472.0  Total Fwd Packets=94.0  Total Backward Packets=112.0  Init_Win_bytes_backward=1039.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1718.6
+  Src IP=192.168.10.19  Src Port=34034.0  Dst IP=23.203.118.98  Destination Port=443.0  Protocol=6.0  Flow Duration=116499312.0  Total Fwd Packets=67.0  Total Backward Packets=71.0  Init_Win_bytes_backward=1039.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=967.0
+  Src IP=192.168.10.19  Src Port=54581.0  Dst IP=172.217.10.226  Destination Port=443.0  Protocol=6.0  Flow Duration=116518000.0  Total Fwd Packets=65.0  Total Backward Packets=66.0  Init_Win_bytes_backward=400.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=652.5
+  Src IP=192.168.10.15  Src Port=55601.0  Dst IP=172.217.11.3  Destination Port=443.0  Protocol=6.0  Flow Duration=118223664.0  Total Fwd Packets=61.0  Total Backward Packets=98.0  Init_Win_bytes_backward=360.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1176.3
+  Src IP=192.168.10.15  Src Port=55602.0  Dst IP=172.217.11.3  Destination Port=443.0  Protocol=6.0  Flow Duration=290186.0  Total Fwd Packets=59.0  Total Backward Packets=101.0  Init_Win_bytes_backward=360.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=475181.4
+  Src IP=192.168.10.15  Src Port=55605.0  Dst IP=172.217.11.3  Destination Port=443.0  Protocol=6.0  Flow Duration=335866.0  Total Fwd Packets=59.0  Total Backward Packets=97.0  Init_Win_bytes_backward=360.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=411372.4
+  Src IP=192.168.10.19  Src Port=33985.0  Dst IP=23.203.118.98  Destination Port=443.0  Protocol=6.0  Flow Duration=115899920.0  Total Fwd Packets=59.0  Total Backward Packets=81.0  Init_Win_bytes_backward=1039.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1178.1
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 2
+  Top dest ports    : [443.0]
+  Protocols         : {6.0: 8}
+====================================================================

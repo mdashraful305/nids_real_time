@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-11-15T08:35:14.592901",
+  "host": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "n_flows": 2000,
+  "dataset": "CICIDS2017",
+  "role1_perflow": {
+    "n": 2000,
+    "mean_ms": 77.5823,
+    "p50_ms": 76.6324,
+    "p95_ms": 98.2798,
+    "max_ms": 134.1782
+  },
+  "role1_batched": {
+    "n": 2,
+    "mean_ms": 0.1091,
+    "p50_ms": 0.1093,
+    "p95_ms": 0.1093,
+    "max_ms": 0.1093
+  },
+  "role2_shap": {
+    "n": 200,
+    "mean_ms": 13.581,
+    "p50_ms": 13.1645,
+    "p95_ms": 15.6565,
+    "max_ms": 25.7559
+  },
+  "decision_merge": {
+    "n": 1000,
+    "mean_ms": 0.0886,
+    "p50_ms": 0.0823,
+    "p95_ms": 0.1099,
+    "max_ms": 1.7653
+  },
+  "role3_llm": {
+    "n": 10,
+    "mean_ms": 804.1062,
+    "p50_ms": 301.2966,
+    "p95_ms": 5334.8788,
+    "max_ms": 5334.8788
+  },
+  "dashboard_serve": {
+    "n": 20,
+    "mean_ms": 13.026,
+    "p50_ms": 11.8898,
+    "p95_ms": 19.8166,
+    "max_ms": 19.8166,
+    "alerts_rendered": 483
+  },
+  "role1_throughput_flows_per_s": 9165.9
+}

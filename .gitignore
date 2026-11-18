@@ -1,0 +1,82 @@
+# ==============================================================================
+# .gitignore for Manuscript Data & Code Repository
+# Tracks all source code, Jupyter notebooks, post-hoc verification logs,
+# primary real-time LAN capture & flow datasets (PCAP, CICFlowMeter CSVs,
+# Approach 1 CSV, Suricata EVE/fast logs, Phase/R3/Unified alerts, runtime logs),
+# and Track B prompt chunks (<100 MB per-file GitHub hard limit; ~327 MB total).
+#
+# Excludes third-party public benchmark datasets (multi-GB), >100 MB derived
+# intermediates, large binary .pkl checkpoints, ZIP archives, duplicate
+# realtime working copies (/realtime_file/data/), and manuscript drafts.
+# ==============================================================================
+
+# --- Python, Jupyter & Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+.env.*
+**/.ipynb_checkpoints/
+
+# --- OS, Editor & Office Lock/Temp Files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+~$*
+*.tmp
+*.bak
+*.flag
+
+# --- Archives & Large Bundle Downloads ---
+*.zip
+
+# --- Large Trained Model Checkpoints, Pickles & Feature Caches (67 MB - 661 MB) ---
+# Note: lightweight summary pickles under colab_file/results/*/*.pkl remain tracked.
+/model/
+/realtime_file/model/
+/realtime_file/*.pkl
+/colab_file/models/
+/colab_file/cache/
+
+# --- Raw Public Benchmark Datasets & >100 MB Track B Split Intermediates ---
+# (Publicly downloadable from UNB CICIDS2017, UNSW-NB15, and Kaggle NSL-KDD)
+/colab_file/data/
+/colab_file/nids_role3/data/cic_labels/
+/colab_file/nids_role3/data/cicflow_csv_labelled/
+/colab_file/nids_role3/data/eve_logs/
+/colab_file/nids_role3/data/flow_friday/
+/colab_file/nids_role3/data/flow_thursday/
+/colab_file/nids_role3/data/flow_tuesday/
+/colab_file/nids_role3/data/flow_wednesday/
+
+# --- Real-Time Testbed Oversized / Duplicate Paths ---
+# All primary live data lives under /realtime_file/realtime_data/ (tracked below):
+#   - pcaps/capture_full.pcap (24.74 MB) & 341 pcaps/segments/*.pcap (<=11.68 MB)
+#   - csv/approach_a_flows.csv (61.71 MB), 63 csv/cicflow_csv/*.csv (<=23.80 MB)
+#   - json/suricata/eve.json (71.50 MB), fast.log, stats.log, suricata.log
+#   - json/phases.jsonl, json/r3.jsonl, json/unified_alerts.jsonl, json/role1_proba_debug.jsonl
+#   - logs/, chunks/, reports/
+# Exclude duplicate raw working directory and flows.jsonl (254.43 MB > 100 MB GitHub limit;
+# identical 92,237 flow records and 52 features are already tracked in csv/approach_a_flows.csv):
+/realtime_file/data/
+/realtime_file/nids_history.json
+/realtime_file/realtime_data/json/flows.jsonl
+ollama_dns_cache.json
+**/* copy.py
+
+# --- Manuscript Drafts, Peer-Review Files & Writing Skills ---
+/review_file/
+/skill/
+
+# Root legacy logs directory
+/logs/

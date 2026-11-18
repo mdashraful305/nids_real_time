@@ -1,0 +1,68 @@
+====================================================================
+LOG WINDOW #0344
+Time range : 2017-07-07 17:43:39 UTC → 2017-07-07 17:44:39 UTC
+Suricata alerts :   11  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (11):
+------------------------------------------------------------
+  [2017-07-07T23:43:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:53898 → 192.168.10.50:57637  proto=TCP
+  [2017-07-07T23:43:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:53898 → 192.168.10.50:57637  proto=TCP
+  [2017-07-07T23:43:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:53898 → 192.168.10.50:57637  proto=TCP
+  [2017-07-07T23:43:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:53898 → 192.168.10.50:57637  proto=TCP
+  [2017-07-07T23:43:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.5:53898 → 192.168.10.50:57637  proto=TCP
+  [2017-07-07T23:43:47] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.8:7922 → 213.239.195.215:443  proto=TCP
+  [2017-07-07T23:43:48] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    59.56.30.206:443 → 192.168.10.17:52883  proto=TCP
+  [2017-07-07T23:44:07] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.8:7922 → 213.239.195.215:443  proto=TCP
+  [2017-07-07T23:44:09] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    209.85.201.108:465 → 192.168.10.5:53900  proto=TCP
+  [2017-07-07T23:44:27] SID:2210050 (sev=3) SURICATA STREAM reassembly overlap with different data
+    category : Generic Protocol Command Decode
+    192.168.10.8:7922 → 213.239.195.215:443  proto=TCP
+  [2017-07-07T23:44:29] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    172.217.12.196:443 → 192.168.10.8:7851  proto=TCP
+
+PROTOCOL METADATA (118 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.19:41753 → 23.60.139.27 | POST ss.symcd.com/
+  HTTP 192.168.10.8:8021 → 50.63.243.230 | POST ocsp.godaddy.com/
+  HTTP 192.168.10.12:37716 → 23.61.187.27 | POST gn.symcd.com/
+  HTTP 192.168.10.12:37716 → 23.61.187.27 | POST gn.symcd.com/
+  DNS  192.168.10.8 queried q.crowdynews.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.25  Src Port=53078  Dst IP=192.168.10.50  Destination Port=139  Protocol=6  Flow Duration=65958  Total Fwd Packets=49  Total Backward Packets=30  Init_Win_bytes_backward=269  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=86054.8
+  Src IP=192.168.10.8  Src Port=8043  Dst IP=192.229.211.82  Destination Port=80  Protocol=6  Flow Duration=115670066  Total Fwd Packets=48  Total Backward Packets=62  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=773.3
+  Src IP=192.168.10.19  Src Port=35798  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1318982  Total Fwd Packets=45  Total Backward Packets=42  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7097.9
+  Src IP=192.168.10.8  Src Port=8044  Dst IP=192.229.211.82  Destination Port=80  Protocol=6  Flow Duration=115668724  Total Fwd Packets=43  Total Backward Packets=61  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=712.3
+  Src IP=192.168.10.8  Src Port=8046  Dst IP=192.229.211.82  Destination Port=80  Protocol=6  Flow Duration=115667027  Total Fwd Packets=42  Total Backward Packets=48  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=577.7
+  Src IP=192.168.10.8  Src Port=8045  Dst IP=192.229.211.82  Destination Port=80  Protocol=6  Flow Duration=115668113  Total Fwd Packets=41  Total Backward Packets=52  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=737.3
+  Src IP=192.168.10.19  Src Port=35797  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1319290  Total Fwd Packets=41  Total Backward Packets=44  Init_Win_bytes_backward=243  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7290.3
+  Src IP=192.168.10.50  Src Port=56446  Dst IP=192.168.10.3  Destination Port=3268  Protocol=6  Flow Duration=111832515  Total Fwd Packets=40  Total Backward Packets=20  Init_Win_bytes_backward=2079  SYN Flag Count=1  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=84.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM CLOSEWAIT FIN out of window, SURICATA STREAM reassembly overlap with different data, SURICATA TCPv4 invalid checksum
+  Unique source IPs : 4
+  Top dest ports    : [80, 22, 139, 3268]
+  Protocols         : {6: 8}
+====================================================================

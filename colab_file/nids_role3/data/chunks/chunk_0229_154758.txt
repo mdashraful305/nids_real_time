@@ -1,0 +1,33 @@
+====================================================================
+LOG WINDOW #0229
+Time range : 2017-07-06 15:47:58 UTC → 2017-07-06 15:48:58 UTC
+Suricata alerts :    0  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS: none in this window
+
+PROTOCOL METADATA (48 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.14 queried smtp.gmail.com type=A
+  DNS  192.168.10.14 queried smtp.gmail.com type=A
+  DNS  192.168.10.14 queried smtp.gmail.com type=A
+  DNS  192.168.10.14 queried smtp.gmail.com type=A
+  TLS  192.168.10.14 → 74.125.192.108 SNI=smtp.gmail.com version=TLSv1
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.15  Src Port=55426.0  Dst IP=104.197.43.56  Destination Port=443.0  Protocol=6.0  Flow Duration=115436768.0  Total Fwd Packets=52.0  Total Backward Packets=28.0  Init_Win_bytes_backward=363.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=249.4
+  Src IP=192.168.10.19  Src Port=43216.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1339443.0  Total Fwd Packets=41.0  Total Backward Packets=42.0  Init_Win_bytes_backward=243.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7180.6
+  Src IP=192.168.10.19  Src Port=43217.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1382799.0  Total Fwd Packets=41.0  Total Backward Packets=42.0  Init_Win_bytes_backward=243.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=6770.3
+  Src IP=192.168.10.5  Src Port=53423.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1280022.0  Total Fwd Packets=35.0  Total Backward Packets=42.0  Init_Win_bytes_backward=245.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7546.7
+  Src IP=192.168.10.5  Src Port=53424.0  Dst IP=192.168.10.50  Destination Port=22.0  Protocol=6.0  Flow Duration=1280575.0  Total Fwd Packets=35.0  Total Backward Packets=40.0  Init_Win_bytes_backward=245.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=7343.6
+  Src IP=192.168.10.12  Src Port=57756.0  Dst IP=74.125.192.108  Destination Port=465.0  Protocol=6.0  Flow Duration=2055606.0  Total Fwd Packets=17.0  Total Backward Packets=24.0  Init_Win_bytes_backward=349.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=2876.0
+  Src IP=192.168.10.14  Src Port=63191.0  Dst IP=74.125.192.108  Destination Port=465.0  Protocol=6.0  Flow Duration=1812685.0  Total Fwd Packets=16.0  Total Backward Packets=24.0  Init_Win_bytes_backward=351.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3284.6
+  Src IP=192.168.10.9  Src Port=4831.0  Dst IP=74.125.192.109  Destination Port=465.0  Protocol=6.0  Flow Duration=1788729.0  Total Fwd Packets=16.0  Total Backward Packets=24.0  Init_Win_bytes_backward=351.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=3337.6
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique source IPs : 6
+  Top dest ports    : [22.0, 465.0, 443.0]
+  Protocols         : {6.0: 8}
+====================================================================

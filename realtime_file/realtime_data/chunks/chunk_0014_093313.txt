@@ -1,0 +1,36 @@
+====================================================================
+LOG WINDOW #0014
+Time range : 2026-11-16 09:33:13 UTC → 2026-11-16 09:33:14 UTC
+Suricata alerts :    6  | Network flows :  1012 (showing top 8)
+====================================================================
+
+SURICATA ALERTS (6 total, 2 unique group(s)):
+------------------------------------------------------------
+  [2026-11-16T15:33:14] [3x] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.1.194:0 → 192.168.1.169:0  proto=ICMP
+  [2026-11-16T15:33:14] [3x] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.1.169:0 → 192.168.1.194:0  proto=ICMP
+
+NETWORK FLOWS — top 8 of 1012 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.1.194  Src Port=63426  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2530320.0  Total Fwd Packets=9  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=263.2
+  Src IP=192.168.1.194  Src Port=63427  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2528886.0  Total Fwd Packets=9  Total Backward Packets=0  Init_Win_bytes_backward=0  SYN Flag Count=9  FIN Flag Count=9  RST Flag Count=0  Flow Bytes/s=263.4
+  Src IP=192.168.1.194  Src Port=63412  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2152487.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=65160  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=227.6
+  Src IP=192.168.1.194  Src Port=63413  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2176509.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=65160  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=225.1
+  Src IP=192.168.1.194  Src Port=63414  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2175970.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=65160  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=225.2
+  Src IP=192.168.1.194  Src Port=63415  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2244024.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=65160  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=213.0
+  Src IP=192.168.1.194  Src Port=63416  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2175457.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=65160  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=225.2
+  Src IP=192.168.1.194  Src Port=63417  Dst IP=192.168.1.169  Destination Port=22  Protocol=6  Flow Duration=2174545.0  Total Fwd Packets=5  Total Backward Packets=2  Init_Win_bytes_backward=65160  SYN Flag Count=5  FIN Flag Count=0  RST Flag Count=2  Flow Bytes/s=216.1
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Alert signatures  : 6x SURICATA ICMPv4 unknown code
+  Total window flows: 1012
+  Unique source IPs : 1
+  Distinct dst ports: 999  (top: [22, 1, 995, 445, 3306, 1720, 139, 8888])
+  Protocols (6=TCP,17=UDP): {'6': 1011, '17': 1}
+  TCP SYN summary   : total_syn=2047, half_open_flows=999
+  Role 1 assessment : PortScan (Heuristics) (100.0%)
+====================================================================

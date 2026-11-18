@@ -1,0 +1,167 @@
+
+════════════════════════════════════════════════════════════════
+  UNIFIED NIDS PIPELINE
+  Mode        : LIVE
+  Ollama URL  : https://presenting-characteristics-kathy-anybody.trycloudflare.com  (custom/3rd-party)
+  Ollama model: qwen2.5:1.5b
+  Window size : 20s
+════════════════════════════════════════════════════════════════
+
+
+  Loading pkl: universal_nids_output.pkl ...
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:58] WARNING: /__w/xgboost/xgboost/src/gbm/gbtree.cc:439: Changing updater from `grow_gpu_hist` to `grow_quantile_histmaker`.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:58] WARNING: /__w/xgboost/xgboost/src/context.cc:55: No visible GPU is found, setting device to CPU.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:58] WARNING: /__w/xgboost/xgboost/src/context.cc:218: Device is changed from GPU to CPU as we couldn't find any available GPU on the system.
+  setstate(state)
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator RandomForestClassifier from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:59] WARNING: /__w/xgboost/xgboost/src/gbm/gbtree.cc:439: Changing updater from `grow_gpu_hist` to `grow_quantile_histmaker`.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:59] WARNING: /__w/xgboost/xgboost/src/context.cc:55: No visible GPU is found, setting device to CPU.
+  setstate(state)
+/home/linuxbrew/.linuxbrew/opt/python@3.14/lib/python3.14/pickle.py:1829: UserWarning: [15:59:59] WARNING: /__w/xgboost/xgboost/src/context.cc:218: Device is changed from GPU to CPU as we couldn't find any available GPU on the system.
+  setstate(state)
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator LabelEncoder from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/ashraf/nids_realtime/.venv/lib/python3.14/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator RobustScaler from version 1.6.1 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+  ✓ Universal ensemble pkl loaded
+    Datasets  : ['CICIDS2017', 'UNSW-NB15', 'NSL-KDD']
+    Classes   : ['Analysis', 'Benign', 'Bot', 'Brute Force', 'DDoS', 'DoS', 'Fuzzers', 'Infiltration', 'PortScan', 'Shellcode', 'Web Attack']
+    Sub-models: ['CICIDS2017', 'UNSW-NB15', 'NSL-KDD']
+  ✓ Ollama ready (qwen2.5:1.5b)
+
+2026-11-16 16:00:01  INFO      src.pipeline.unified_pipeline   Role1 ready (universal): datasets=['CICIDS2017', 'UNSW-NB15', 'NSL-KDD']  classes=11
+  ✓ Role 1 ready: UniversalEnsemble
+    Datasets : ['CICIDS2017', 'UNSW-NB15', 'NSL-KDD']
+    Scalers  : per-dataset ✓ (3/3)
+    Classes  : [np.str_('Analysis'), np.str_('Benign'), np.str_('Bot'), np.str_('Brute Force'), np.str_('DDoS'), np.str_('DoS'), np.str_('Fuzzers'), np.str_('Infiltration'), np.str_('PortScan'), np.str_('Shellcode'), np.str_('Web Attack')]
+  Role 1 route: PINNED to CICIDS2017 (--dataset)
+
+════════════════════════════════════════════════════════════════
+  UNIFIED NIDS — LIVE MONITORING
+  Role 1+2 : ✓ active (universal)
+  Ctrl-C to stop
+
+[0/3] Timezone: using configured flow offset UTC+6.00h
+2026-11-16 16:00:01  INFO      src.ingestion.cicflow_reader    CICFlowMeter naive timestamps will be interpreted as UTC+6.00h
+  ✓ CICFlowMeter: watching data/cicflow_csv/ for new flow CSVs
+2026-11-16 16:00:01  INFO      src.ingestion.suricata_reader   Tailing eve.json: data/live_b/suricata_logs/eve.json  (from_start=True)
+2026-11-16 16:00:21  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_095935_0001_flows.csv
+2026-11-16 16:00:21  WARNING   src.ingestion.cicflow_reader    live_20261116_095935_0001_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_095935_0001_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:00:21  INFO      src.ingestion.cicflow_reader    Loaded 0 flows, 82 columns from live_20261116_095935_0001_flows.csv
+2026-11-16 16:00:21  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_095955_0002_flows.csv
+2026-11-16 16:00:21  WARNING   src.ingestion.cicflow_reader    live_20261116_095955_0002_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_095955_0002_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:00:21  INFO      src.ingestion.cicflow_reader    Loaded 0 flows, 82 columns from live_20261116_095955_0002_flows.csv
+2026-11-16 16:00:21  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100016_0003_flows.csv
+2026-11-16 16:00:21  WARNING   src.ingestion.cicflow_reader    live_20261116_100016_0003_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100016_0003_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:00:21  INFO      src.ingestion.cicflow_reader    Loaded 0 flows, 82 columns from live_20261116_100016_0003_flows.csv
+2026-11-16 16:00:41  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100036_0004_flows.csv
+2026-11-16 16:00:41  WARNING   src.ingestion.cicflow_reader    live_20261116_100036_0004_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100036_0004_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:00:41  INFO      src.ingestion.cicflow_reader    Loaded 0 flows, 82 columns from live_20261116_100036_0004_flows.csv
+2026-11-16 16:04:21  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100116_0005_flows.csv
+2026-11-16 16:04:22  WARNING   src.ingestion.cicflow_reader    live_20261116_100116_0005_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: 0.2310 s → 231004 µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100116_0005_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: 0.2310 s → 231,004 µs  (21 columns corrected)
+2026-11-16 16:04:22  INFO      src.ingestion.cicflow_reader    Loaded 58204 flows, 82 columns from live_20261116_100116_0005_flows.csv
+  ✓ CICFlowMeter: +58,204 flows from live_20261116_100116_0005_flows.csv (total 58,204)
+2026-11-16 16:04:22  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +58204 flows from live_20261116_100116_0005_flows.csv, total=58204
+  → Role 1 routed to sub-model: CICIDS2017  (coverage {'CICIDS2017': 1.0, 'UNSW-NB15': 0.0, 'NSL-KDD': 0.0})
+  ✓ Feature coverage for CICIDS2017: 52/52 (100.0%)
+2026-11-16 16:04:41  INFO      src.pipeline.unified_pipeline   Feature-drift check for CICIDS2017: 5/52 features drifted — OK
+  ⚡ Behavioral detector: DoS/Flood (Heuristics) — 192.168.1.194 (58202 flows, 1 ports)
+
+────────────────────────────────────────────────────────────────
+  🔴  [16:04:47]  HIGH  │  DoS/Flood (Heuristics)  │  conf=99%
+  Both Role1 (ML model) and Role3 (log analyst) classify this 
+  as ATTACK. The log contains a high volume of SYN/ACK and SYN 
+  retransmissions, which is indicative of a PortScan attack 
+  pattern. Top ML features: Bwd Packet Length Mean, 
+  act_data_pkt_fwd, Fwd Packet Length Max, Total Length of Fwd 
+  Packets. 
+  → Monitor the network for further signs of an ongoing scan and consider implementing additional security measures to prevent such attacks.
+2026-11-16 16:05:01  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100406_0006_flows.csv
+2026-11-16 16:05:02  WARNING   src.ingestion.cicflow_reader    live_20261116_100406_0006_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: 0.1328 s → 132804 µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100406_0006_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: 0.1328 s → 132,804 µs  (21 columns corrected)
+2026-11-16 16:05:02  INFO      src.ingestion.cicflow_reader    Loaded 30335 flows, 82 columns from live_20261116_100406_0006_flows.csv
+  ✓ CICFlowMeter: +30,335 flows from live_20261116_100406_0006_flows.csv (total 88,539)
+2026-11-16 16:05:02  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +30335 flows from live_20261116_100406_0006_flows.csv, total=88539
+2026-11-16 16:05:02  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100454_0007_flows.csv
+2026-11-16 16:05:02  WARNING   src.ingestion.cicflow_reader    live_20261116_100454_0007_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: 40.0386 s → 40038610 µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100454_0007_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: 40.0386 s → 40,038,610 µs  (21 columns corrected)
+2026-11-16 16:05:02  INFO      src.ingestion.cicflow_reader    Loaded 1 flows, 82 columns from live_20261116_100454_0007_flows.csv
+  ✓ CICFlowMeter: +1 flows from live_20261116_100454_0007_flows.csv (total 88,540)
+2026-11-16 16:05:02  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +1 flows from live_20261116_100454_0007_flows.csv, total=88540
+2026-11-16 16:05:22  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100511_0008_flows.csv
+2026-11-16 16:05:22  WARNING   src.ingestion.cicflow_reader    live_20261116_100511_0008_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100511_0008_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:05:22  INFO      src.ingestion.cicflow_reader    Loaded 1 flows, 82 columns from live_20261116_100511_0008_flows.csv
+  ✓ CICFlowMeter: +1 flows from live_20261116_100511_0008_flows.csv (total 88,541)
+2026-11-16 16:05:22  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +1 flows from live_20261116_100511_0008_flows.csv, total=88541
+2026-11-16 16:05:42  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100531_0009_flows.csv
+2026-11-16 16:05:42  WARNING   src.ingestion.cicflow_reader    live_20261116_100531_0009_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100531_0009_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:05:42  INFO      src.ingestion.cicflow_reader    Loaded 1 flows, 82 columns from live_20261116_100531_0009_flows.csv
+  ✓ CICFlowMeter: +1 flows from live_20261116_100531_0009_flows.csv (total 88,542)
+2026-11-16 16:05:42  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +1 flows from live_20261116_100531_0009_flows.csv, total=88542
+  ⚡ Behavioral detector: DoS/Flood (Heuristics) — 192.168.1.194 (30107 flows, 1 ports)
+
+────────────────────────────────────────────────────────────────
+  🟡  [16:05:46]  MEDIUM  │  DoS/Flood (Heuristics)  │  conf=100%  │  ⚠ CONFLICT
+  Conflict: Role1 (ML) says attack, Role3 (log analyst) says 
+  benign. Manual review recommended. The log shows a normal 
+  network traffic pattern with no unusual activity or threats 
+  detected. Top ML features: Bwd Packet Length Mean, 
+  act_data_pkt_fwd, Fwd Packet Length Max, Total Length of Fwd 
+  Packets. 
+  → No action required.
+2026-11-16 16:06:02  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100551_0010_flows.csv
+2026-11-16 16:06:02  WARNING   src.ingestion.cicflow_reader    live_20261116_100551_0010_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: 2.0479 s → 2047922 µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100551_0010_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: 2.0479 s → 2,047,922 µs  (21 columns corrected)
+2026-11-16 16:06:02  INFO      src.ingestion.cicflow_reader    Loaded 1 flows, 82 columns from live_20261116_100551_0010_flows.csv
+  ✓ CICFlowMeter: +1 flows from live_20261116_100551_0010_flows.csv (total 88,543)
+2026-11-16 16:06:02  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +1 flows from live_20261116_100551_0010_flows.csv, total=88543
+2026-11-16 16:06:23  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100611_0011_flows.csv
+2026-11-16 16:06:23  WARNING   src.ingestion.cicflow_reader    live_20261116_100611_0011_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100611_0011_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:06:23  INFO      src.ingestion.cicflow_reader    Loaded 1 flows, 82 columns from live_20261116_100611_0011_flows.csv
+  ✓ CICFlowMeter: +1 flows from live_20261116_100611_0011_flows.csv (total 88,544)
+2026-11-16 16:06:23  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +1 flows from live_20261116_100611_0011_flows.csv, total=88544
+2026-11-16 16:06:43  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100632_0012_flows.csv
+2026-11-16 16:06:43  WARNING   src.ingestion.cicflow_reader    live_20261116_100632_0012_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: nan s → nan µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100632_0012_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: nan s → nan µs  (21 columns corrected)
+2026-11-16 16:06:43  INFO      src.ingestion.cicflow_reader    Loaded 1 flows, 82 columns from live_20261116_100632_0012_flows.csv
+  ✓ CICFlowMeter: +1 flows from live_20261116_100632_0012_flows.csv (total 88,545)
+2026-11-16 16:06:43  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +1 flows from live_20261116_100632_0012_flows.csv, total=88545
+2026-11-16 16:07:28  INFO      src.ingestion.cicflow_reader    Loading flow CSV: data/cicflow_csv/live_20261116_100649_0013_flows.csv
+2026-11-16 16:07:28  WARNING   src.ingestion.cicflow_reader    live_20261116_100649_0013_flows.csv: python-cicflowmeter seconds→µs correction applied to 21 time column(s). Flow Duration: 9.9141 s → 9914097 µs. Rate columns (Bytes/s, Packets/s) not changed.
+  ✓  Unit fix (live_20261116_100649_0013_flows.csv): python-cicflowmeter seconds → µs
+     Flow Duration: 9.9141 s → 9,914,097 µs  (21 columns corrected)
+2026-11-16 16:07:28  INFO      src.ingestion.cicflow_reader    Loaded 1 flows, 82 columns from live_20261116_100649_0013_flows.csv
+  ✓ CICFlowMeter: +1 flows from live_20261116_100649_0013_flows.csv (total 88,546)
+2026-11-16 16:07:28  INFO      src.pipeline.unified_pipeline   refresh_flow_dir: +1 flows from live_20261116_100649_0013_flows.csv, total=88546
+
+  ✓ Approach B drain complete (9 windows, 88,546 flows)

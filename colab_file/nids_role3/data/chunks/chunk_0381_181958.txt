@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0381
+Time range : 2017-07-06 18:19:58 UTC → 2017-07-06 18:20:58 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-07T00:20:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.51:56691 → 172.217.6.206:443  proto=TCP
+  [2017-07-07T00:20:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:54925 → 23.195.248.141:443  proto=TCP
+  [2017-07-07T00:20:01] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    216.58.219.238:443 → 192.168.10.51:35760  proto=TCP
+  [2017-07-07T00:20:02] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.19:54925 → 23.195.248.141:443  proto=TCP
+  [2017-07-07T00:20:08] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    23.194.142.22:80 → 192.168.10.8:1826  proto=TCP
+  [2017-07-07T00:20:09] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    216.58.219.238:80 → 192.168.10.8:1913  proto=TCP
+  [2017-07-07T00:20:10] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    182.161.73.86:443 → 192.168.10.8:1935  proto=TCP
+  [2017-07-07T00:20:14] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.10.8:0 → 192.168.10.16:0  proto=ICMP
+  [2017-07-07T00:20:14] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.10.8:0 → 192.168.10.16:0  proto=ICMP
+  [2017-07-07T00:20:14] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.10.16:0 → 192.168.10.8:0  proto=ICMP
+  [2017-07-07T00:20:14] SID:2200025 (sev=3) SURICATA ICMPv4 unknown code
+    category : Generic Protocol Command Decode
+    192.168.10.16:0 → 192.168.10.8:0  proto=ICMP
+  [2017-07-07T00:20:15] SID:2225005 (sev=3) SURICATA SMB malformed request dialects
+    category : Generic Protocol Command Decode
+    192.168.10.8:2039 → 192.168.10.16:445  proto=TCP
+  [2017-07-07T00:20:15] SID:2225005 (sev=3) SURICATA SMB malformed request dialects
+    category : Generic Protocol Command Decode
+    192.168.10.8:2040 → 192.168.10.16:445  proto=TCP
+  [2017-07-07T00:20:15] SID:2225005 (sev=3) SURICATA SMB malformed request dialects
+    category : Generic Protocol Command Decode
+    192.168.10.8:2041 → 192.168.10.16:445  proto=TCP
+  [2017-07-07T00:20:16] SID:2225005 (sev=3) SURICATA SMB malformed request dialects
+    category : Generic Protocol Command Decode
+    192.168.10.8:2042 → 192.168.10.16:445  proto=TCP
+
+PROTOCOL METADATA (3309 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.51 queried safebrowsing.google.com type=A
+  DNS  192.168.10.51 queried safebrowsing.google.com type=A
+  DNS  192.168.10.3 queried sb.l.google.com type=A
+  DNS  192.168.10.3 queried sb.l.google.com type=A
+  DNS  192.168.10.51 queried safebrowsing.google.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.16  Src Port=42198.0  Dst IP=206.126.112.142  Destination Port=443.0  Protocol=6.0  Flow Duration=70037800.0  Total Fwd Packets=802.0  Total Backward Packets=2385.0  Init_Win_bytes_backward=183.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=74177.7
+  Src IP=192.168.10.16  Src Port=36686.0  Dst IP=169.54.221.58  Destination Port=443.0  Protocol=6.0  Flow Duration=11600442.0  Total Fwd Packets=392.0  Total Backward Packets=605.0  Init_Win_bytes_backward=486.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=99967.0
+  Src IP=8.6.0.1  Src Port=0.0  Dst IP=8.0.6.4  Destination Port=0.0  Protocol=0.0  Flow Duration=116993496.0  Total Fwd Packets=247.0  Total Backward Packets=0.0  Init_Win_bytes_backward=-1.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=0.0
+  Src IP=192.168.10.16  Src Port=36672.0  Dst IP=169.54.221.58  Destination Port=443.0  Protocol=6.0  Flow Duration=12309902.0  Total Fwd Packets=243.0  Total Backward Packets=400.0  Init_Win_bytes_backward=600.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=60775.2
+  Src IP=192.168.10.16  Src Port=36666.0  Dst IP=169.54.221.58  Destination Port=443.0  Protocol=6.0  Flow Duration=15678907.0  Total Fwd Packets=184.0  Total Backward Packets=344.0  Init_Win_bytes_backward=531.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=42168.2
+  Src IP=192.168.10.17  Src Port=41935.0  Dst IP=52.44.197.141  Destination Port=443.0  Protocol=6.0  Flow Duration=118608744.0  Total Fwd Packets=182.0  Total Backward Packets=275.0  Init_Win_bytes_backward=3254.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=6267.1
+  Src IP=192.168.10.16  Src Port=48034.0  Dst IP=172.217.3.110  Destination Port=443.0  Protocol=6.0  Flow Duration=116098880.0  Total Fwd Packets=177.0  Total Backward Packets=423.0  Init_Win_bytes_backward=767.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=5205.3
+  Src IP=192.168.10.16  Src Port=36684.0  Dst IP=169.54.221.58  Destination Port=443.0  Protocol=6.0  Flow Duration=11601112.0  Total Fwd Packets=169.0  Total Backward Packets=263.0  Init_Win_bytes_backward=486.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=49298.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window, SURICATA SMB malformed request dialects, SURICATA ICMPv4 unknown code
+  Unique source IPs : 3
+  Top dest ports    : [443.0, 0.0]
+  Protocols         : {6.0: 7, 0.0: 1}
+====================================================================

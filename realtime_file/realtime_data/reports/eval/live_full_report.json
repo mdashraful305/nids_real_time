@@ -1,0 +1,546 @@
+{
+  "run_id": "live_20261116_combined",
+  "run_dir": "data/runs/live_20261116_combined",
+  "meta": {
+    "run_id": "live_20261116_combined",
+    "run_dir": "data/runs/live_20261116_092302",
+    "start_ts_utc": "2026-11-16T09:23:05.180778+00:00",
+    "start_epoch": 1794820985.1808124,
+    "pkl": "universal_nids_output.pkl",
+    "source": "wlp0s20f3",
+    "iface": "wlp0s20f3",
+    "capture_backend": "dumpcap",
+    "pcap_extractor": "fast",
+    "rotate_sec": 5,
+    "host_ip": "192.168.1.169",
+    "host_network": "192.168.1.0/24",
+    "ollama_url": "https://presenting-characteristics-kathy-anybody.trycloudflare.com",
+    "ollama_model": "qwen2.5:1.5b",
+    "ollama_is_local": false,
+    "llm_enabled": true,
+    "shap_source": "xgb_component",
+    "bpf_filter": "not (host 127.0.0.1 or port 5000 or (src host 192.168.1.169 and not dst net 192.168.1.0/24) or (dst host 192.168.1.169 and not src net 192.168.1.0/24) or port 5001)",
+    "classes": [
+      "Analysis",
+      "Benign",
+      "Bot",
+      "Brute Force",
+      "DDoS",
+      "DoS",
+      "Fuzzers",
+      "Infiltration",
+      "PortScan",
+      "Shellcode",
+      "Web Attack"
+    ],
+    "n_features": 52,
+    "features": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Mean",
+      "Fwd IAT Std",
+      "Fwd IAT Min",
+      "Bwd IAT Total",
+      "Bwd IAT Mean",
+      "Bwd IAT Std",
+      "Bwd IAT Max",
+      "Bwd IAT Min",
+      "Fwd PSH Flags",
+      "Fwd URG Flags",
+      "Fwd Header Length",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Variance",
+      "FIN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "CWE Flag Count",
+      "Down/Up Ratio",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "act_data_pkt_fwd",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Active Std",
+      "Active Max",
+      "Active Min",
+      "Idle Mean",
+      "Idle Std"
+    ],
+    "hardware": {
+      "hostname": "ashraf",
+      "os": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+      "python": "3.14.5",
+      "cpu_count": 8,
+      "ram_gb": 7.44,
+      "cpu_model": "12th Gen Intel(R) Core(TM) i3-1215U"
+    },
+    "drain_completed": true,
+    "end_ts_utc": "2026-11-16T10:07:34.609585+00:00",
+    "end_epoch": 1794823654.6096218,
+    "counts": {
+      "flows": 3617,
+      "r3": 438,
+      "phases": 0
+    },
+    "final_stats": {
+      "total": 92237,
+      "attacks_r1": 91405,
+      "attacks_r3": 18,
+      "agree": 623,
+      "disagree": 0,
+      "llm_pending": 0
+    },
+    "combined_sessions": [
+      {
+        "run_id": "live_20261116_092302",
+        "start_ts_utc": "2026-11-16T09:23:05.180778+00:00",
+        "end_ts_utc": "2026-11-16T09:45:02.613244+00:00",
+        "flows": 3617,
+        "r3": 438
+      },
+      {
+        "run_id": "live_20261116_095911",
+        "start_ts_utc": "2026-11-16T09:59:15.035554+00:00",
+        "end_ts_utc": "2026-11-16T10:07:34.609585+00:00",
+        "flows": 88620,
+        "r3": 186
+      }
+    ],
+    "active_duration_seconds": 1817.0
+  },
+  "duration_seconds": 2624.3,
+  "attacker_ip": "192.168.1.194",
+  "lan_source_counts": {},
+  "approach_a": {
+    "flows_total": 92237,
+    "ui_suppressed_flows": 91613,
+    "role1_model_only_attacks": 4,
+    "role1_heuristic_attacks": 91402,
+    "role1_combined_attacks": 91405,
+    "role1_model_labels": {
+      "Benign": 92233,
+      "Brute Force": 4
+    },
+    "role1_combined_labels": {
+      "Benign": 832,
+      "Web Attack (Heuristics)": 211,
+      "PortScan (Heuristics)": 2981,
+      "Brute Force": 3,
+      "DoS/Flood (Heuristics)": 88210
+    },
+    "attacker_flows": 91820,
+    "reply_to_attacker_flows": 240,
+    "attacker_r1_hits": 91405,
+    "attacker_r1_model_hits": 4,
+    "benign_background": {
+      "flows": 177,
+      "role1_model_fp": 0,
+      "role1_combined_fp": 0,
+      "role1_fpr_pct": 0.0,
+      "role1_alerts_per_hour": 0.0,
+      "role3_evaluated": 177,
+      "role3_fp": 0,
+      "role3_fpr_pct": 0.0,
+      "role3_alerts_per_hour": 0.0
+    }
+  },
+  "role3_llm_audit": {
+    "total_calls": 624,
+    "ok": 623,
+    "errors": 1,
+    "valid_json_pct": 99.84,
+    "error_breakdown": {
+      "parse_json_error": 1
+    },
+    "verdict_counts": {
+      "benign": 605,
+      "attack": 18
+    },
+    "attacks_or_suspicious": 18,
+    "agreement_counts": {
+      "agree_benign": 605,
+      "agree_attack": 18
+    }
+  },
+  "latencies_ms": {
+    "role1_amortized_per_flow": {
+      "n": 92237,
+      "mean": 1.691,
+      "std": 1.913,
+      "min": 1.101,
+      "p50": 1.559,
+      "p95": 1.834,
+      "p99": 4.316,
+      "max": 105.894
+    },
+    "capture_to_verdict": {
+      "n": 92237,
+      "mean": 74565.606,
+      "std": 44626.831,
+      "min": 72.5,
+      "p50": 74394.09,
+      "p95": 144497.52,
+      "p99": 152435.44,
+      "max": 153407.35
+    },
+    "role3_llm_roundtrip": {
+      "n": 623,
+      "mean": 4400.696,
+      "std": 1154.419,
+      "min": 1283.8,
+      "p50": 4609.3,
+      "p95": 6247.55,
+      "p99": 6764.896,
+      "max": 7168.0
+    },
+    "role3_queue_wait": {
+      "n": 623,
+      "mean": 20129.348,
+      "std": 24778.873,
+      "min": 0.1,
+      "p50": 11723.4,
+      "p95": 75083.36,
+      "p99": 104714.812,
+      "max": 112356.6
+    },
+    "ollama_server_total_duration": {
+      "n": 623,
+      "mean": 4054.394,
+      "std": 1190.937,
+      "min": 849.133,
+      "p50": 4319.424,
+      "p95": 5920.733,
+      "p99": 6410.56,
+      "max": 6856.102
+    }
+  },
+  "phases": [
+    {
+      "phase": "DoS / Flood",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:25:36.716000+00:00",
+      "end_utc": "2026-11-16T09:27:15.848000+00:00",
+      "duration_s": 99.13,
+      "flows": 105,
+      "role1_model_hits": 0,
+      "role1_total_hits": 0,
+      "role1_hit_pct": 0.0,
+      "role1_top_labels": {},
+      "role3_evaluated": 104,
+      "role3_hits": 0,
+      "role3_hit_pct": 0.0,
+      "time_to_first_alert_r1_s": null,
+      "time_to_first_alert_r3_s": null
+    },
+    {
+      "phase": "Traffic burst #2 (ports=[0])",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:28:03.567000+00:00",
+      "end_utc": "2026-11-16T09:28:17.578000+00:00",
+      "duration_s": 14.01,
+      "flows": 4,
+      "role1_model_hits": 0,
+      "role1_total_hits": 0,
+      "role1_hit_pct": 0.0,
+      "role1_top_labels": {},
+      "role3_evaluated": 4,
+      "role3_hits": 0,
+      "role3_hit_pct": 0.0,
+      "time_to_first_alert_r1_s": null,
+      "time_to_first_alert_r3_s": null
+    },
+    {
+      "phase": "Brute Force (SSH)",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:29:06.133000+00:00",
+      "end_utc": "2026-11-16T09:29:28.047000+00:00",
+      "duration_s": 21.91,
+      "flows": 104,
+      "role1_model_hits": 0,
+      "role1_total_hits": 72,
+      "role1_hit_pct": 69.2,
+      "role1_top_labels": {
+        "Web Attack (Heuristics)": 72
+      },
+      "role3_evaluated": 34,
+      "role3_hits": 2,
+      "role3_hit_pct": 5.9,
+      "time_to_first_alert_r1_s": 2.23,
+      "time_to_first_alert_r3_s": 9.42
+    },
+    {
+      "phase": "Web Attack / Scan",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:30:01.839000+00:00",
+      "end_utc": "2026-11-16T09:30:34.010000+00:00",
+      "duration_s": 32.17,
+      "flows": 164,
+      "role1_model_hits": 0,
+      "role1_total_hits": 139,
+      "role1_hit_pct": 84.8,
+      "role1_top_labels": {
+        "Web Attack (Heuristics)": 139
+      },
+      "role3_evaluated": 31,
+      "role3_hits": 6,
+      "role3_hit_pct": 19.4,
+      "time_to_first_alert_r1_s": 7.52,
+      "time_to_first_alert_r3_s": 14.27
+    },
+    {
+      "phase": "Web Attack / Scan",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:31:00.207000+00:00",
+      "end_utc": "2026-11-16T09:31:11.164000+00:00",
+      "duration_s": 10.96,
+      "flows": 4,
+      "role1_model_hits": 0,
+      "role1_total_hits": 0,
+      "role1_hit_pct": 0.0,
+      "role1_top_labels": {},
+      "role3_evaluated": 4,
+      "role3_hits": 0,
+      "role3_hit_pct": 0.0,
+      "time_to_first_alert_r1_s": null,
+      "time_to_first_alert_r3_s": null
+    },
+    {
+      "phase": "PortScan (1000 ports)",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:31:40.041000+00:00",
+      "end_utc": "2026-11-16T09:31:40.234000+00:00",
+      "duration_s": 0.19,
+      "flows": 1002,
+      "role1_model_hits": 0,
+      "role1_total_hits": 975,
+      "role1_hit_pct": 97.3,
+      "role1_top_labels": {
+        "PortScan (Heuristics)": 975
+      },
+      "role3_evaluated": 28,
+      "role3_hits": 1,
+      "role3_hit_pct": 3.6,
+      "time_to_first_alert_r1_s": 2.16,
+      "time_to_first_alert_r3_s": 8.72
+    },
+    {
+      "phase": "Brute Force (SSH)",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:32:43.632000+00:00",
+      "end_utc": "2026-11-16T09:32:49.919000+00:00",
+      "duration_s": 6.29,
+      "flows": 15,
+      "role1_model_hits": 0,
+      "role1_total_hits": 0,
+      "role1_hit_pct": 0.0,
+      "role1_top_labels": {},
+      "role3_evaluated": 15,
+      "role3_hits": 0,
+      "role3_hit_pct": 0.0,
+      "time_to_first_alert_r1_s": null,
+      "time_to_first_alert_r3_s": null
+    },
+    {
+      "phase": "PortScan (1000 ports)",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:33:13.429000+00:00",
+      "end_utc": "2026-11-16T09:33:24.916000+00:00",
+      "duration_s": 11.49,
+      "flows": 1043,
+      "role1_model_hits": 1,
+      "role1_total_hits": 1019,
+      "role1_hit_pct": 97.7,
+      "role1_top_labels": {
+        "PortScan (Heuristics)": 1019
+      },
+      "role3_evaluated": 27,
+      "role3_hits": 3,
+      "role3_hit_pct": 11.1,
+      "time_to_first_alert_r1_s": 5.51,
+      "time_to_first_alert_r3_s": 12.09
+    },
+    {
+      "phase": "PortScan (998 ports)",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:34:27.260000+00:00",
+      "end_utc": "2026-11-16T09:34:39.754000+00:00",
+      "duration_s": 12.49,
+      "flows": 1010,
+      "role1_model_hits": 0,
+      "role1_total_hits": 987,
+      "role1_hit_pct": 97.7,
+      "role1_top_labels": {
+        "PortScan (Heuristics)": 987
+      },
+      "role3_evaluated": 26,
+      "role3_hits": 3,
+      "role3_hit_pct": 11.5,
+      "time_to_first_alert_r1_s": 3.32,
+      "time_to_first_alert_r3_s": 10.75
+    },
+    {
+      "phase": "Brute Force (SSH)",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:35:59.935000+00:00",
+      "end_utc": "2026-11-16T09:36:00.399000+00:00",
+      "duration_s": 0.46,
+      "flows": 50,
+      "role1_model_hits": 3,
+      "role1_total_hits": 3,
+      "role1_hit_pct": 6.0,
+      "role1_top_labels": {
+        "Brute Force": 3
+      },
+      "role3_evaluated": 48,
+      "role3_hits": 1,
+      "role3_hit_pct": 2.1,
+      "time_to_first_alert_r1_s": 1.84,
+      "time_to_first_alert_r3_s": 6.96
+    },
+    {
+      "phase": "Traffic burst #11 (ports=[53, 123, 161])",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T09:37:26.051000+00:00",
+      "end_utc": "2026-11-16T09:37:26.051000+00:00",
+      "duration_s": 0.0,
+      "flows": 4,
+      "role1_model_hits": 0,
+      "role1_total_hits": 0,
+      "role1_hit_pct": 0.0,
+      "role1_top_labels": {},
+      "role3_evaluated": 4,
+      "role3_hits": 0,
+      "role3_hit_pct": 0.0,
+      "time_to_first_alert_r1_s": null,
+      "time_to_first_alert_r3_s": null
+    },
+    {
+      "phase": "DoS / SYN Flood",
+      "source": "auto_burst",
+      "start_utc": "2026-11-16T10:01:12.690000+00:00",
+      "end_utc": "2026-11-16T10:01:21.306000+00:00",
+      "duration_s": 8.62,
+      "flows": 88537,
+      "role1_model_hits": 0,
+      "role1_total_hits": 88210,
+      "role1_hit_pct": 99.6,
+      "role1_top_labels": {
+        "DoS/Flood (Heuristics)": 88210
+      },
+      "role3_evaluated": 103,
+      "role3_hits": 2,
+      "role3_hit_pct": 1.9,
+      "time_to_first_alert_r1_s": 14.58,
+      "time_to_first_alert_r3_s": 19.59
+    }
+  ],
+  "approach_b": {
+    "windows": 32,
+    "role1_attack_windows": 14,
+    "role3_attack_windows": 16,
+    "final_attack_windows": 17,
+    "severity_counts": {
+      "LOW": 3,
+      "HIGH": 13,
+      "NONE": 15,
+      "MEDIUM": 1
+    },
+    "role3_error_windows": 0
+  },
+  "suricata": {
+    "total_events": 123761,
+    "alert_events": 28999,
+    "top_signatures": [
+      [
+        "SURICATA STREAM 3way handshake SYNACK resend with different ack",
+        14484
+      ],
+      [
+        "SURICATA STREAM 3way handshake SYN resend different seq on SYN recv",
+        14464
+      ],
+      [
+        "ET SCAN Possible Nmap User-Agent Observed",
+        29
+      ],
+      [
+        "SURICATA ICMPv4 unknown code",
+        10
+      ],
+      [
+        "ET WEB_SERVER ColdFusion administrator access",
+        5
+      ],
+      [
+        "SURICATA Applayer Detect protocol only one direction",
+        4
+      ],
+      [
+        "SURICATA HTTP Host header invalid",
+        1
+      ],
+      [
+        "ET WEB_SERVER ColdFusion componentutils access",
+        1
+      ],
+      [
+        "ET WEB_SPECIFIC_APPS Wordpress LiteSpeed Cache Plugin debug.log Access Attempt (CVE-2024-44000)",
+        1
+      ]
+    ]
+  },
+  "feature_drift": {
+    "n_flows_checked": 92237,
+    "n_features": 52,
+    "n_drifted_10x": 4,
+    "drifted_features": [
+      {
+        "feature": "Flow IAT Min",
+        "train_median": 4.0,
+        "live_median": 83.0,
+        "ratio": 20.75
+      },
+      {
+        "feature": "Fwd IAT Mean",
+        "train_median": 49.0,
+        "live_median": 170995.0,
+        "ratio": 3489.694
+      },
+      {
+        "feature": "Fwd IAT Min",
+        "train_median": 3.0,
+        "live_median": 26806.0,
+        "ratio": 8935.333
+      },
+      {
+        "feature": "Init_Win_bytes_backward",
+        "train_median": 0.0,
+        "live_median": 64240.0,
+        "z_iqr": 272.2
+      }
+    ]
+  },
+  "raw_pcap": null
+}

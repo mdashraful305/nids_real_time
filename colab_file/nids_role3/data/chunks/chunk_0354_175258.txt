@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0354
+Time range : 2017-07-06 17:52:58 UTC → 2017-07-06 17:53:58 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-06T23:52:58] SID:2210038 (sev=3) SURICATA STREAM FIN out of window
+    category : Generic Protocol Command Decode
+    37.140.238.33:443 → 192.168.10.8:49421  proto=TCP
+  [2017-07-06T23:53:00] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    34.211.94.203:443 → 192.168.10.8:49659  proto=TCP
+  [2017-07-06T23:53:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:49179 → 192.168.10.50:39668  proto=TCP
+  [2017-07-06T23:53:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:49179 → 192.168.10.50:39668  proto=TCP
+  [2017-07-06T23:53:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:49179 → 192.168.10.50:39668  proto=TCP
+  [2017-07-06T23:53:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:49179 → 192.168.10.50:39668  proto=TCP
+  [2017-07-06T23:53:03] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.14:49179 → 192.168.10.50:39668  proto=TCP
+  [2017-07-06T23:53:03] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.50:39668 → 192.168.10.14:49179  proto=TCP
+  [2017-07-06T23:53:03] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    192.168.10.50:39668 → 192.168.10.14:49179  proto=TCP
+  [2017-07-06T23:53:08] SID:2027758 (sev=2) ET DNS Query for .cc TLD
+    category : Potentially Bad Traffic
+    192.168.10.14:52759 → 192.168.10.3:53  proto=UDP
+  [2017-07-06T23:53:08] SID:2027758 (sev=2) ET DNS Query for .cc TLD
+    category : Potentially Bad Traffic
+    192.168.10.14:52759 → 192.168.10.3:53  proto=UDP
+  [2017-07-06T23:53:08] SID:2027758 (sev=2) ET DNS Query for .cc TLD
+    category : Potentially Bad Traffic
+    192.168.10.3:61805 → 192.168.10.1:53  proto=UDP
+  [2017-07-06T23:53:08] SID:2027758 (sev=2) ET DNS Query for .cc TLD
+    category : Potentially Bad Traffic
+    192.168.10.14:52759 → 192.168.10.3:53  proto=UDP
+  [2017-07-06T23:53:08] SID:2027758 (sev=2) ET DNS Query for .cc TLD
+    category : Potentially Bad Traffic
+    192.168.10.14:52759 → 192.168.10.3:53  proto=UDP
+  [2017-07-06T23:53:08] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.229.163.139:443 → 192.168.10.14:49181  proto=TCP
+
+PROTOCOL METADATA (1622 events, showing first 5):
+------------------------------------------------------------
+  TLS  192.168.10.51 → 52.24.31.137 SNI=versioncheck-bg.addons.mozilla.org version=TLS 1.2
+  TLS  192.168.10.51 → 52.24.31.137 SNI=versioncheck-bg.addons.mozilla.org version=TLS 1.2
+  TLS  192.168.10.51 → 52.24.31.137 SNI=versioncheck-bg.addons.mozilla.org version=TLS 1.2
+  DNS  192.168.10.8 queried p4-gmwnuzn6xifum-jur34xlbeglp2mv6-378407-i1-v6exp3.v4.metric.gstatic.com type=A
+  DNS  192.168.10.8 queried p4-gmwnuzn6xifum-jur34xlbeglp2mv6-378407-i2-v6exp3.ds.metric.gstatic.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.12  Src Port=39972.0  Dst IP=104.24.11.111  Destination Port=443.0  Protocol=6.0  Flow Duration=87911216.0  Total Fwd Packets=685.0  Total Backward Packets=2616.0  Init_Win_bytes_backward=105.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=43362.9
+  Src IP=192.168.10.17  Src Port=56276.0  Dst IP=205.185.208.154  Destination Port=443.0  Protocol=6.0  Flow Duration=11391188.0  Total Fwd Packets=199.0  Total Backward Packets=227.0  Init_Win_bytes_backward=31.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=41303.1
+  Src IP=192.168.10.16  Src Port=37264.0  Dst IP=172.217.11.3  Destination Port=443.0  Protocol=6.0  Flow Duration=118781360.0  Total Fwd Packets=139.0  Total Backward Packets=233.0  Init_Win_bytes_backward=390.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=2501.2
+  Src IP=192.168.10.12  Src Port=60096.0  Dst IP=216.58.219.193  Destination Port=443.0  Protocol=6.0  Flow Duration=62433800.0  Total Fwd Packets=114.0  Total Backward Packets=350.0  Init_Win_bytes_backward=382.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=8432.8
+  Src IP=192.168.10.17  Src Port=40556.0  Dst IP=104.17.19.11  Destination Port=443.0  Protocol=6.0  Flow Duration=118676000.0  Total Fwd Packets=104.0  Total Backward Packets=104.0  Init_Win_bytes_backward=150.0  SYN Flag Count=1.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1145.3
+  Src IP=192.168.10.25  Src Port=51325.0  Dst IP=205.174.165.73  Destination Port=444.0  Protocol=6.0  Flow Duration=108011632.0  Total Fwd Packets=103.0  Total Backward Packets=98.0  Init_Win_bytes_backward=764.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1201.0
+  Src IP=192.168.10.14  Src Port=49181.0  Dst IP=192.229.163.139  Destination Port=443.0  Protocol=6.0  Flow Duration=119086144.0  Total Fwd Packets=100.0  Total Backward Packets=149.0  Init_Win_bytes_backward=292.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1977.2
+  Src IP=192.168.10.12  Src Port=37964.0  Dst IP=172.217.10.38  Destination Port=443.0  Protocol=6.0  Flow Duration=118812032.0  Total Fwd Packets=99.0  Total Backward Packets=162.0  Init_Win_bytes_backward=390.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=1665.8
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM FIN out of window, SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window, ET DNS Query for .cc TLD
+  Unique source IPs : 5
+  Top dest ports    : [443.0, 444.0]
+  Protocols         : {6.0: 8}
+====================================================================

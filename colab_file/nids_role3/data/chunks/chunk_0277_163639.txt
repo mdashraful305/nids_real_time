@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0277
+Time range : 2017-07-07 16:36:39 UTC → 2017-07-07 16:37:39 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5271  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5271  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5271  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5268  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5268  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5268  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5268  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    160.17.5.1:443 → 192.168.10.8:5266  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5273  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5273  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5273  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    160.17.5.1:443 → 192.168.10.8:5264  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    160.17.5.1:443 → 192.168.10.8:5265  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    160.17.5.1:443 → 192.168.10.8:5265  proto=TCP
+  [2017-07-07T22:36:39] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    104.97.120.94:443 → 192.168.10.8:5270  proto=TCP
+
+PROTOCOL METADATA (3683 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.14:54692 → 162.208.20.178 | GET vast.bp3866431.btrll.com/vast/3866431?n=1499445378556&br_w=356&br_h=205&br_pageurl=h
+  TLS  192.168.10.25 → 172.217.9.226 SNI=ade.googlesyndication.com version=TLSv1
+  HTTP 192.168.10.14:54694 → 162.208.20.178 | GET vast.bp3871512.btrll.com/vast/3871512?n=1499445378556&br_w=356&br_h=205&br_pageurl=h
+  DNS  192.168.10.19 queried beacon-us-iad2.rubiconproject.com type=A
+  DNS  192.168.10.19 queried beacon-us-iad2.rubiconproject.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.19  Src Port=54429  Dst IP=151.101.0.143  Destination Port=80  Protocol=6  Flow Duration=118578295  Total Fwd Packets=1010  Total Backward Packets=1871  Init_Win_bytes_backward=114  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=30763.9
+  Src IP=192.168.10.19  Src Port=59267  Dst IP=151.101.128.143  Destination Port=80  Protocol=6  Flow Duration=112455789  Total Fwd Packets=972  Total Backward Packets=1960  Init_Win_bytes_backward=121  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=33830.9
+  Src IP=192.168.10.19  Src Port=54431  Dst IP=151.101.0.143  Destination Port=80  Protocol=6  Flow Duration=118578148  Total Fwd Packets=870  Total Backward Packets=1427  Init_Win_bytes_backward=89  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=23530.2
+  Src IP=192.168.10.19  Src Port=54430  Dst IP=151.101.0.143  Destination Port=80  Protocol=6  Flow Duration=118578234  Total Fwd Packets=817  Total Backward Packets=1514  Init_Win_bytes_backward=110  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=24469.4
+  Src IP=192.168.10.19  Src Port=59266  Dst IP=151.101.128.143  Destination Port=80  Protocol=6  Flow Duration=112455864  Total Fwd Packets=784  Total Backward Packets=1603  Init_Win_bytes_backward=117  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=24194.5
+  Src IP=192.168.10.19  Src Port=54428  Dst IP=151.101.0.143  Destination Port=80  Protocol=6  Flow Duration=118578312  Total Fwd Packets=696  Total Backward Packets=1151  Init_Win_bytes_backward=101  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=18756.9
+  Src IP=192.168.10.25  Src Port=52728  Dst IP=172.217.10.110  Destination Port=80  Protocol=6  Flow Duration=71746218  Total Fwd Packets=533  Total Backward Packets=846  Init_Win_bytes_backward=631  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=22314.2
+  Src IP=192.168.10.19  Src Port=54115  Dst IP=151.101.0.143  Destination Port=80  Protocol=6  Flow Duration=13515505  Total Fwd Packets=430  Total Backward Packets=693  Init_Win_bytes_backward=106  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=102972.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum
+  Unique source IPs : 2
+  Top dest ports    : [80]
+  Protocols         : {6: 8}
+====================================================================

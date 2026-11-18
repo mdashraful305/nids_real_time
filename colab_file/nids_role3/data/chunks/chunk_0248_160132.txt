@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0248
+Time range : 2017-07-04 16:01:32 UTC → 2017-07-04 16:02:32 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-04T22:01:33] SID:2027390 (sev=3) ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+    category : Misc activity
+    192.168.10.15:55193 → 23.194.141.143:80  proto=TCP
+  [2017-07-04T22:01:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    40.80.145.78:80 → 192.168.10.15:55187  proto=TCP
+  [2017-07-04T22:01:33] SID:2027390 (sev=3) ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+    category : Misc activity
+    192.168.10.15:55187 → 40.80.145.78:80  proto=TCP
+  [2017-07-04T22:01:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:55194 → 23.194.141.143:80  proto=TCP
+  [2017-07-04T22:01:33] SID:2027390 (sev=3) ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+    category : Misc activity
+    192.168.10.15:55194 → 23.194.141.143:80  proto=TCP
+  [2017-07-04T22:01:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.15:55187 → 40.80.145.78:80  proto=TCP
+  [2017-07-04T22:01:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.145.207:443 → 192.168.10.25:55000  proto=TCP
+  [2017-07-04T22:01:33] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.145.207:443 → 192.168.10.25:55001  proto=TCP
+  [2017-07-04T22:01:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    40.80.145.78:80 → 192.168.10.15:55187  proto=TCP
+  [2017-07-04T22:01:34] SID:2027390 (sev=3) ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+    category : Misc activity
+    192.168.10.15:55187 → 40.80.145.78:80  proto=TCP
+  [2017-07-04T22:01:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.145.207:443 → 192.168.10.25:55000  proto=TCP
+  [2017-07-04T22:01:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.145.207:443 → 192.168.10.25:55000  proto=TCP
+  [2017-07-04T22:01:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.145.207:443 → 192.168.10.25:55001  proto=TCP
+  [2017-07-04T22:01:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.145.207:443 → 192.168.10.25:55001  proto=TCP
+  [2017-07-04T22:01:34] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    52.84.145.207:443 → 192.168.10.25:55000  proto=TCP
+
+PROTOCOL METADATA (287 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.15 queried img-s-msn-com.akamaized.net type=A
+  DNS  192.168.10.15 queried img-s-msn-com.akamaized.net type=A
+  DNS  192.168.10.3 queried img-s-msn-com.akamaized.net type=A
+  DNS  192.168.10.3 queried img-s-msn-com.akamaized.net type=A
+  DNS  192.168.10.15 queried img-s-msn-com.akamaized.net type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.9  Src Port=5308  Dst IP=172.217.11.46  Destination Port=443  Protocol=6  Flow Duration=119091255  Total Fwd Packets=490  Total Backward Packets=803  Init_Win_bytes_backward=427  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=11711.2
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=103040630  Total Fwd Packets=62  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.25  Src Port=54993  Dst IP=54.192.37.17  Destination Port=443  Protocol=6  Flow Duration=214095  Total Fwd Packets=40  Total Backward Packets=62  Init_Win_bytes_backward=122  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=408346.8
+  Src IP=192.168.10.25  Src Port=55001  Dst IP=52.84.145.207  Destination Port=443  Protocol=6  Flow Duration=170178  Total Fwd Packets=39  Total Backward Packets=62  Init_Win_bytes_backward=122  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=513726.8
+  Src IP=192.168.10.15  Src Port=55228  Dst IP=239.255.255.250  Destination Port=1900  Protocol=17  Flow Duration=5999996  Total Fwd Packets=39  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=890.5
+  Src IP=192.168.10.25  Src Port=54998  Dst IP=52.84.145.207  Destination Port=443  Protocol=6  Flow Duration=194964  Total Fwd Packets=36  Total Backward Packets=108  Init_Win_bytes_backward=122  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=852752.3
+  Src IP=192.168.10.5  Src Port=56910  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1283960  Total Fwd Packets=35  Total Backward Packets=42  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7416.1
+  Src IP=192.168.10.5  Src Port=56911  Dst IP=192.168.10.50  Destination Port=22  Protocol=6  Flow Duration=1284291  Total Fwd Packets=35  Total Backward Packets=40  Init_Win_bytes_backward=245  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7214.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+  Unique source IPs : 5
+  Top dest ports    : [443, 22, 0, 1900]
+  Protocols         : {6: 6, 0: 1, 17: 1}
+====================================================================

@@ -1,0 +1,977 @@
+[62302 - Suricata-Main] 2026-11-16 15:23:11 Notice: suricata: This is Suricata version 7.0.3 RELEASE running in USER mode
+[62302 - Suricata-Main] 2026-11-16 15:23:11 Info: cpu: CPUs/cores online: 8
+[62302 - Suricata-Main] 2026-11-16 15:23:11 Info: suricata: Setting engine mode to IDS mode by default
+[62302 - Suricata-Main] 2026-11-16 15:23:11 Info: exception-policy: master exception-policy set to: auto
+[62302 - Suricata-Main] 2026-11-16 15:23:11 Info: logopenfile: fast output device (regular) initialized: fast.log
+[62302 - Suricata-Main] 2026-11-16 15:23:11 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[62302 - Suricata-Main] 2026-11-16 15:23:11 Info: logopenfile: stats output device (regular) initialized: stats.log
+[62302 - Suricata-Main] 2026-11-16 15:23:15 Info: detect: 1 rule files processed. 44596 rules successfully loaded, 0 rules failed, 0
+[62302 - Suricata-Main] 2026-11-16 15:23:15 Info: threshold-config: Threshold config parsed: 5 rule(s) found
+[62302 - Suricata-Main] 2026-11-16 15:23:15 Info: detect: 44599 signatures processed. 961 are IP-only rules, 4383 are inspecting packet payload, 39035 inspect application layer, 108 are decoder event only
+[62404 - RX#01] 2026-11-16 15:23:26 Info: pcap: Argument /home/ashraf/nids_realtime/data/live_b/suri_in was a directory
+[62404 - RX#01] 2026-11-16 15:23:27 Info: pcap: Starting directory run for /home/ashraf/nids_realtime/data/live_b/suri_in
+[62404 - RX#01] 2026-11-16 15:23:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794820977021
+[62404 - RX#01] 2026-11-16 15:23:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794820977021
+[62404 - RX#01] 2026-11-16 15:23:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794820982022
+[62404 - RX#01] 2026-11-16 15:23:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794820987022
+[62404 - RX#01] 2026-11-16 15:23:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00001_20261116152305.pcap" at 1794820986944
+[62404 - RX#01] 2026-11-16 15:23:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00001_20261116152305.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:23:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00001_20261116152305.pcap, processed up to 1794820986944
+[62404 - RX#01] 2026-11-16 15:23:42 Info: pcap: Updating processed to 1794820986944
+[62302 - Suricata-Main] 2026-11-16 15:23:42 Notice: threads: Threads created -> RX: 1 W: 8 FM: 1 FR: 1   Engine started.
+[62404 - RX#01] 2026-11-16 15:23:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820986944 and older than 1794820992022
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820986944 and older than 1794820997022
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00002_20261116152310.pcap" at 1794820995693
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00003_20261116152315.pcap" at 1794820996193
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00002_20261116152310.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00002_20261116152310.pcap, processed up to 1794820995693
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00003_20261116152315.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00003_20261116152315.pcap, processed up to 1794820996193
+[62404 - RX#01] 2026-11-16 15:23:52 Info: pcap: Updating processed to 1794820996193
+[62404 - RX#01] 2026-11-16 15:23:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821002024
+[62404 - RX#01] 2026-11-16 15:24:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821007024
+[62404 - RX#01] 2026-11-16 15:24:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821012024
+[62404 - RX#01] 2026-11-16 15:24:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821017025
+[62404 - RX#01] 2026-11-16 15:24:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821022025
+[62404 - RX#01] 2026-11-16 15:24:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821027025
+[62404 - RX#01] 2026-11-16 15:24:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821032025
+[62404 - RX#01] 2026-11-16 15:24:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821037025
+[62404 - RX#01] 2026-11-16 15:24:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821042026
+[62404 - RX#01] 2026-11-16 15:24:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821047026
+[62404 - RX#01] 2026-11-16 15:24:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821052026
+[62404 - RX#01] 2026-11-16 15:24:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794820996193 and older than 1794821057027
+[62404 - RX#01] 2026-11-16 15:24:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00015_20261116152415.pcap" at 1794821056194
+[62404 - RX#01] 2026-11-16 15:24:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00015_20261116152415.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:24:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00015_20261116152415.pcap, processed up to 1794821056194
+[62404 - RX#01] 2026-11-16 15:24:52 Info: pcap: Updating processed to 1794821056194
+[62404 - RX#01] 2026-11-16 15:24:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821056194 and older than 1794821062027
+[62404 - RX#01] 2026-11-16 15:25:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821056194 and older than 1794821067028
+[62404 - RX#01] 2026-11-16 15:25:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821056194 and older than 1794821072028
+[62404 - RX#01] 2026-11-16 15:25:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00017_20261116152425.pcap" at 1794821070193
+[62404 - RX#01] 2026-11-16 15:25:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00017_20261116152425.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:25:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00017_20261116152425.pcap, processed up to 1794821070193
+[62404 - RX#01] 2026-11-16 15:25:07 Info: pcap: Updating processed to 1794821070193
+[62404 - RX#01] 2026-11-16 15:25:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821070193 and older than 1794821077028
+[62404 - RX#01] 2026-11-16 15:25:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821070193 and older than 1794821082028
+[62404 - RX#01] 2026-11-16 15:25:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821070193 and older than 1794821087028
+[62404 - RX#01] 2026-11-16 15:25:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821070193 and older than 1794821092028
+[62404 - RX#01] 2026-11-16 15:25:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821070193 and older than 1794821097029
+[62404 - RX#01] 2026-11-16 15:25:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821070193 and older than 1794821102029
+[62404 - RX#01] 2026-11-16 15:25:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821070193 and older than 1794821107029
+[62404 - RX#01] 2026-11-16 15:25:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00024_20261116152501.pcap" at 1794821106193
+[62404 - RX#01] 2026-11-16 15:25:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00024_20261116152501.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:25:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00024_20261116152501.pcap, processed up to 1794821106193
+[62404 - RX#01] 2026-11-16 15:25:42 Info: pcap: Updating processed to 1794821106193
+[62404 - RX#01] 2026-11-16 15:25:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821106193 and older than 1794821112029
+[62404 - RX#01] 2026-11-16 15:25:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821106193 and older than 1794821117030
+[62404 - RX#01] 2026-11-16 15:25:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00026_20261116152511.pcap" at 1794821116693
+[62404 - RX#01] 2026-11-16 15:25:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00026_20261116152511.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:25:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00026_20261116152511.pcap, processed up to 1794821116693
+[62404 - RX#01] 2026-11-16 15:25:52 Info: pcap: Updating processed to 1794821116693
+[62404 - RX#01] 2026-11-16 15:25:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821116693 and older than 1794821122030
+[62404 - RX#01] 2026-11-16 15:26:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821116693 and older than 1794821127030
+[62404 - RX#01] 2026-11-16 15:26:02 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00027_20261116152516.pcap" at 1794821120443
+[62404 - RX#01] 2026-11-16 15:26:02 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00027_20261116152516.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:02 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00027_20261116152516.pcap, processed up to 1794821120443
+[62404 - RX#01] 2026-11-16 15:26:02 Info: pcap: Updating processed to 1794821120443
+[62404 - RX#01] 2026-11-16 15:26:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821120443 and older than 1794821132031
+[62404 - RX#01] 2026-11-16 15:26:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821120443 and older than 1794821137031
+[62404 - RX#01] 2026-11-16 15:26:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821120443 and older than 1794821142031
+[62404 - RX#01] 2026-11-16 15:26:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00031_20261116152536.pcap" at 1794821141943
+[62404 - RX#01] 2026-11-16 15:26:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00031_20261116152536.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00031_20261116152536.pcap, processed up to 1794821141943
+[62404 - RX#01] 2026-11-16 15:26:17 Info: pcap: Updating processed to 1794821141943
+[62404 - RX#01] 2026-11-16 15:26:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821141943 and older than 1794821147032
+[62404 - RX#01] 2026-11-16 15:26:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821141943 and older than 1794821152032
+[62404 - RX#01] 2026-11-16 15:26:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00032_20261116152541.pcap" at 1794821147193
+[62404 - RX#01] 2026-11-16 15:26:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00032_20261116152541.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00032_20261116152541.pcap, processed up to 1794821147193
+[62404 - RX#01] 2026-11-16 15:26:27 Info: pcap: Updating processed to 1794821147193
+[62404 - RX#01] 2026-11-16 15:26:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821147193 and older than 1794821157032
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821147193 and older than 1794821162033
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00033_20261116152547.pcap" at 1794821152193
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00034_20261116152552.pcap" at 1794821157193
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00033_20261116152547.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00033_20261116152547.pcap, processed up to 1794821152193
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00034_20261116152552.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00034_20261116152552.pcap, processed up to 1794821157193
+[62404 - RX#01] 2026-11-16 15:26:37 Info: pcap: Updating processed to 1794821157193
+[62404 - RX#01] 2026-11-16 15:26:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821157193 and older than 1794821167033
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821157193 and older than 1794821172033
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00036_20261116152602.pcap" at 1794821168194
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00035_20261116152557.pcap" at 1794821162943
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00035_20261116152557.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00035_20261116152557.pcap, processed up to 1794821162943
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00036_20261116152602.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00036_20261116152602.pcap, processed up to 1794821168194
+[62404 - RX#01] 2026-11-16 15:26:47 Info: pcap: Updating processed to 1794821168194
+[62404 - RX#01] 2026-11-16 15:26:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821168194 and older than 1794821177034
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821168194 and older than 1794821182034
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00038_20261116152613.pcap" at 1794821178193
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00037_20261116152608.pcap" at 1794821173194
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00037_20261116152608.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00037_20261116152608.pcap, processed up to 1794821173194
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00038_20261116152613.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00038_20261116152613.pcap, processed up to 1794821178193
+[62404 - RX#01] 2026-11-16 15:26:57 Info: pcap: Updating processed to 1794821178193
+[62404 - RX#01] 2026-11-16 15:27:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821178193 and older than 1794821187035
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821178193 and older than 1794821192035
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00039_20261116152618.pcap" at 1794821183193
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00040_20261116152623.pcap" at 1794821188943
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00039_20261116152618.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00039_20261116152618.pcap, processed up to 1794821183193
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00040_20261116152623.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00040_20261116152623.pcap, processed up to 1794821188943
+[62404 - RX#01] 2026-11-16 15:27:07 Info: pcap: Updating processed to 1794821188943
+[62404 - RX#01] 2026-11-16 15:27:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821188943 and older than 1794821197036
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821188943 and older than 1794821202036
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00042_20261116152634.pcap" at 1794821199193
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00041_20261116152628.pcap" at 1794821194193
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00041_20261116152628.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00041_20261116152628.pcap, processed up to 1794821194193
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00042_20261116152634.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00042_20261116152634.pcap, processed up to 1794821199193
+[62404 - RX#01] 2026-11-16 15:27:17 Info: pcap: Updating processed to 1794821199193
+[62404 - RX#01] 2026-11-16 15:27:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821199193 and older than 1794821207037
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821199193 and older than 1794821212037
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00044_20261116152644.pcap" at 1794821209944
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00043_20261116152639.pcap" at 1794821204194
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00043_20261116152639.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00043_20261116152639.pcap, processed up to 1794821204194
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00044_20261116152644.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00044_20261116152644.pcap, processed up to 1794821209944
+[62404 - RX#01] 2026-11-16 15:27:27 Info: pcap: Updating processed to 1794821209944
+[62404 - RX#01] 2026-11-16 15:27:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821209944 and older than 1794821217038
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821209944 and older than 1794821222039
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00046_20261116152655.pcap" at 1794821220193
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00045_20261116152649.pcap" at 1794821215194
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00045_20261116152649.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00045_20261116152649.pcap, processed up to 1794821215194
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00046_20261116152655.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00046_20261116152655.pcap, processed up to 1794821220193
+[62404 - RX#01] 2026-11-16 15:27:37 Info: pcap: Updating processed to 1794821220193
+[62404 - RX#01] 2026-11-16 15:27:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821220193 and older than 1794821227039
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821220193 and older than 1794821232039
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00048_20261116152705.pcap" at 1794821230193
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00047_20261116152700.pcap" at 1794821225193
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00047_20261116152700.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00047_20261116152700.pcap, processed up to 1794821225193
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00048_20261116152705.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00048_20261116152705.pcap, processed up to 1794821230193
+[62404 - RX#01] 2026-11-16 15:27:47 Info: pcap: Updating processed to 1794821230193
+[62404 - RX#01] 2026-11-16 15:27:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821230193 and older than 1794821237040
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821230193 and older than 1794821242040
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00050_20261116152715.pcap" at 1794821238443
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00049_20261116152710.pcap" at 1794821235943
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00049_20261116152710.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00049_20261116152710.pcap, processed up to 1794821235943
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00050_20261116152715.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00050_20261116152715.pcap, processed up to 1794821238443
+[62404 - RX#01] 2026-11-16 15:27:57 Info: pcap: Updating processed to 1794821238443
+[62404 - RX#01] 2026-11-16 15:28:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821238443 and older than 1794821247040
+[62404 - RX#01] 2026-11-16 15:28:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821238443 and older than 1794821252040
+[62404 - RX#01] 2026-11-16 15:28:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00052_20261116152725.pcap" at 1794821246194
+[62404 - RX#01] 2026-11-16 15:28:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00052_20261116152725.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:28:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00052_20261116152725.pcap, processed up to 1794821246194
+[62404 - RX#01] 2026-11-16 15:28:07 Info: pcap: Updating processed to 1794821246194
+[62404 - RX#01] 2026-11-16 15:28:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821246194 and older than 1794821257041
+[62404 - RX#01] 2026-11-16 15:28:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821246194 and older than 1794821262041
+[62404 - RX#01] 2026-11-16 15:28:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821246194 and older than 1794821267041
+[62404 - RX#01] 2026-11-16 15:28:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821246194 and older than 1794821272041
+[62404 - RX#01] 2026-11-16 15:28:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00056_20261116152746.pcap" at 1794821269443
+[62404 - RX#01] 2026-11-16 15:28:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00056_20261116152746.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:28:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00056_20261116152746.pcap, processed up to 1794821269443
+[62404 - RX#01] 2026-11-16 15:28:27 Info: pcap: Updating processed to 1794821269443
+[62404 - RX#01] 2026-11-16 15:28:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821269443 and older than 1794821277043
+[62404 - RX#01] 2026-11-16 15:28:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821269443 and older than 1794821282043
+[62404 - RX#01] 2026-11-16 15:28:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00058_20261116152756.pcap" at 1794821280193
+[62404 - RX#01] 2026-11-16 15:28:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00058_20261116152756.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:28:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00058_20261116152756.pcap, processed up to 1794821280193
+[62404 - RX#01] 2026-11-16 15:28:37 Info: pcap: Updating processed to 1794821280193
+[62404 - RX#01] 2026-11-16 15:28:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821280193 and older than 1794821287044
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821280193 and older than 1794821292044
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00059_20261116152801.pcap" at 1794821286944
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00060_20261116152806.pcap" at 1794821291944
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00059_20261116152801.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00059_20261116152801.pcap, processed up to 1794821286944
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00060_20261116152806.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00060_20261116152806.pcap, processed up to 1794821291944
+[62404 - RX#01] 2026-11-16 15:28:47 Info: pcap: Updating processed to 1794821291944
+[62404 - RX#01] 2026-11-16 15:28:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821291944 and older than 1794821297047
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821291944 and older than 1794821302047
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00061_20261116152812.pcap" at 1794821297193
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00062_20261116152817.pcap" at 1794821299943
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00061_20261116152812.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00061_20261116152812.pcap, processed up to 1794821297193
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00062_20261116152817.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00062_20261116152817.pcap, processed up to 1794821299943
+[62404 - RX#01] 2026-11-16 15:28:57 Info: pcap: Updating processed to 1794821299943
+[62404 - RX#01] 2026-11-16 15:29:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821299943 and older than 1794821307048
+[62404 - RX#01] 2026-11-16 15:29:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821299943 and older than 1794821312048
+[62404 - RX#01] 2026-11-16 15:29:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821299943 and older than 1794821317048
+[62404 - RX#01] 2026-11-16 15:29:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00064_20261116152827.pcap" at 1794821312443
+[62404 - RX#01] 2026-11-16 15:29:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00064_20261116152827.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:29:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00064_20261116152827.pcap, processed up to 1794821312443
+[62404 - RX#01] 2026-11-16 15:29:12 Info: pcap: Updating processed to 1794821312443
+[62404 - RX#01] 2026-11-16 15:29:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821312443 and older than 1794821322049
+[62404 - RX#01] 2026-11-16 15:29:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821312443 and older than 1794821327049
+[62404 - RX#01] 2026-11-16 15:29:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821312443 and older than 1794821332049
+[62404 - RX#01] 2026-11-16 15:29:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821312443 and older than 1794821337049
+[62404 - RX#01] 2026-11-16 15:29:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821312443 and older than 1794821342050
+[62404 - RX#01] 2026-11-16 15:29:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821312443 and older than 1794821347050
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821312443 and older than 1794821352050
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00072_20261116152907.pcap" at 1794821348194
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00071_20261116152902.pcap" at 1794821347943
+[62404 - RX#01] 2026-11-16 15:29:47 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00071_20261116152902.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00071_20261116152902.pcap, processed up to 1794821347943
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00072_20261116152907.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00072_20261116152907.pcap, processed up to 1794821348194
+[62404 - RX#01] 2026-11-16 15:29:47 Info: pcap: Updating processed to 1794821348194
+[62404 - RX#01] 2026-11-16 15:29:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821348194 and older than 1794821357064
+[62404 - RX#01] 2026-11-16 15:29:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821348194 and older than 1794821362065
+[62404 - RX#01] 2026-11-16 15:29:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00073_20261116152912.pcap" at 1794821357444
+[62404 - RX#01] 2026-11-16 15:29:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00073_20261116152912.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:29:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00073_20261116152912.pcap, processed up to 1794821357444
+[62404 - RX#01] 2026-11-16 15:29:57 Info: pcap: Updating processed to 1794821357444
+[62404 - RX#01] 2026-11-16 15:30:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821357444 and older than 1794821367065
+[62404 - RX#01] 2026-11-16 15:30:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821357444 and older than 1794821372065
+[62404 - RX#01] 2026-11-16 15:30:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00075_20261116152923.pcap" at 1794821368443
+[62404 - RX#01] 2026-11-16 15:30:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00075_20261116152923.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:30:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00075_20261116152923.pcap, processed up to 1794821368443
+[62404 - RX#01] 2026-11-16 15:30:07 Info: pcap: Updating processed to 1794821368443
+[62404 - RX#01] 2026-11-16 15:30:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821368443 and older than 1794821377066
+[62404 - RX#01] 2026-11-16 15:30:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821368443 and older than 1794821382066
+[62404 - RX#01] 2026-11-16 15:30:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821368443 and older than 1794821387066
+[62404 - RX#01] 2026-11-16 15:30:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821368443 and older than 1794821392066
+[62404 - RX#01] 2026-11-16 15:30:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821368443 and older than 1794821397066
+[62404 - RX#01] 2026-11-16 15:30:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821368443 and older than 1794821402067
+[62404 - RX#01] 2026-11-16 15:30:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821368443 and older than 1794821407067
+[62404 - RX#01] 2026-11-16 15:30:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00082_20261116152958.pcap" at 1794821403694
+[62404 - RX#01] 2026-11-16 15:30:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00082_20261116152958.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:30:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00082_20261116152958.pcap, processed up to 1794821403694
+[62404 - RX#01] 2026-11-16 15:30:42 Info: pcap: Updating processed to 1794821403694
+[62404 - RX#01] 2026-11-16 15:30:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821403694 and older than 1794821412068
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821403694 and older than 1794821417068
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00083_20261116153003.pcap" at 1794821408943
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00084_20261116153008.pcap" at 1794821414193
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00083_20261116153003.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00083_20261116153003.pcap, processed up to 1794821408943
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00084_20261116153008.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00084_20261116153008.pcap, processed up to 1794821414193
+[62404 - RX#01] 2026-11-16 15:30:52 Info: pcap: Updating processed to 1794821414193
+[62404 - RX#01] 2026-11-16 15:30:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821414193 and older than 1794821422111
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821414193 and older than 1794821427111
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00086_20261116153019.pcap" at 1794821424693
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00085_20261116153014.pcap" at 1794821419443
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00085_20261116153014.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00085_20261116153014.pcap, processed up to 1794821419443
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00086_20261116153019.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00086_20261116153019.pcap, processed up to 1794821424693
+[62404 - RX#01] 2026-11-16 15:31:02 Info: pcap: Updating processed to 1794821424693
+[62404 - RX#01] 2026-11-16 15:31:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821424693 and older than 1794821432148
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821424693 and older than 1794821437148
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00088_20261116153029.pcap" at 1794821434695
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00087_20261116153024.pcap" at 1794821429943
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00087_20261116153024.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00087_20261116153024.pcap, processed up to 1794821429943
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00088_20261116153029.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00088_20261116153029.pcap, processed up to 1794821434695
+[62404 - RX#01] 2026-11-16 15:31:12 Info: pcap: Updating processed to 1794821434695
+[62404 - RX#01] 2026-11-16 15:31:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821434695 and older than 1794821442171
+[62404 - RX#01] 2026-11-16 15:31:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821434695 and older than 1794821447171
+[62404 - RX#01] 2026-11-16 15:31:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821434695 and older than 1794821452171
+[62404 - RX#01] 2026-11-16 15:31:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821434695 and older than 1794821457171
+[62404 - RX#01] 2026-11-16 15:31:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821434695 and older than 1794821462171
+[62404 - RX#01] 2026-11-16 15:31:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00094_20261116153059.pcap" at 1794821461693
+[62404 - RX#01] 2026-11-16 15:31:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00094_20261116153059.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00094_20261116153059.pcap, processed up to 1794821461693
+[62404 - RX#01] 2026-11-16 15:31:37 Info: pcap: Updating processed to 1794821461693
+[62404 - RX#01] 2026-11-16 15:31:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821461693 and older than 1794821467172
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821461693 and older than 1794821472172
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00095_20261116153105.pcap" at 1794821465943
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00096_20261116153110.pcap" at 1794821471444
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00095_20261116153105.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00095_20261116153105.pcap, processed up to 1794821465943
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00096_20261116153110.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00096_20261116153110.pcap, processed up to 1794821471444
+[62404 - RX#01] 2026-11-16 15:31:47 Info: pcap: Updating processed to 1794821471444
+[62404 - RX#01] 2026-11-16 15:31:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821471444 and older than 1794821477172
+[62404 - RX#01] 2026-11-16 15:31:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821471444 and older than 1794821482173
+[62404 - RX#01] 2026-11-16 15:31:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00097_20261116153115.pcap" at 1794821477944
+[62404 - RX#01] 2026-11-16 15:31:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00097_20261116153115.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:31:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00097_20261116153115.pcap, processed up to 1794821477944
+[62404 - RX#01] 2026-11-16 15:31:57 Info: pcap: Updating processed to 1794821477944
+[62404 - RX#01] 2026-11-16 15:32:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821477944 and older than 1794821487173
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821477944 and older than 1794821492173
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00098_20261116153120.pcap" at 1794821483693
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00099_20261116153125.pcap" at 1794821488693
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00098_20261116153120.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00098_20261116153120.pcap, processed up to 1794821483693
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00099_20261116153125.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00099_20261116153125.pcap, processed up to 1794821488693
+[62404 - RX#01] 2026-11-16 15:32:07 Info: pcap: Updating processed to 1794821488693
+[62404 - RX#01] 2026-11-16 15:32:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821488693 and older than 1794821497174
+[62404 - RX#01] 2026-11-16 15:32:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821488693 and older than 1794821502174
+[62404 - RX#01] 2026-11-16 15:32:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00101_20261116153136.pcap" at 1794821500695
+[62404 - RX#01] 2026-11-16 15:32:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00101_20261116153136.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:32:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00101_20261116153136.pcap, processed up to 1794821500695
+[62404 - RX#01] 2026-11-16 15:32:17 Info: pcap: Updating processed to 1794821500695
+[62404 - RX#01] 2026-11-16 15:32:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821500695 and older than 1794821507179
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821500695 and older than 1794821512179
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00103_20261116153146.pcap" at 1794821508944
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00102_20261116153141.pcap" at 1794821505444
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00102_20261116153141.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00102_20261116153141.pcap, processed up to 1794821505444
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00103_20261116153146.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00103_20261116153146.pcap, processed up to 1794821508944
+[62404 - RX#01] 2026-11-16 15:32:27 Info: pcap: Updating processed to 1794821508944
+[62404 - RX#01] 2026-11-16 15:32:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821508944 and older than 1794821517180
+[62404 - RX#01] 2026-11-16 15:32:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821508944 and older than 1794821522180
+[62404 - RX#01] 2026-11-16 15:32:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821508944 and older than 1794821527180
+[62404 - RX#01] 2026-11-16 15:32:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821508944 and older than 1794821532180
+[62404 - RX#01] 2026-11-16 15:32:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821508944 and older than 1794821537180
+[62404 - RX#01] 2026-11-16 15:32:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821508944 and older than 1794821542181
+[62404 - RX#01] 2026-11-16 15:32:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00109_20261116153216.pcap" at 1794821538193
+[62404 - RX#01] 2026-11-16 15:32:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00109_20261116153216.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:32:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00109_20261116153216.pcap, processed up to 1794821538193
+[62404 - RX#01] 2026-11-16 15:32:57 Info: pcap: Updating processed to 1794821538193
+[62404 - RX#01] 2026-11-16 15:33:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821538193 and older than 1794821547181
+[62404 - RX#01] 2026-11-16 15:33:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821538193 and older than 1794821552181
+[62404 - RX#01] 2026-11-16 15:33:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821538193 and older than 1794821557181
+[62404 - RX#01] 2026-11-16 15:33:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821538193 and older than 1794821562181
+[62404 - RX#01] 2026-11-16 15:33:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00113_20261116153236.pcap" at 1794821559693
+[62404 - RX#01] 2026-11-16 15:33:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00113_20261116153236.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:33:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00113_20261116153236.pcap, processed up to 1794821559693
+[62404 - RX#01] 2026-11-16 15:33:17 Info: pcap: Updating processed to 1794821559693
+[62404 - RX#01] 2026-11-16 15:33:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821559693 and older than 1794821567182
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821559693 and older than 1794821572182
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00114_20261116153242.pcap" at 1794821566193
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00115_20261116153247.pcap" at 1794821570193
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00114_20261116153242.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00114_20261116153242.pcap, processed up to 1794821566193
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00115_20261116153247.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00115_20261116153247.pcap, processed up to 1794821570193
+[62404 - RX#01] 2026-11-16 15:33:27 Info: pcap: Updating processed to 1794821570193
+[62404 - RX#01] 2026-11-16 15:33:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821570193 and older than 1794821577183
+[62404 - RX#01] 2026-11-16 15:33:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821570193 and older than 1794821582183
+[62404 - RX#01] 2026-11-16 15:33:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821570193 and older than 1794821587183
+[62404 - RX#01] 2026-11-16 15:33:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00118_20261116153302.pcap" at 1794821585694
+[62404 - RX#01] 2026-11-16 15:33:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00118_20261116153302.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:33:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00118_20261116153302.pcap, processed up to 1794821585694
+[62404 - RX#01] 2026-11-16 15:33:42 Info: pcap: Updating processed to 1794821585694
+[62404 - RX#01] 2026-11-16 15:33:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821585694 and older than 1794821592183
+[62404 - RX#01] 2026-11-16 15:33:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821585694 and older than 1794821597184
+[62404 - RX#01] 2026-11-16 15:33:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821585694 and older than 1794821602184
+[62404 - RX#01] 2026-11-16 15:33:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00120_20261116153312.pcap" at 1794821597443
+[62404 - RX#01] 2026-11-16 15:33:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00120_20261116153312.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:33:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00120_20261116153312.pcap, processed up to 1794821597443
+[62404 - RX#01] 2026-11-16 15:33:57 Info: pcap: Updating processed to 1794821597443
+[62404 - RX#01] 2026-11-16 15:34:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821597443 and older than 1794821607189
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821597443 and older than 1794821612189
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00121_20261116153317.pcap" at 1794821603193
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00122_20261116153323.pcap" at 1794821605443
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00121_20261116153317.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00121_20261116153317.pcap, processed up to 1794821603193
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00122_20261116153323.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00122_20261116153323.pcap, processed up to 1794821605443
+[62404 - RX#01] 2026-11-16 15:34:07 Info: pcap: Updating processed to 1794821605443
+[62404 - RX#01] 2026-11-16 15:34:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821605443 and older than 1794821617191
+[62404 - RX#01] 2026-11-16 15:34:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821605443 and older than 1794821622191
+[62404 - RX#01] 2026-11-16 15:34:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00123_20261116153328.pcap" at 1794821612693
+[62404 - RX#01] 2026-11-16 15:34:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00123_20261116153328.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:34:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00123_20261116153328.pcap, processed up to 1794821612693
+[62404 - RX#01] 2026-11-16 15:34:17 Info: pcap: Updating processed to 1794821612693
+[62404 - RX#01] 2026-11-16 15:34:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821612693 and older than 1794821627191
+[62404 - RX#01] 2026-11-16 15:34:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821612693 and older than 1794821632192
+[62404 - RX#01] 2026-11-16 15:34:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821612693 and older than 1794821637192
+[62404 - RX#01] 2026-11-16 15:34:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821612693 and older than 1794821642192
+[62404 - RX#01] 2026-11-16 15:34:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821612693 and older than 1794821647192
+[62404 - RX#01] 2026-11-16 15:34:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00129_20261116153358.pcap" at 1794821643693
+[62404 - RX#01] 2026-11-16 15:34:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00129_20261116153358.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:34:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00129_20261116153358.pcap, processed up to 1794821643693
+[62404 - RX#01] 2026-11-16 15:34:42 Info: pcap: Updating processed to 1794821643693
+[62404 - RX#01] 2026-11-16 15:34:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821643693 and older than 1794821652193
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821643693 and older than 1794821657193
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00131_20261116153408.pcap" at 1794821653194
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00130_20261116153403.pcap" at 1794821648693
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00130_20261116153403.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00130_20261116153403.pcap, processed up to 1794821648693
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00131_20261116153408.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00131_20261116153408.pcap, processed up to 1794821653194
+[62404 - RX#01] 2026-11-16 15:34:52 Info: pcap: Updating processed to 1794821653194
+[62404 - RX#01] 2026-11-16 15:34:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821653194 and older than 1794821662194
+[62404 - RX#01] 2026-11-16 15:35:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821653194 and older than 1794821667194
+[62404 - RX#01] 2026-11-16 15:35:02 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00132_20261116153414.pcap" at 1794821658694
+[62404 - RX#01] 2026-11-16 15:35:02 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00132_20261116153414.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:02 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00132_20261116153414.pcap, processed up to 1794821658694
+[62404 - RX#01] 2026-11-16 15:35:02 Info: pcap: Updating processed to 1794821658694
+[62404 - RX#01] 2026-11-16 15:35:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821658694 and older than 1794821672194
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821658694 and older than 1794821677195
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00135_20261116153429.pcap" at 1794821673944
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00134_20261116153424.pcap" at 1794821668693
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00134_20261116153424.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00134_20261116153424.pcap, processed up to 1794821668693
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00135_20261116153429.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00135_20261116153429.pcap, processed up to 1794821673944
+[62404 - RX#01] 2026-11-16 15:35:12 Info: pcap: Updating processed to 1794821673944
+[62404 - RX#01] 2026-11-16 15:35:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821673944 and older than 1794821682197
+[62404 - RX#01] 2026-11-16 15:35:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821673944 and older than 1794821687197
+[62404 - RX#01] 2026-11-16 15:35:22 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00137_20261116153439.pcap" at 1794821680194
+[62404 - RX#01] 2026-11-16 15:35:22 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00137_20261116153439.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:22 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00137_20261116153439.pcap, processed up to 1794821680194
+[62404 - RX#01] 2026-11-16 15:35:22 Info: pcap: Updating processed to 1794821680194
+[62404 - RX#01] 2026-11-16 15:35:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821680194 and older than 1794821692198
+[62404 - RX#01] 2026-11-16 15:35:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821680194 and older than 1794821697198
+[62404 - RX#01] 2026-11-16 15:35:32 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00139_20261116153449.pcap" at 1794821693194
+[62404 - RX#01] 2026-11-16 15:35:32 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00139_20261116153449.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:32 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00139_20261116153449.pcap, processed up to 1794821693194
+[62404 - RX#01] 2026-11-16 15:35:32 Info: pcap: Updating processed to 1794821693194
+[62404 - RX#01] 2026-11-16 15:35:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821693194 and older than 1794821702198
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821693194 and older than 1794821707198
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00141_20261116153500.pcap" at 1794821703443
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00142_20261116153505.pcap" at 1794821705943
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00141_20261116153500.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00141_20261116153500.pcap, processed up to 1794821703443
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00142_20261116153505.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00142_20261116153505.pcap, processed up to 1794821705943
+[62404 - RX#01] 2026-11-16 15:35:42 Info: pcap: Updating processed to 1794821705943
+[62404 - RX#01] 2026-11-16 15:35:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821705943 and older than 1794821712199
+[62404 - RX#01] 2026-11-16 15:35:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821705943 and older than 1794821717199
+[62404 - RX#01] 2026-11-16 15:35:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821705943 and older than 1794821722199
+[62404 - RX#01] 2026-11-16 15:35:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00144_20261116153515.pcap" at 1794821718943
+[62404 - RX#01] 2026-11-16 15:35:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00144_20261116153515.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:35:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00144_20261116153515.pcap, processed up to 1794821718943
+[62404 - RX#01] 2026-11-16 15:35:57 Info: pcap: Updating processed to 1794821718943
+[62404 - RX#01] 2026-11-16 15:36:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821718943 and older than 1794821727199
+[62404 - RX#01] 2026-11-16 15:36:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821718943 and older than 1794821732200
+[62404 - RX#01] 2026-11-16 15:36:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821718943 and older than 1794821737200
+[62404 - RX#01] 2026-11-16 15:36:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821718943 and older than 1794821742200
+[62404 - RX#01] 2026-11-16 15:36:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821718943 and older than 1794821747200
+[62404 - RX#01] 2026-11-16 15:36:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821718943 and older than 1794821752200
+[62404 - RX#01] 2026-11-16 15:36:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00150_20261116153545.pcap" at 1794821750943
+[62404 - RX#01] 2026-11-16 15:36:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00150_20261116153545.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:36:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00150_20261116153545.pcap, processed up to 1794821750943
+[62404 - RX#01] 2026-11-16 15:36:27 Info: pcap: Updating processed to 1794821750943
+[62404 - RX#01] 2026-11-16 15:36:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821750943 and older than 1794821757201
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821750943 and older than 1794821762201
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00152_20261116153555.pcap" at 1794821761194
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00151_20261116153550.pcap" at 1794821755943
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00151_20261116153550.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00151_20261116153550.pcap, processed up to 1794821755943
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00152_20261116153555.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00152_20261116153555.pcap, processed up to 1794821761194
+[62404 - RX#01] 2026-11-16 15:36:37 Info: pcap: Updating processed to 1794821761194
+[62404 - RX#01] 2026-11-16 15:36:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821761194 and older than 1794821767203
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821761194 and older than 1794821772203
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00154_20261116153606.pcap" at 1794821771193
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00153_20261116153601.pcap" at 1794821766444
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00153_20261116153601.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00153_20261116153601.pcap, processed up to 1794821766444
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00154_20261116153606.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00154_20261116153606.pcap, processed up to 1794821771193
+[62404 - RX#01] 2026-11-16 15:36:47 Info: pcap: Updating processed to 1794821771193
+[62404 - RX#01] 2026-11-16 15:36:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821771193 and older than 1794821777203
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821771193 and older than 1794821782204
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00155_20261116153611.pcap" at 1794821776193
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00156_20261116153616.pcap" at 1794821781193
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00155_20261116153611.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00155_20261116153611.pcap, processed up to 1794821776193
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00156_20261116153616.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00156_20261116153616.pcap, processed up to 1794821781193
+[62404 - RX#01] 2026-11-16 15:36:57 Info: pcap: Updating processed to 1794821781193
+[62404 - RX#01] 2026-11-16 15:37:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821781193 and older than 1794821787204
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821781193 and older than 1794821792204
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00158_20261116153626.pcap" at 1794821792193
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00157_20261116153621.pcap" at 1794821784193
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00157_20261116153621.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00157_20261116153621.pcap, processed up to 1794821784193
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00158_20261116153626.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00158_20261116153626.pcap, processed up to 1794821792193
+[62404 - RX#01] 2026-11-16 15:37:07 Info: pcap: Updating processed to 1794821792193
+[62404 - RX#01] 2026-11-16 15:37:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821792193 and older than 1794821797205
+[62404 - RX#01] 2026-11-16 15:37:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821792193 and older than 1794821802205
+[62404 - RX#01] 2026-11-16 15:37:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00159_20261116153632.pcap" at 1794821797194
+[62404 - RX#01] 2026-11-16 15:37:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00159_20261116153632.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:37:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00159_20261116153632.pcap, processed up to 1794821797194
+[62404 - RX#01] 2026-11-16 15:37:17 Info: pcap: Updating processed to 1794821797194
+[62404 - RX#01] 2026-11-16 15:37:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821797194 and older than 1794821807206
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821797194 and older than 1794821812206
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00161_20261116153642.pcap" at 1794821805193
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00162_20261116153647.pcap" at 1794821810693
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00161_20261116153642.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00161_20261116153642.pcap, processed up to 1794821805193
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00162_20261116153647.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00162_20261116153647.pcap, processed up to 1794821810693
+[62404 - RX#01] 2026-11-16 15:37:27 Info: pcap: Updating processed to 1794821810693
+[62404 - RX#01] 2026-11-16 15:37:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821810693 and older than 1794821817206
+[62404 - RX#01] 2026-11-16 15:37:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821810693 and older than 1794821822207
+[62404 - RX#01] 2026-11-16 15:37:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821810693 and older than 1794821827207
+[62404 - RX#01] 2026-11-16 15:37:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00165_20261116153702.pcap" at 1794821825443
+[62404 - RX#01] 2026-11-16 15:37:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00165_20261116153702.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:37:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00165_20261116153702.pcap, processed up to 1794821825443
+[62404 - RX#01] 2026-11-16 15:37:42 Info: pcap: Updating processed to 1794821825443
+[62404 - RX#01] 2026-11-16 15:37:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821825443 and older than 1794821832207
+[62404 - RX#01] 2026-11-16 15:37:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821825443 and older than 1794821837207
+[62404 - RX#01] 2026-11-16 15:37:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821825443 and older than 1794821842208
+[62404 - RX#01] 2026-11-16 15:37:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00168_20261116153718.pcap" at 1794821839444
+[62404 - RX#01] 2026-11-16 15:37:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00168_20261116153718.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:37:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00168_20261116153718.pcap, processed up to 1794821839444
+[62404 - RX#01] 2026-11-16 15:37:57 Info: pcap: Updating processed to 1794821839444
+[62404 - RX#01] 2026-11-16 15:38:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821839444 and older than 1794821847209
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821839444 and older than 1794821852209
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00170_20261116153728.pcap" at 1794821851693
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00169_20261116153723.pcap" at 1794821846443
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00169_20261116153723.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00169_20261116153723.pcap, processed up to 1794821846443
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00170_20261116153728.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00170_20261116153728.pcap, processed up to 1794821851693
+[62404 - RX#01] 2026-11-16 15:38:07 Info: pcap: Updating processed to 1794821851693
+[62404 - RX#01] 2026-11-16 15:38:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821851693 and older than 1794821857210
+[62404 - RX#01] 2026-11-16 15:38:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821851693 and older than 1794821862210
+[62404 - RX#01] 2026-11-16 15:38:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821851693 and older than 1794821867210
+[62404 - RX#01] 2026-11-16 15:38:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821851693 and older than 1794821872211
+[62404 - RX#01] 2026-11-16 15:38:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821851693 and older than 1794821877211
+[62404 - RX#01] 2026-11-16 15:38:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821851693 and older than 1794821882211
+[62404 - RX#01] 2026-11-16 15:38:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821851693 and older than 1794821887211
+[62404 - RX#01] 2026-11-16 15:38:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00177_20261116153803.pcap" at 1794821885693
+[62404 - RX#01] 2026-11-16 15:38:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00177_20261116153803.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:38:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00177_20261116153803.pcap, processed up to 1794821885693
+[62404 - RX#01] 2026-11-16 15:38:42 Info: pcap: Updating processed to 1794821885693
+[62404 - RX#01] 2026-11-16 15:38:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821885693 and older than 1794821892212
+[62404 - RX#01] 2026-11-16 15:38:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821885693 and older than 1794821897212
+[62404 - RX#01] 2026-11-16 15:38:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00178_20261116153809.pcap" at 1794821893943
+[62404 - RX#01] 2026-11-16 15:38:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00178_20261116153809.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:38:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00178_20261116153809.pcap, processed up to 1794821893943
+[62404 - RX#01] 2026-11-16 15:38:52 Info: pcap: Updating processed to 1794821893943
+[62404 - RX#01] 2026-11-16 15:38:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821893943 and older than 1794821902213
+[62404 - RX#01] 2026-11-16 15:39:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821893943 and older than 1794821907213
+[62404 - RX#01] 2026-11-16 15:39:02 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00179_20261116153814.pcap" at 1794821899693
+[62404 - RX#01] 2026-11-16 15:39:02 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00179_20261116153814.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:39:02 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00179_20261116153814.pcap, processed up to 1794821899693
+[62404 - RX#01] 2026-11-16 15:39:02 Info: pcap: Updating processed to 1794821899693
+[62404 - RX#01] 2026-11-16 15:39:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821899693 and older than 1794821912213
+[62404 - RX#01] 2026-11-16 15:39:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821899693 and older than 1794821917213
+[62404 - RX#01] 2026-11-16 15:39:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821899693 and older than 1794821922214
+[62404 - RX#01] 2026-11-16 15:39:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821899693 and older than 1794821927214
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821899693 and older than 1794821932214
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00185_20261116153844.pcap" at 1794821928693
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00186_20261116153849.pcap" at 1794821931193
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00185_20261116153844.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00185_20261116153844.pcap, processed up to 1794821928693
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00186_20261116153849.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00186_20261116153849.pcap, processed up to 1794821931193
+[62404 - RX#01] 2026-11-16 15:39:27 Info: pcap: Updating processed to 1794821931193
+[62404 - RX#01] 2026-11-16 15:39:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821931193 and older than 1794821937214
+[62404 - RX#01] 2026-11-16 15:39:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821931193 and older than 1794821942214
+[62404 - RX#01] 2026-11-16 15:39:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821931193 and older than 1794821947215
+[62404 - RX#01] 2026-11-16 15:39:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821931193 and older than 1794821952215
+[62404 - RX#01] 2026-11-16 15:39:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00189_20261116153904.pcap" at 1794821947693
+[62404 - RX#01] 2026-11-16 15:39:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00189_20261116153904.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:39:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00189_20261116153904.pcap, processed up to 1794821947693
+[62404 - RX#01] 2026-11-16 15:39:47 Info: pcap: Updating processed to 1794821947693
+[62404 - RX#01] 2026-11-16 15:39:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821947693 and older than 1794821957215
+[62404 - RX#01] 2026-11-16 15:39:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821947693 and older than 1794821962216
+[62404 - RX#01] 2026-11-16 15:39:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00191_20261116153915.pcap" at 1794821959943
+[62404 - RX#01] 2026-11-16 15:39:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00191_20261116153915.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:39:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00191_20261116153915.pcap, processed up to 1794821959943
+[62404 - RX#01] 2026-11-16 15:39:57 Info: pcap: Updating processed to 1794821959943
+[62404 - RX#01] 2026-11-16 15:40:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821959943 and older than 1794821967216
+[62404 - RX#01] 2026-11-16 15:40:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821959943 and older than 1794821972216
+[62404 - RX#01] 2026-11-16 15:40:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821959943 and older than 1794821977216
+[62404 - RX#01] 2026-11-16 15:40:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821959943 and older than 1794821982216
+[62404 - RX#01] 2026-11-16 15:40:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00195_20261116153935.pcap" at 1794821978944
+[62404 - RX#01] 2026-11-16 15:40:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00195_20261116153935.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:40:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00195_20261116153935.pcap, processed up to 1794821978944
+[62404 - RX#01] 2026-11-16 15:40:17 Info: pcap: Updating processed to 1794821978944
+[62404 - RX#01] 2026-11-16 15:40:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821978944 and older than 1794821987217
+[62404 - RX#01] 2026-11-16 15:40:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821978944 and older than 1794821992217
+[62404 - RX#01] 2026-11-16 15:40:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821978944 and older than 1794821997217
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794821978944 and older than 1794822002217
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00200_20261116154000.pcap" at 1794822001193
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00199_20261116153955.pcap" at 1794821999943
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00199_20261116153955.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00199_20261116153955.pcap, processed up to 1794821999943
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00200_20261116154000.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00200_20261116154000.pcap, processed up to 1794822001193
+[62404 - RX#01] 2026-11-16 15:40:37 Info: pcap: Updating processed to 1794822001193
+[62404 - RX#01] 2026-11-16 15:40:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822001193 and older than 1794822007218
+[62404 - RX#01] 2026-11-16 15:40:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822001193 and older than 1794822012218
+[62404 - RX#01] 2026-11-16 15:40:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822001193 and older than 1794822017218
+[62404 - RX#01] 2026-11-16 15:40:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822001193 and older than 1794822022218
+[62404 - RX#01] 2026-11-16 15:40:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00203_20261116154015.pcap" at 1794822020193
+[62404 - RX#01] 2026-11-16 15:40:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00203_20261116154015.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:40:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00203_20261116154015.pcap, processed up to 1794822020193
+[62404 - RX#01] 2026-11-16 15:40:57 Info: pcap: Updating processed to 1794822020193
+[62404 - RX#01] 2026-11-16 15:41:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822020193 and older than 1794822027219
+[62404 - RX#01] 2026-11-16 15:41:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822020193 and older than 1794822032219
+[62404 - RX#01] 2026-11-16 15:41:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822020193 and older than 1794822037225
+[62404 - RX#01] 2026-11-16 15:41:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822020193 and older than 1794822042225
+[62404 - RX#01] 2026-11-16 15:41:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00207_20261116154036.pcap" at 1794822037693
+[62404 - RX#01] 2026-11-16 15:41:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00207_20261116154036.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:41:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00207_20261116154036.pcap, processed up to 1794822037693
+[62404 - RX#01] 2026-11-16 15:41:17 Info: pcap: Updating processed to 1794822037693
+[62404 - RX#01] 2026-11-16 15:41:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822037693 and older than 1794822047226
+[62404 - RX#01] 2026-11-16 15:41:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822037693 and older than 1794822052226
+[62404 - RX#01] 2026-11-16 15:41:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00210_20261116154051.pcap" at 1794822051694
+[62404 - RX#01] 2026-11-16 15:41:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00210_20261116154051.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:41:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00210_20261116154051.pcap, processed up to 1794822051694
+[62404 - RX#01] 2026-11-16 15:41:27 Info: pcap: Updating processed to 1794822051694
+[62404 - RX#01] 2026-11-16 15:41:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822051694 and older than 1794822057227
+[62404 - RX#01] 2026-11-16 15:41:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822051694 and older than 1794822062227
+[62404 - RX#01] 2026-11-16 15:41:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822051694 and older than 1794822067227
+[62404 - RX#01] 2026-11-16 15:41:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822051694 and older than 1794822072227
+[62404 - RX#01] 2026-11-16 15:41:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00213_20261116154106.pcap" at 1794822070443
+[62404 - RX#01] 2026-11-16 15:41:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00213_20261116154106.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:41:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00213_20261116154106.pcap, processed up to 1794822070443
+[62404 - RX#01] 2026-11-16 15:41:47 Info: pcap: Updating processed to 1794822070443
+[62404 - RX#01] 2026-11-16 15:41:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822070443 and older than 1794822077228
+[62404 - RX#01] 2026-11-16 15:41:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822070443 and older than 1794822082228
+[62404 - RX#01] 2026-11-16 15:41:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00215_20261116154116.pcap" at 1794822080194
+[62404 - RX#01] 2026-11-16 15:41:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00215_20261116154116.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:41:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00215_20261116154116.pcap, processed up to 1794822080194
+[62404 - RX#01] 2026-11-16 15:41:57 Info: pcap: Updating processed to 1794822080194
+[62404 - RX#01] 2026-11-16 15:42:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822080194 and older than 1794822087228
+[62404 - RX#01] 2026-11-16 15:42:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822080194 and older than 1794822092228
+[62404 - RX#01] 2026-11-16 15:42:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822080194 and older than 1794822097228
+[62404 - RX#01] 2026-11-16 15:42:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00218_20261116154132.pcap" at 1794822095193
+[62404 - RX#01] 2026-11-16 15:42:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00218_20261116154132.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:42:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00218_20261116154132.pcap, processed up to 1794822095193
+[62404 - RX#01] 2026-11-16 15:42:12 Info: pcap: Updating processed to 1794822095193
+[62404 - RX#01] 2026-11-16 15:42:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822095193 and older than 1794822102229
+[62404 - RX#01] 2026-11-16 15:42:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822095193 and older than 1794822107229
+[62404 - RX#01] 2026-11-16 15:42:22 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00219_20261116154137.pcap" at 1794822099443
+[62404 - RX#01] 2026-11-16 15:42:22 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00219_20261116154137.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:42:22 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00219_20261116154137.pcap, processed up to 1794822099443
+[62404 - RX#01] 2026-11-16 15:42:22 Info: pcap: Updating processed to 1794822099443
+[62404 - RX#01] 2026-11-16 15:42:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822099443 and older than 1794822112229
+[62404 - RX#01] 2026-11-16 15:42:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822099443 and older than 1794822117229
+[62404 - RX#01] 2026-11-16 15:42:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822099443 and older than 1794822122229
+[62404 - RX#01] 2026-11-16 15:42:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822099443 and older than 1794822127230
+[62404 - RX#01] 2026-11-16 15:42:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822099443 and older than 1794822132230
+[62404 - RX#01] 2026-11-16 15:42:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822099443 and older than 1794822137230
+[62404 - RX#01] 2026-11-16 15:42:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822099443 and older than 1794822142230
+[62404 - RX#01] 2026-11-16 15:42:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00227_20261116154217.pcap" at 1794822140693
+[62404 - RX#01] 2026-11-16 15:42:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00227_20261116154217.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:42:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00227_20261116154217.pcap, processed up to 1794822140693
+[62404 - RX#01] 2026-11-16 15:42:57 Info: pcap: Updating processed to 1794822140693
+[62404 - RX#01] 2026-11-16 15:43:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822140693 and older than 1794822147231
+[62404 - RX#01] 2026-11-16 15:43:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822140693 and older than 1794822152231
+[62404 - RX#01] 2026-11-16 15:43:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822140693 and older than 1794822157231
+[62404 - RX#01] 2026-11-16 15:43:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822140693 and older than 1794822162231
+[62404 - RX#01] 2026-11-16 15:43:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822140693 and older than 1794822167231
+[62404 - RX#01] 2026-11-16 15:43:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822140693 and older than 1794822172232
+[62404 - RX#01] 2026-11-16 15:43:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00233_20261116154247.pcap" at 1794822172193
+[62404 - RX#01] 2026-11-16 15:43:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00233_20261116154247.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:43:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00233_20261116154247.pcap, processed up to 1794822172193
+[62404 - RX#01] 2026-11-16 15:43:27 Info: pcap: Updating processed to 1794822172193
+[62404 - RX#01] 2026-11-16 15:43:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822172193 and older than 1794822177232
+[62404 - RX#01] 2026-11-16 15:43:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822172193 and older than 1794822182232
+[62404 - RX#01] 2026-11-16 15:43:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822172193 and older than 1794822187233
+[62404 - RX#01] 2026-11-16 15:43:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822172193 and older than 1794822192233
+[62404 - RX#01] 2026-11-16 15:43:47 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00237_20261116154307.pcap" at 1794822191694
+[62404 - RX#01] 2026-11-16 15:43:47 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00237_20261116154307.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:43:47 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00237_20261116154307.pcap, processed up to 1794822191694
+[62404 - RX#01] 2026-11-16 15:43:47 Info: pcap: Updating processed to 1794822191694
+[62404 - RX#01] 2026-11-16 15:43:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822191694 and older than 1794822197233
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822191694 and older than 1794822202233
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00238_20261116154313.pcap" at 1794822196943
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00239_20261116154318.pcap" at 1794822200943
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00238_20261116154313.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00238_20261116154313.pcap, processed up to 1794822196943
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00239_20261116154318.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00239_20261116154318.pcap, processed up to 1794822200943
+[62404 - RX#01] 2026-11-16 15:43:57 Info: pcap: Updating processed to 1794822200943
+[62404 - RX#01] 2026-11-16 15:44:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822200943 and older than 1794822207234
+[62404 - RX#01] 2026-11-16 15:44:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822200943 and older than 1794822212234
+[62404 - RX#01] 2026-11-16 15:44:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00240_20261116154323.pcap" at 1794822207193
+[62404 - RX#01] 2026-11-16 15:44:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00240_20261116154323.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:44:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00240_20261116154323.pcap, processed up to 1794822207193
+[62404 - RX#01] 2026-11-16 15:44:07 Info: pcap: Updating processed to 1794822207193
+[62404 - RX#01] 2026-11-16 15:44:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822207193 and older than 1794822217234
+[62404 - RX#01] 2026-11-16 15:44:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822207193 and older than 1794822222234
+[62404 - RX#01] 2026-11-16 15:44:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822207193 and older than 1794822227235
+[62404 - RX#01] 2026-11-16 15:44:22 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00243_20261116154338.pcap" at 1794822222444
+[62404 - RX#01] 2026-11-16 15:44:22 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00243_20261116154338.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:44:22 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00243_20261116154338.pcap, processed up to 1794822222444
+[62404 - RX#01] 2026-11-16 15:44:22 Info: pcap: Updating processed to 1794822222444
+[62404 - RX#01] 2026-11-16 15:44:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822222444 and older than 1794822232235
+[62404 - RX#01] 2026-11-16 15:44:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822222444 and older than 1794822237235
+[62404 - RX#01] 2026-11-16 15:44:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822222444 and older than 1794822242235
+[62404 - RX#01] 2026-11-16 15:44:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822222444 and older than 1794822247236
+[62404 - RX#01] 2026-11-16 15:44:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822222444 and older than 1794822252236
+[62404 - RX#01] 2026-11-16 15:44:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822222444 and older than 1794822257236
+[62404 - RX#01] 2026-11-16 15:44:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794822222444 and older than 1794822262236
+[62404 - RX#01] 2026-11-16 15:44:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00251_20261116154418.pcap" at 1794822261194
+[62404 - RX#01] 2026-11-16 15:44:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00251_20261116154418.pcap end of file reached (pcap err code 0)
+[62404 - RX#01] 2026-11-16 15:44:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00251_20261116154418.pcap, processed up to 1794822261194
+[62404 - RX#01] 2026-11-16 15:44:57 Info: pcap: Updating processed to 1794822261194
+[62302 - Suricata-Main] 2026-11-16 15:44:59 Notice: suricata: Signal Received.  Stopping engine.
+[62404 - RX#01] 2026-11-16 15:45:02 Info: pcap: Directory run mode complete
+[62302 - Suricata-Main] 2026-11-16 15:45:02 Info: suricata: time elapsed 1295.347s
+[62404 - RX#01] 2026-11-16 15:45:02 Notice: pcap: read 117 files, 24303 packets, 7797424 bytes
+[62302 - Suricata-Main] 2026-11-16 15:45:02 Info: counters: Alerts: 51
+[70024 - Suricata-Main] 2026-11-16 15:59:21 Notice: suricata: This is Suricata version 7.0.3 RELEASE running in USER mode
+[70024 - Suricata-Main] 2026-11-16 15:59:21 Info: cpu: CPUs/cores online: 8
+[70024 - Suricata-Main] 2026-11-16 15:59:21 Info: suricata: Setting engine mode to IDS mode by default
+[70024 - Suricata-Main] 2026-11-16 15:59:21 Info: exception-policy: master exception-policy set to: auto
+[70024 - Suricata-Main] 2026-11-16 15:59:21 Info: logopenfile: fast output device (regular) initialized: fast.log
+[70024 - Suricata-Main] 2026-11-16 15:59:21 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[70024 - Suricata-Main] 2026-11-16 15:59:21 Info: logopenfile: stats output device (regular) initialized: stats.log
+[70024 - Suricata-Main] 2026-11-16 15:59:25 Info: detect: 1 rule files processed. 44596 rules successfully loaded, 0 rules failed, 0
+[70024 - Suricata-Main] 2026-11-16 15:59:25 Info: threshold-config: Threshold config parsed: 5 rule(s) found
+[70024 - Suricata-Main] 2026-11-16 15:59:25 Info: detect: 44599 signatures processed. 961 are IP-only rules, 4383 are inspecting packet payload, 39035 inspect application layer, 108 are decoder event only
+[70129 - RX#01] 2026-11-16 15:59:36 Info: pcap: Argument /home/ashraf/nids_realtime/data/live_b/suri_in was a directory
+[70129 - RX#01] 2026-11-16 15:59:36 Info: pcap: Starting directory run for /home/ashraf/nids_realtime/data/live_b/suri_in
+[70129 - RX#01] 2026-11-16 15:59:36 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794823146579
+[70129 - RX#01] 2026-11-16 15:59:41 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794823146579
+[70129 - RX#01] 2026-11-16 15:59:46 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794823151579
+[70129 - RX#01] 2026-11-16 15:59:51 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794823156579
+[70129 - RX#01] 2026-11-16 15:59:56 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 0 and older than 1794823161580
+[70129 - RX#01] 2026-11-16 15:59:56 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00001_20261116155915.pcap" at 1794823157292
+[70129 - RX#01] 2026-11-16 15:59:56 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00001_20261116155915.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 15:59:56 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00001_20261116155915.pcap, processed up to 1794823157292
+[70129 - RX#01] 2026-11-16 15:59:56 Info: pcap: Updating processed to 1794823157292
+[70024 - Suricata-Main] 2026-11-16 15:59:56 Notice: threads: Threads created -> RX: 1 W: 8 FM: 1 FR: 1   Engine started.
+[70129 - RX#01] 2026-11-16 16:00:01 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823157292 and older than 1794823166580
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823157292 and older than 1794823171581
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00003_20261116155925.pcap" at 1794823166042
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00002_20261116155920.pcap" at 1794823164792
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00002_20261116155920.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00002_20261116155920.pcap, processed up to 1794823164792
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00003_20261116155925.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00003_20261116155925.pcap, processed up to 1794823166042
+[70129 - RX#01] 2026-11-16 16:00:06 Info: pcap: Updating processed to 1794823166042
+[70129 - RX#01] 2026-11-16 16:00:11 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823166042 and older than 1794823176582
+[70129 - RX#01] 2026-11-16 16:00:16 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823166042 and older than 1794823181582
+[70129 - RX#01] 2026-11-16 16:00:21 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823166042 and older than 1794823186582
+[70129 - RX#01] 2026-11-16 16:00:26 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823166042 and older than 1794823191582
+[70129 - RX#01] 2026-11-16 16:00:26 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00007_20261116155945.pcap" at 1794823189291
+[70129 - RX#01] 2026-11-16 16:00:26 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00007_20261116155945.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:00:26 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00007_20261116155945.pcap, processed up to 1794823189291
+[70129 - RX#01] 2026-11-16 16:00:26 Info: pcap: Updating processed to 1794823189291
+[70129 - RX#01] 2026-11-16 16:00:31 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823189291 and older than 1794823196583
+[70129 - RX#01] 2026-11-16 16:00:36 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823189291 and older than 1794823201583
+[70129 - RX#01] 2026-11-16 16:00:41 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823189291 and older than 1794823206584
+[70129 - RX#01] 2026-11-16 16:00:46 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823189291 and older than 1794823211584
+[70129 - RX#01] 2026-11-16 16:00:46 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00012_20261116160010.pcap" at 1794823211291
+[70129 - RX#01] 2026-11-16 16:00:46 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00012_20261116160010.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:00:46 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00012_20261116160010.pcap, processed up to 1794823211291
+[70129 - RX#01] 2026-11-16 16:00:46 Info: pcap: Updating processed to 1794823211291
+[70129 - RX#01] 2026-11-16 16:00:51 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823211291 and older than 1794823216585
+[70129 - RX#01] 2026-11-16 16:00:56 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823211291 and older than 1794823221585
+[70129 - RX#01] 2026-11-16 16:01:01 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823211291 and older than 1794823226585
+[70129 - RX#01] 2026-11-16 16:01:01 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00014_20261116160020.pcap" at 1794823225292
+[70129 - RX#01] 2026-11-16 16:01:01 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00014_20261116160020.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:01:01 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00014_20261116160020.pcap, processed up to 1794823225292
+[70129 - RX#01] 2026-11-16 16:01:01 Info: pcap: Updating processed to 1794823225292
+[70129 - RX#01] 2026-11-16 16:01:06 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823231586
+[70129 - RX#01] 2026-11-16 16:01:11 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823236586
+[70129 - RX#01] 2026-11-16 16:01:16 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823241586
+[70129 - RX#01] 2026-11-16 16:01:21 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823246586
+[70129 - RX#01] 2026-11-16 16:01:26 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823251587
+[70129 - RX#01] 2026-11-16 16:01:31 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823256587
+[70129 - RX#01] 2026-11-16 16:01:36 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823261587
+[70129 - RX#01] 2026-11-16 16:01:41 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823266587
+[70129 - RX#01] 2026-11-16 16:01:46 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823225292 and older than 1794823271588
+[70129 - RX#01] 2026-11-16 16:01:46 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00023_20261116160106.pcap" at 1794823271291
+[70129 - RX#01] 2026-11-16 16:01:46 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00023_20261116160106.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:01:46 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00023_20261116160106.pcap, processed up to 1794823271291
+[70129 - RX#01] 2026-11-16 16:01:46 Info: pcap: Updating processed to 1794823271291
+[70129 - RX#01] 2026-11-16 16:01:51 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823271291 and older than 1794823276590
+[70129 - RX#01] 2026-11-16 16:01:56 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823271291 and older than 1794823281590
+[70129 - RX#01] 2026-11-16 16:01:56 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00024_20261116160111.pcap" at 1794823276376
+[70129 - RX#01] 2026-11-16 16:01:56 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[70129 - RX#01] 2026-11-16 16:01:56 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00024_20261116160111.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:01:56 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00024_20261116160111.pcap, processed up to 1794823276376
+[70129 - RX#01] 2026-11-16 16:01:56 Info: pcap: Updating processed to 1794823276376
+[70129 - RX#01] 2026-11-16 16:02:01 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823286874
+[70129 - RX#01] 2026-11-16 16:02:06 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823291876
+[70129 - RX#01] 2026-11-16 16:02:11 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823296876
+[70129 - RX#01] 2026-11-16 16:02:16 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823301877
+[70129 - RX#01] 2026-11-16 16:02:21 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823306877
+[70129 - RX#01] 2026-11-16 16:02:26 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823311877
+[70129 - RX#01] 2026-11-16 16:02:31 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823316877
+[70129 - RX#01] 2026-11-16 16:02:36 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823321877
+[70129 - RX#01] 2026-11-16 16:02:41 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823326878
+[70129 - RX#01] 2026-11-16 16:02:46 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823331878
+[70129 - RX#01] 2026-11-16 16:02:51 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823336878
+[70129 - RX#01] 2026-11-16 16:02:56 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823341878
+[70129 - RX#01] 2026-11-16 16:03:01 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823346880
+[70129 - RX#01] 2026-11-16 16:03:06 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823351880
+[70129 - RX#01] 2026-11-16 16:03:11 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823356881
+[70129 - RX#01] 2026-11-16 16:03:16 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823361881
+[70129 - RX#01] 2026-11-16 16:03:21 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823366882
+[70129 - RX#01] 2026-11-16 16:03:26 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823371883
+[70129 - RX#01] 2026-11-16 16:03:31 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823376883
+[70129 - RX#01] 2026-11-16 16:03:36 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823381884
+[70129 - RX#01] 2026-11-16 16:03:41 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823386884
+[70129 - RX#01] 2026-11-16 16:03:46 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823391884
+[70129 - RX#01] 2026-11-16 16:03:51 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823396885
+[70129 - RX#01] 2026-11-16 16:03:56 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823401885
+[70129 - RX#01] 2026-11-16 16:04:01 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823406885
+[70129 - RX#01] 2026-11-16 16:04:06 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823411885
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823276376 and older than 1794823416886
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00029_20261116160136.pcap" at 1794823297292
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00038_20261116160222.pcap" at 1794823345791
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00034_20261116160202.pcap" at 1794823325291
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00031_20261116160146.pcap" at 1794823311791
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00050_20261116160323.pcap" at 1794823406292
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00039_20261116160227.pcap" at 1794823350045
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00051_20261116160328.pcap" at 1794823410291
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00047_20261116160308.pcap" at 1794823390041
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00025_20261116160116.pcap" at 1794823281541
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00052_20261116160333.pcap" at 1794823416041
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00043_20261116160247.pcap" at 1794823370042
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00035_20261116160207.pcap" at 1794823330043
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00044_20261116160252.pcap" at 1794823377291
+[70129 - RX#01] 2026-11-16 16:04:11 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00026_20261116160121.pcap" at 1794823285541
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00025_20261116160116.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00025_20261116160116.pcap, processed up to 1794823281541
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00026_20261116160121.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00026_20261116160121.pcap, processed up to 1794823285541
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00029_20261116160136.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00029_20261116160136.pcap, processed up to 1794823297292
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00031_20261116160146.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00031_20261116160146.pcap, processed up to 1794823311791
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00034_20261116160202.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00034_20261116160202.pcap, processed up to 1794823325291
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00035_20261116160207.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00035_20261116160207.pcap, processed up to 1794823330043
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00038_20261116160222.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00038_20261116160222.pcap, processed up to 1794823345791
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00039_20261116160227.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00039_20261116160227.pcap, processed up to 1794823350045
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00043_20261116160247.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00043_20261116160247.pcap, processed up to 1794823370042
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00044_20261116160252.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00044_20261116160252.pcap, processed up to 1794823377291
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00047_20261116160308.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00047_20261116160308.pcap, processed up to 1794823390041
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00050_20261116160323.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00050_20261116160323.pcap, processed up to 1794823406292
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00051_20261116160328.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00051_20261116160328.pcap, processed up to 1794823410291
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00052_20261116160333.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00052_20261116160333.pcap, processed up to 1794823416041
+[70129 - RX#01] 2026-11-16 16:04:12 Info: pcap: Updating processed to 1794823416041
+[70129 - RX#01] 2026-11-16 16:04:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823416041 and older than 1794823422109
+[70129 - RX#01] 2026-11-16 16:04:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823416041 and older than 1794823427109
+[70129 - RX#01] 2026-11-16 16:04:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823416041 and older than 1794823432110
+[70129 - RX#01] 2026-11-16 16:04:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00055_20261116160349.pcap" at 1794823430041
+[70129 - RX#01] 2026-11-16 16:04:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00055_20261116160349.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00055_20261116160349.pcap, processed up to 1794823430041
+[70129 - RX#01] 2026-11-16 16:04:27 Info: pcap: Updating processed to 1794823430041
+[70129 - RX#01] 2026-11-16 16:04:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823430041 and older than 1794823437110
+[70129 - RX#01] 2026-11-16 16:04:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823430041 and older than 1794823442110
+[70129 - RX#01] 2026-11-16 16:04:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00057_20261116160359.pcap" at 1794823441792
+[70129 - RX#01] 2026-11-16 16:04:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00057_20261116160359.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00057_20261116160359.pcap, processed up to 1794823441792
+[70129 - RX#01] 2026-11-16 16:04:37 Info: pcap: Updating processed to 1794823441792
+[70129 - RX#01] 2026-11-16 16:04:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823441792 and older than 1794823447110
+[70129 - RX#01] 2026-11-16 16:04:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823441792 and older than 1794823452111
+[70129 - RX#01] 2026-11-16 16:04:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823441792 and older than 1794823457111
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823441792 and older than 1794823462111
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00059_20261116160409.pcap" at 1794823450291
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00060_20261116160414.pcap" at 1794823455291
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00059_20261116160409.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00059_20261116160409.pcap, processed up to 1794823450291
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00060_20261116160414.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00060_20261116160414.pcap, processed up to 1794823455291
+[70129 - RX#01] 2026-11-16 16:04:57 Info: pcap: Updating processed to 1794823455291
+[70129 - RX#01] 2026-11-16 16:05:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823455291 and older than 1794823467112
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823455291 and older than 1794823472112
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00062_20261116160425.pcap" at 1794823470292
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00061_20261116160419.pcap" at 1794823463041
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00061_20261116160419.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00061_20261116160419.pcap, processed up to 1794823463041
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00062_20261116160425.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00062_20261116160425.pcap, processed up to 1794823470292
+[70129 - RX#01] 2026-11-16 16:05:07 Info: pcap: Updating processed to 1794823470292
+[70129 - RX#01] 2026-11-16 16:05:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823470292 and older than 1794823477113
+[70129 - RX#01] 2026-11-16 16:05:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823470292 and older than 1794823482113
+[70129 - RX#01] 2026-11-16 16:05:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823470292 and older than 1794823487113
+[70129 - RX#01] 2026-11-16 16:05:22 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00065_20261116160440.pcap" at 1794823485541
+[70129 - RX#01] 2026-11-16 16:05:22 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00065_20261116160440.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:05:22 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00065_20261116160440.pcap, processed up to 1794823485541
+[70129 - RX#01] 2026-11-16 16:05:22 Info: pcap: Updating processed to 1794823485541
+[70129 - RX#01] 2026-11-16 16:05:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823485541 and older than 1794823492113
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823485541 and older than 1794823497114
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00066_20261116160445.pcap" at 1794823490291
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00067_20261116160450.pcap" at 1794823493541
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00066_20261116160445.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00066_20261116160445.pcap, processed up to 1794823490291
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00067_20261116160450.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00067_20261116160450.pcap, processed up to 1794823493541
+[70129 - RX#01] 2026-11-16 16:05:32 Info: pcap: Updating processed to 1794823493541
+[70129 - RX#01] 2026-11-16 16:05:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823493541 and older than 1794823502115
+[70129 - RX#01] 2026-11-16 16:05:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823493541 and older than 1794823507115
+[70129 - RX#01] 2026-11-16 16:05:42 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00068_20261116160455.pcap" at 1794823498041
+[70129 - RX#01] 2026-11-16 16:05:42 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00068_20261116160455.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:05:42 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00068_20261116160455.pcap, processed up to 1794823498041
+[70129 - RX#01] 2026-11-16 16:05:42 Info: pcap: Updating processed to 1794823498041
+[70129 - RX#01] 2026-11-16 16:05:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823498041 and older than 1794823512115
+[70129 - RX#01] 2026-11-16 16:05:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823498041 and older than 1794823517116
+[70129 - RX#01] 2026-11-16 16:05:52 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00070_20261116160505.pcap" at 1794823510292
+[70129 - RX#01] 2026-11-16 16:05:52 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00070_20261116160505.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:05:52 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00070_20261116160505.pcap, processed up to 1794823510292
+[70129 - RX#01] 2026-11-16 16:05:52 Info: pcap: Updating processed to 1794823510292
+[70129 - RX#01] 2026-11-16 16:05:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823510292 and older than 1794823522116
+[70129 - RX#01] 2026-11-16 16:06:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823510292 and older than 1794823527116
+[70129 - RX#01] 2026-11-16 16:06:02 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00073_20261116160521.pcap" at 1794823526291
+[70129 - RX#01] 2026-11-16 16:06:02 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00073_20261116160521.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:06:02 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00073_20261116160521.pcap, processed up to 1794823526291
+[70129 - RX#01] 2026-11-16 16:06:02 Info: pcap: Updating processed to 1794823526291
+[70129 - RX#01] 2026-11-16 16:06:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823526291 and older than 1794823532117
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823526291 and older than 1794823537117
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00074_20261116160526.pcap" at 1794823530291
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00075_20261116160531.pcap" at 1794823536542
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00074_20261116160526.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00074_20261116160526.pcap, processed up to 1794823530291
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00075_20261116160531.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00075_20261116160531.pcap, processed up to 1794823536542
+[70129 - RX#01] 2026-11-16 16:06:12 Info: pcap: Updating processed to 1794823536542
+[70129 - RX#01] 2026-11-16 16:06:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823536542 and older than 1794823542117
+[70129 - RX#01] 2026-11-16 16:06:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823536542 and older than 1794823547117
+[70129 - RX#01] 2026-11-16 16:06:22 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00076_20261116160536.pcap" at 1794823538542
+[70129 - RX#01] 2026-11-16 16:06:22 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00076_20261116160536.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:06:22 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00076_20261116160536.pcap, processed up to 1794823538542
+[70129 - RX#01] 2026-11-16 16:06:22 Info: pcap: Updating processed to 1794823538542
+[70129 - RX#01] 2026-11-16 16:06:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823538542 and older than 1794823552118
+[70129 - RX#01] 2026-11-16 16:06:32 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823538542 and older than 1794823557118
+[70129 - RX#01] 2026-11-16 16:06:37 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823538542 and older than 1794823562118
+[70129 - RX#01] 2026-11-16 16:06:37 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00080_20261116160556.pcap" at 1794823558541
+[70129 - RX#01] 2026-11-16 16:06:37 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00080_20261116160556.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:06:37 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00080_20261116160556.pcap, processed up to 1794823558541
+[70129 - RX#01] 2026-11-16 16:06:37 Info: pcap: Updating processed to 1794823558541
+[70129 - RX#01] 2026-11-16 16:06:42 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823558541 and older than 1794823567119
+[70129 - RX#01] 2026-11-16 16:06:47 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823558541 and older than 1794823572119
+[70129 - RX#01] 2026-11-16 16:06:52 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823558541 and older than 1794823577119
+[70129 - RX#01] 2026-11-16 16:06:57 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823558541 and older than 1794823582119
+[70129 - RX#01] 2026-11-16 16:06:57 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00084_20261116160616.pcap" at 1794823578542
+[70129 - RX#01] 2026-11-16 16:06:57 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00084_20261116160616.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:06:57 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00084_20261116160616.pcap, processed up to 1794823578542
+[70129 - RX#01] 2026-11-16 16:06:57 Info: pcap: Updating processed to 1794823578542
+[70129 - RX#01] 2026-11-16 16:07:02 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823578542 and older than 1794823587120
+[70129 - RX#01] 2026-11-16 16:07:07 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823578542 and older than 1794823592120
+[70129 - RX#01] 2026-11-16 16:07:07 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00085_20261116160622.pcap" at 1794823587291
+[70129 - RX#01] 2026-11-16 16:07:07 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00085_20261116160622.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:07:07 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00085_20261116160622.pcap, processed up to 1794823587291
+[70129 - RX#01] 2026-11-16 16:07:07 Info: pcap: Updating processed to 1794823587291
+[70129 - RX#01] 2026-11-16 16:07:12 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823587291 and older than 1794823597120
+[70129 - RX#01] 2026-11-16 16:07:17 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823587291 and older than 1794823602121
+[70129 - RX#01] 2026-11-16 16:07:17 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00088_20261116160637.pcap" at 1794823598541
+[70129 - RX#01] 2026-11-16 16:07:17 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00088_20261116160637.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:07:17 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00088_20261116160637.pcap, processed up to 1794823598541
+[70129 - RX#01] 2026-11-16 16:07:17 Info: pcap: Updating processed to 1794823598541
+[70129 - RX#01] 2026-11-16 16:07:22 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823598541 and older than 1794823607121
+[70129 - RX#01] 2026-11-16 16:07:27 Info: pcap: Processing pcaps directory /home/ashraf/nids_realtime/data/live_b/suri_in, files must be newer than 1794823598541 and older than 1794823612121
+[70129 - RX#01] 2026-11-16 16:07:27 Info: pcap: Found "/home/ashraf/nids_realtime/data/live_b/suri_in/cap_00090_20261116160647.pcap" at 1794823608542
+[70129 - RX#01] 2026-11-16 16:07:27 Info: pcap: pcap file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00090_20261116160647.pcap end of file reached (pcap err code 0)
+[70129 - RX#01] 2026-11-16 16:07:27 Info: pcap: Processed file /home/ashraf/nids_realtime/data/live_b/suri_in/cap_00090_20261116160647.pcap, processed up to 1794823608542
+[70129 - RX#01] 2026-11-16 16:07:27 Info: pcap: Updating processed to 1794823608542
+[70024 - Suricata-Main] 2026-11-16 16:07:29 Notice: suricata: Signal Received.  Stopping engine.
+[70129 - RX#01] 2026-11-16 16:07:32 Info: pcap: Directory run mode complete
+[70024 - Suricata-Main] 2026-11-16 16:07:32 Info: suricata: time elapsed 475.632s
+[70129 - RX#01] 2026-11-16 16:07:32 Notice: pcap: read 42 files, 236072 packets, 13980965 bytes
+[70024 - Suricata-Main] 2026-11-16 16:07:32 Info: counters: Alerts: 28948

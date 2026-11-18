@@ -1,0 +1,52 @@
+# Live configuration for Approach B (unprivileged dumpcap + Suricata continuous + main_unified.py)
+ollama:
+  url: "https://presenting-characteristics-kathy-anybody.trycloudflare.com"
+  model: "qwen2.5:1.5b"
+  temperature: 0.1
+  max_tokens: 600
+  timeout_seconds: 120
+  retry_attempts: 3
+
+paths:
+  raw_pcap_dir:    "data/raw_pcap"
+  cicflow_csv_dir: "data/cicflow_csv"
+  eve_logs_dir:    "data/live_b/suricata_logs"
+  chunks_dir:      "data/chunks"
+  results_dir:     "data/results"
+  app_log_file:    "logs/nids_role3.log"
+  live_eve_json:   "data/live_b/suricata_logs/eve.json"
+
+chunker:
+  window_seconds: 20
+  max_flows_per_chunk: 8
+  max_alerts_per_chunk: 15
+  save_chunks_to_disk: true
+
+suricata:
+  offline_output_dir: "data/live_b/suricata_logs"
+  rules_dir: "/etc/suricata/rules"
+  config_path: "/etc/suricata/suricata.yaml"
+
+cicflow:
+  timestamp_utc_offset_hours: 6
+
+cicflowmeter:
+  jar_path: "tools/CICFlowMeterV3-0.0.4-SNAPSHOT.jar"
+  output_dir: "data/cicflow_csv"
+  timestamp_utc_offset_hours: 6
+
+role1:
+  min_feature_coverage: 0.90
+
+evaluation:
+  attack_verdicts: ["attack", "suspicious"]
+  benign_verdicts: ["benign"]
+  cicids_benign_label: "BENIGN"
+  save_full_verdicts: true
+  attack_window_threshold: 0.03
+
+live:
+  poll_interval_seconds: 0.5
+  alert_on_verdicts: ["attack", "suspicious"]
+  webhook_url: ""
+  output_verdict_json: "logs/llm_verdicts.json"

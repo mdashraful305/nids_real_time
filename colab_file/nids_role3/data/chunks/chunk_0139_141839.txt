@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0139
+Time range : 2017-07-07 14:18:39 UTC → 2017-07-07 14:19:39 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-07T20:18:44] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    46.105.198.136:80 → 192.168.10.12:54808  proto=TCP
+  [2017-07-07T20:18:44] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.60.139.27:80 → 192.168.10.16:48604  proto=TCP
+  [2017-07-07T20:18:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    220.243.219.55:443 → 192.168.10.16:55480  proto=TCP
+  [2017-07-07T20:18:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    220.243.219.55:443 → 192.168.10.16:55480  proto=TCP
+  [2017-07-07T20:18:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    220.243.219.55:443 → 192.168.10.16:55480  proto=TCP
+  [2017-07-07T20:18:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    220.243.219.55:443 → 192.168.10.16:55480  proto=TCP
+  [2017-07-07T20:18:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    220.243.219.55:443 → 192.168.10.16:55480  proto=TCP
+  [2017-07-07T20:18:45] SID:2050736 (sev=3) ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)
+    category : Misc activity
+    192.168.10.16:55473 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T20:18:45] SID:2050736 (sev=3) ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)
+    category : Misc activity
+    192.168.10.16:55473 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T20:18:45] SID:2050736 (sev=3) ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)
+    category : Misc activity
+    192.168.10.16:3655 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T20:18:45] SID:2050736 (sev=3) ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)
+    category : Misc activity
+    192.168.10.16:3655 → 192.168.10.3:53  proto=UDP
+  [2017-07-07T20:18:45] SID:2050736 (sev=3) ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)
+    category : Misc activity
+    192.168.10.3:60622 → 192.168.10.1:53  proto=UDP
+  [2017-07-07T20:18:45] SID:2050736 (sev=3) ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)
+    category : Misc activity
+    192.168.10.3:61275 → 192.168.10.1:53  proto=UDP
+  [2017-07-07T20:18:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    220.243.219.55:443 → 192.168.10.16:55480  proto=TCP
+  [2017-07-07T20:18:45] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    220.243.219.55:443 → 192.168.10.16:55480  proto=TCP
+
+PROTOCOL METADATA (3067 events, showing first 5):
+------------------------------------------------------------
+  DNS  192.168.10.17 queried ping.chartbeat.net type=A
+  DNS  192.168.10.17 queried ping.chartbeat.net type=A
+  DNS  192.168.10.17 queried ping.chartbeat.net type=AAAA
+  DNS  192.168.10.17 queried ping.chartbeat.net type=AAAA
+  DNS  192.168.10.17 queried ping.chartbeat.net type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.16  Src Port=41870  Dst IP=205.185.216.42  Destination Port=80  Protocol=6  Flow Duration=14061696  Total Fwd Packets=629  Total Backward Packets=992  Init_Win_bytes_backward=31  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=144527.5
+  Src IP=192.168.10.8  Src Port=3523  Dst IP=151.101.2.90  Destination Port=443  Protocol=6  Flow Duration=118842647  Total Fwd Packets=485  Total Backward Packets=886  Init_Win_bytes_backward=179  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=10656.6
+  Src IP=192.168.10.16  Src Port=41878  Dst IP=205.185.216.42  Destination Port=80  Protocol=6  Flow Duration=14812997  Total Fwd Packets=285  Total Backward Packets=348  Init_Win_bytes_backward=31  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=48175.9
+  Src IP=192.168.10.16  Src Port=55648  Dst IP=220.243.219.55  Destination Port=443  Protocol=6  Flow Duration=117092794  Total Fwd Packets=216  Total Backward Packets=334  Init_Win_bytes_backward=205  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=4160.6
+  Src IP=192.168.10.16  Src Port=41872  Dst IP=205.185.216.42  Destination Port=80  Protocol=6  Flow Duration=14045169  Total Fwd Packets=212  Total Backward Packets=318  Init_Win_bytes_backward=31  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=47495.1
+  Src IP=192.168.10.17  Src Port=49771  Dst IP=37.48.106.238  Destination Port=443  Protocol=6  Flow Duration=40831342  Total Fwd Packets=188  Total Backward Packets=250  Init_Win_bytes_backward=140  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=11957.8
+  Src IP=192.168.10.16  Src Port=41168  Dst IP=110.53.246.31  Destination Port=80  Protocol=6  Flow Duration=62576033  Total Fwd Packets=179  Total Backward Packets=246  Init_Win_bytes_backward=754  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5637.2
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=117071331  Total Fwd Packets=168  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA HTTP unable to match response to request, ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com), SURICATA TCPv4 invalid checksum
+  Unique source IPs : 4
+  Top dest ports    : [80, 443, 0]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

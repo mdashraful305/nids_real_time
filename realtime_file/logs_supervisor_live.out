@@ -1,0 +1,31 @@
+════════════════════════════════════════════════════════════════════
+  🛡️  NIDS Live Supervisor (Approach A + Approach B)
+════════════════════════════════════════════════════════════════════
+  ✓ All previous run data cleaned
+  ✓ Ollama warm (https://presenting-characteristics-kathy-anybody.trycloudflare.com, model=qwen2.5:1.5b)
+  ▶ Started nids_web_5000 (PID 69970)
+  ✓ Approach A dashboard live on http://localhost:5000
+  ▶ Started live_b_worker (PID 70004)
+  ⏳ Waiting for first live 5s PCAP chunk...
+  ✓ First live chunk ready in suri_in (cap_00001_20261116155915.pcap)
+  ▶ Started suricata (PID 70024)
+  ✓ Suricata status: Engine started
+  ▶ Started main_unified_live (PID 70313)
+  ▶ Started app_5001 (PID 70314)
+  ✓ Approach B dashboard live on http://localhost:5001
+════════════════════════════════════════════════════════════════════
+  READY FOR LIVE SIMULATION
+  Run dir: data/runs/live_20261116_095911
+════════════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════════════
+  ⏳ TWO-PHASE DRAIN: stopping packet capture, keeping analysis running...
+  ✓ Capture stopped & all PCAP/CSV batches flushed
+  ✓ Suricata finished all captured PCAPs
+  ✓ Approach A drained all flows & Role 3 LLM queue
+  ⏳ Drain wait: approach_a_complete=True, approach_b_complete=False
+  ✓ Approach B drained all CSVs & LLM windows
+  ✓ FULL DRAIN COMPLETE — shutting down services cleanly
+════════════════════════════════════════════════════════════════════
+
+  Stopping all live services...

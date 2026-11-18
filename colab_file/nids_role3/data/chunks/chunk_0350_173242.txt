@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0350
+Time range : 2017-07-05 17:32:42 UTC → 2017-07-05 17:33:42 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.35.249.127:443 → 192.168.10.8:56919  proto=TCP
+  [2017-07-05T23:32:42] SID:2210038 (sev=3) SURICATA STREAM FIN out of window
+    category : Generic Protocol Command Decode
+    159.127.42.41:443 → 192.168.10.8:57813  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56895 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56894 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56894 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56899 → 192.35.249.127:80  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:56915 → 192.35.249.127:443  proto=TCP
+  [2017-07-05T23:32:42] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56899  proto=TCP
+  [2017-07-05T23:32:42] SID:2221010 (sev=3) SURICATA HTTP unable to match response to request
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56894  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56899  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56894  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.35.249.127:80 → 192.168.10.8:56895  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:57812 → 8.43.72.21:443  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:57812 → 8.43.72.21:443  proto=TCP
+  [2017-07-05T23:32:42] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    192.168.10.8:57694 → 8.43.72.21:443  proto=TCP
+
+PROTOCOL METADATA (1386 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.8:57815 → 54.225.131.84 | GET beacon.krxd.net/usermatch.gif?partner=spotxchange&partner_uid=b182fb00-5b4d
+  HTTP 192.168.10.8:57806 → 162.208.20.178 | GET vast.bp3867818.btrll.com/vast/3867818?n=1499275959601823
+  HTTP 192.168.10.8:57805 → 162.208.20.178 | GET vast.bp3867819.btrll.com/vast/3867819?n=1499275959601823
+  TLS  192.168.10.8 → 74.217.253.61 SNI=rp.gwallet.com version=TLS 1.2
+  DNS  192.168.10.8 queried h.ocsp-certum.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.8  Src Port=57910  Dst IP=173.194.131.75  Destination Port=443  Protocol=6  Flow Duration=442294  Total Fwd Packets=845  Total Backward Packets=1358  Init_Win_bytes_backward=123  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=5611604.5
+  Src IP=192.168.10.8  Src Port=57780  Dst IP=198.54.12.96  Destination Port=80  Protocol=6  Flow Duration=117749794  Total Fwd Packets=268  Total Backward Packets=430  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=7438.8
+  Src IP=8.6.0.1  Src Port=0  Dst IP=8.0.6.4  Destination Port=0  Protocol=0  Flow Duration=114795642  Total Fwd Packets=139  Total Backward Packets=0  Init_Win_bytes_backward=-1  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=0.0
+  Src IP=192.168.10.8  Src Port=57751  Dst IP=172.217.3.98  Destination Port=443  Protocol=6  Flow Duration=118864793  Total Fwd Packets=134  Total Backward Packets=195  Init_Win_bytes_backward=1614  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=519.9
+  Src IP=199.244.48.54  Src Port=443  Dst IP=192.168.10.8  Destination Port=57539  Protocol=6  Flow Duration=21649  Total Fwd Packets=112  Total Backward Packets=1  Init_Win_bytes_backward=0  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=11700000.0
+  Src IP=192.168.10.8  Src Port=57539  Dst IP=199.244.48.54  Destination Port=443  Protocol=6  Flow Duration=188308  Total Fwd Packets=101  Total Backward Packets=149  Init_Win_bytes_backward=62  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1529648.2
+  Src IP=192.168.10.8  Src Port=57816  Dst IP=34.194.92.111  Destination Port=80  Protocol=6  Flow Duration=118855288  Total Fwd Packets=94  Total Backward Packets=58  Init_Win_bytes_backward=461  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=840.2
+  Src IP=192.168.10.8  Src Port=56895  Dst IP=192.35.249.127  Destination Port=80  Protocol=6  Flow Duration=112785567  Total Fwd Packets=77  Total Backward Packets=82  Init_Win_bytes_backward=65535  SYN Flag Count=0  FIN Flag Count=0  RST Flag Count=0  Flow Bytes/s=1029.9
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA STREAM FIN out of window, SURICATA TCPv4 invalid checksum, SURICATA HTTP unable to match response to request
+  Unique source IPs : 3
+  Top dest ports    : [443, 80, 0, 57539]
+  Protocols         : {6: 7, 0: 1}
+====================================================================

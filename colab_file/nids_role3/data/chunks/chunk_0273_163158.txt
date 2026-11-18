@@ -1,0 +1,80 @@
+====================================================================
+LOG WINDOW #0273
+Time range : 2017-07-06 16:31:58 UTC → 2017-07-06 16:32:58 UTC
+Suricata alerts :   15  | Network flows :     8
+====================================================================
+
+SURICATA ALERTS (15):
+------------------------------------------------------------
+  [2017-07-06T22:31:59] SID:2210016 (sev=3) SURICATA STREAM CLOSEWAIT FIN out of window
+    category : Generic Protocol Command Decode
+    54.230.51.155:80 → 192.168.10.8:53086  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    141.0.174.73:443 → 192.168.10.14:64198  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    23.50.75.27:80 → 192.168.10.14:64199  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    141.0.174.73:443 → 192.168.10.14:64198  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    141.0.174.73:443 → 192.168.10.14:64198  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.42:443 → 192.168.10.14:64207  proto=TCP
+  [2017-07-06T22:32:12] SID:2027863 (sev=2) ET INFO Observed DNS Query to .biz TLD
+    category : Potentially Bad Traffic
+    192.168.10.14:65151 → 192.168.10.3:53  proto=UDP
+  [2017-07-06T22:32:12] SID:2027863 (sev=2) ET INFO Observed DNS Query to .biz TLD
+    category : Potentially Bad Traffic
+    192.168.10.14:65151 → 192.168.10.3:53  proto=UDP
+  [2017-07-06T22:32:12] SID:2027863 (sev=2) ET INFO Observed DNS Query to .biz TLD
+    category : Potentially Bad Traffic
+    192.168.10.3:61591 → 192.168.10.1:53  proto=UDP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.42:443 → 192.168.10.14:64205  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.42:443 → 192.168.10.14:64205  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.42:443 → 192.168.10.14:64205  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.42:443 → 192.168.10.14:64205  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.42:443 → 192.168.10.14:64205  proto=TCP
+  [2017-07-06T22:32:12] SID:2200074 (sev=3) SURICATA TCPv4 invalid checksum
+    category : Generic Protocol Command Decode
+    205.185.216.42:443 → 192.168.10.14:64205  proto=TCP
+
+PROTOCOL METADATA (2464 events, showing first 5):
+------------------------------------------------------------
+  HTTP 192.168.10.14:64168 → 23.54.187.27 | POST gs.symcd.com/
+  HTTP 192.168.10.14:64168 → 23.54.187.27 | POST gs.symcd.com/
+  DNS  192.168.10.15 queried smtp.gmail.com type=A
+  DNS  192.168.10.15 queried smtp.gmail.com type=A
+  DNS  192.168.10.3 queried gmail-smtp-msa.l.google.com type=A
+
+NETWORK FLOWS — top 8 by packet count:
+------------------------------------------------------------
+  Src IP=192.168.10.12  Src Port=48694.0  Dst IP=193.41.230.87  Destination Port=443.0  Protocol=6.0  Flow Duration=7886204.0  Total Fwd Packets=298.0  Total Backward Packets=428.0  Init_Win_bytes_backward=8652.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=73633.9
+  Src IP=192.168.10.12  Src Port=48690.0  Dst IP=193.41.230.87  Destination Port=443.0  Protocol=6.0  Flow Duration=8479852.0  Total Fwd Packets=262.0  Total Backward Packets=345.0  Init_Win_bytes_backward=13507.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=52016.6
+  Src IP=192.168.10.12  Src Port=48698.0  Dst IP=193.41.230.87  Destination Port=443.0  Protocol=6.0  Flow Duration=8512888.0  Total Fwd Packets=258.0  Total Backward Packets=342.0  Init_Win_bytes_backward=10860.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=49599.4
+  Src IP=192.168.10.12  Src Port=48696.0  Dst IP=193.41.230.87  Destination Port=443.0  Protocol=6.0  Flow Duration=7951812.0  Total Fwd Packets=174.0  Total Backward Packets=204.0  Init_Win_bytes_backward=12613.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=30902.6
+  Src IP=192.168.10.12  Src Port=48700.0  Dst IP=193.41.230.87  Destination Port=443.0  Protocol=6.0  Flow Duration=7831924.0  Total Fwd Packets=152.0  Total Backward Packets=211.0  Init_Win_bytes_backward=10927.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=35061.8
+  Src IP=192.168.10.12  Src Port=48692.0  Dst IP=193.41.230.87  Destination Port=443.0  Protocol=6.0  Flow Duration=7824065.0  Total Fwd Packets=138.0  Total Backward Packets=164.0  Init_Win_bytes_backward=12967.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=22607.4
+  Src IP=192.168.10.14  Src Port=64202.0  Dst IP=205.185.208.154  Destination Port=443.0  Protocol=6.0  Flow Duration=11340421.0  Total Fwd Packets=118.0  Total Backward Packets=189.0  Init_Win_bytes_backward=31.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=21894.0
+  Src IP=192.168.10.9  Src Port=5535.0  Dst IP=162.248.184.53  Destination Port=443.0  Protocol=6.0  Flow Duration=116326384.0  Total Fwd Packets=114.0  Total Backward Packets=172.0  Init_Win_bytes_backward=7105.0  SYN Flag Count=0.0  FIN Flag Count=0.0  RST Flag Count=0.0  Flow Bytes/s=2358.7
+
+CONTEXT SUMMARY:
+------------------------------------------------------------
+  Unique signatures : SURICATA TCPv4 invalid checksum, SURICATA STREAM CLOSEWAIT FIN out of window, ET INFO Observed DNS Query to .biz TLD
+  Unique source IPs : 3
+  Top dest ports    : [443.0]
+  Protocols         : {6.0: 8}
+====================================================================

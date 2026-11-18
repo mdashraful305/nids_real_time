@@ -1,0 +1,107 @@
+{
+  "baseline": "plain_xgboost",
+  "n_features": 72,
+  "n_classes": 13,
+  "n_train": 2495421,
+  "n_test": 623856,
+  "accuracy_pct": 99.97,
+  "macro_f1_pct": 96.73,
+  "weighted_f1_pct": 99.97,
+  "per_class": {
+    "BENIGN": {
+      "precision": 0.9998944119736822,
+      "recall": 0.9998438256125995,
+      "f1-score": 0.9998691181533121,
+      "support": 454620.0
+    },
+    "Bot": {
+      "precision": 0.9795918367346939,
+      "recall": 0.9770992366412213,
+      "f1-score": 0.978343949044586,
+      "support": 393.0
+    },
+    "DDoS": {
+      "precision": 0.9999609405515194,
+      "recall": 0.9998437805116188,
+      "f1-score": 0.9999023570996153,
+      "support": 25605.0
+    },
+    "DoS GoldenEye": {
+      "precision": 0.9990281827016521,
+      "recall": 0.9985429820301117,
+      "f1-score": 0.9987855234393976,
+      "support": 2059.0
+    },
+    "DoS Hulk": {
+      "precision": 0.9989404947240962,
+      "recall": 0.9996537920588553,
+      "f1-score": 0.9992970161037388,
+      "support": 46215.0
+    },
+    "DoS Slowhttptest": {
+      "precision": 0.9945504087193461,
+      "recall": 0.9954545454545455,
+      "f1-score": 0.9950022716946842,
+      "support": 1100.0
+    },
+    "DoS slowloris": {
+      "precision": 0.9956896551724138,
+      "recall": 0.996548748921484,
+      "f1-score": 0.9961190168175937,
+      "support": 1159.0
+    },
+    "FTP-Patator": {
+      "precision": 1.0,
+      "recall": 0.9993702770780857,
+      "f1-score": 0.9996850393700787,
+      "support": 1588.0
+    },
+    "PortScan": {
+      "precision": 0.9997797495437669,
+      "recall": 0.9996539356949601,
+      "f1-score": 0.9997168386609615,
+      "support": 31786.0
+    },
+    "SSH-Patator": {
+      "precision": 0.9991511035653651,
+      "recall": 0.998303647158609,
+      "f1-score": 0.9987271955876114,
+      "support": 1179.0
+    },
+    "Web Attack \u2013 Brute Force": {
+      "precision": 0.9,
+      "recall": 0.867109634551495,
+      "f1-score": 0.883248730964467,
+      "support": 301.0
+    },
+    "Web Attack \u2013 XSS": {
+      "precision": 0.7,
+      "recall": 0.7538461538461538,
+      "f1-score": 0.725925925925926,
+      "support": 130.0
+    },
+    "nan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 57721.0
+    },
+    "accuracy": 0.9996826190659382,
+    "macro avg": {
+      "precision": 0.9666605218220413,
+      "recall": 0.9680977353507494,
+      "f1-score": 0.9672786909893826,
+      "support": 623856.0
+    },
+    "weighted avg": {
+      "precision": 0.9996856952053494,
+      "recall": 0.9996826190659382,
+      "f1-score": 0.9996837889351167,
+      "support": 623856.0
+    }
+  },
+  "compare_full_pipeline": {
+    "accuracy_pct": 99.87,
+    "macro_f1_pct": 97.34
+  }
+}
