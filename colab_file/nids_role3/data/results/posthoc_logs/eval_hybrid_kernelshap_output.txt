@@ -1,0 +1,38 @@
+==============================================================================
+  COMPOSITE HYBRID KERNELSHAP FAITHFULNESS EVALUATION (NO RETRAINING)
+==============================================================================
+Environment: Python 3.13.0 | XGBoost 3.3.0 (CPU) | scikit-learn 1.9.0 | SHAP 0.54.1
+Protocol: KernelExplainer on P_hybrid = w_xgb*P_xgb + w_rf*P_rf | bg=kmeans(30) from train-pre-SMOTE (seed=42) | n_eval=100 | nsamples=200
+
+[CICIDS2017] (n=100, weights=0.501/0.499)
+  Latency: Hybrid KernelSHAP = 659.8 ms/flow | XGB TreeSHAP = 51.38 ms/flow (12.8x slower)
+  Global Top-5 (Hybrid KernelSHAP prob) : Bwd Packet Length Mean (0.0108), Bwd Packet Length Max (0.0070), Destination Port (0.0058), Init_Win_bytes_backward (0.0038), Total Length of Bwd Packets (0.0036)
+  Global Top-5 (XGB TreeSHAP log-odds)  : Destination Port (0.9201), Init_Win_bytes_backward (0.3768), Init_Win_bytes_forward (0.3319), min_seg_size_forward (0.3307), Fwd IAT Min (0.2678)
+  Global vs XGB TreeSHAP (same 100)     : Top-15 10/15 (66.7%), Top-10 70.0%, rho=0.772, tau=0.583
+  Global vs L1-Hybrid TreeSHAP (300)    : Top-15 73.3%, rho=0.835
+  Global vs RF TreeSHAP (300)           : Top-15 73.3%, rho=0.833
+  Per-flow (predicted class) faithfulness: mean rho=0.321 (median 0.353), Top-1 match=5.0%, Top-3 overlap=23.3%, Top-5 overlap=34.2%
+
+[CICIDS2017 DISCORDANT SLICE: 50/182 flows where XGBoost != Hybrid (0.0361% of test)]
+  Global on discordant flows (KS vs XGB): Top-15 9/15 (60.0%), rho=0.771
+  Per-flow (hybrid-predicted class)     : mean rho=0.286 (median 0.297), Top-1 match=0.0%, Top-3 overlap=20.7%, Top-5 overlap=32.4%
+
+[NSL-KDD] (n=100, weights=0.502/0.498)
+  Latency: Hybrid KernelSHAP = 654.7 ms/flow | XGB TreeSHAP = 17.81 ms/flow (36.8x slower)
+  Global Top-5 (Hybrid KernelSHAP prob) : src_bytes (0.0135), dst_bytes (0.0057), flag_SF (0.0054), dst_host_rerror_rate (0.0043), dst_host_serror_rate (0.0040)
+  Global Top-5 (XGB TreeSHAP log-odds)  : src_bytes (0.9915), dst_bytes (0.3854), dst_host_same_srv_rate (0.3072), dst_host_same_src_port_rate (0.3008), dst_host_srv_count (0.2973)
+  Global vs XGB TreeSHAP (same 100)     : Top-15 9/15 (60.0%), Top-10 50.0%, rho=0.817, tau=0.637
+  Global vs L1-Hybrid TreeSHAP (300)    : Top-15 73.3%, rho=0.884
+  Global vs RF TreeSHAP (300)           : Top-15 80.0%, rho=0.908
+  Per-flow (predicted class) faithfulness: mean rho=0.407 (median 0.396), Top-1 match=11.0%, Top-3 overlap=34.3%, Top-5 overlap=45.2%
+
+[UNSW-NB15] (n=100, weights=0.510/0.490)
+  Latency: Hybrid KernelSHAP = 638.6 ms/flow | XGB TreeSHAP = 68.62 ms/flow (9.3x slower)
+  Global Top-5 (Hybrid KernelSHAP prob) : sttl (0.0572), dbytes (0.0197), dttl (0.0196), ct_state_ttl (0.0164), dmean (0.0125)
+  Global Top-5 (XGB TreeSHAP log-odds)  : sttl (0.6974), dbytes (0.2902), sbytes (0.2780), smean (0.2746), sloss (0.2293)
+  Global vs XGB TreeSHAP (same 100)     : Top-15 13/15 (86.7%), Top-10 80.0%, rho=0.929, tau=0.781
+  Global vs L1-Hybrid TreeSHAP (300)    : Top-15 86.7%, rho=0.945
+  Global vs RF TreeSHAP (300)           : Top-15 80.0%, rho=0.940
+  Per-flow (predicted class) faithfulness: mean rho=0.405 (median 0.405), Top-1 match=56.0%, Top-3 overlap=51.0%, Top-5 overlap=51.4%
+
+Saved summary CSV: E:\Research\research_last\colab_file\hybrid_kernelshap_summary.csv

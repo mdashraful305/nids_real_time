@@ -1,0 +1,5 @@
+Dataset,Slice,n_flows,w_xgb,w_rf,kernelshap_ms_per_flow,xgb_treeshap_ms_per_flow,latency_ratio_ks_to_tx,global_vs_xgb100_top15_n,global_vs_xgb100_top15_pct,global_vs_xgb100_top10_pct,global_vs_xgb100_rho,global_vs_xgb100_tau,global_vs_xgb300_top15_pct,global_vs_xgb300_rho,global_vs_l1hyb300_top15_pct,global_vs_l1hyb300_rho,global_vs_rf300_top15_pct,global_vs_rf300_rho,local_spearman_mean,local_spearman_median,local_top1_match_pct,local_top3_overlap_pct,local_top5_overlap_pct
+CICIDS2017,test_sample_n100,100,0.501,0.499,659.76,51.38,12.8,10,66.7,70.0,0.772,0.583,66.7,0.775,73.3,0.835,73.3,0.833,0.321,0.353,5.0,23.3,34.2
+CICIDS2017,discordant_n50_of_182,50,0.501,0.499,521.85,51.38,10.2,9,60.0,60.0,0.771,0.586,,,,,,,0.286,0.297,0.0,20.7,32.4
+NSL-KDD,test_sample_n100,100,0.502,0.498,654.71,17.81,36.8,9,60.0,50.0,0.817,0.637,60.0,0.819,73.3,0.884,80.0,0.908,0.407,0.396,11.0,34.3,45.2
+UNSW-NB15,test_sample_n100,100,0.51,0.49,638.62,68.62,9.3,13,86.7,80.0,0.929,0.781,93.3,0.926,86.7,0.945,80.0,0.94,0.405,0.405,56.0,51.0,51.4
